@@ -52,27 +52,27 @@ a {
     left: 0;
     z-index: 4;
 }
-/*.page-banner {*/
-/*    position: relative;*/
-/*}*/
-/*.page-banner:after {*/
-/*    background-image: url("../images/header-bg.svg");*/
-/*    background-size: cover;*/
-/*    background-position: center;*/
-/*    background-repeat: no-repeat;*/
-/*    !*min-height: 100vh;*!*/
-/*    min-height: 575px;*/
-/*    content: '';*/
-/*    position: absolute;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    z-index: -1;*/
-/*    max-width: 100%;*/
-/*    overflow: hidden;*/
-/*    height: auto;*/
-/*    width: 100%;*/
-/*    display: none;*/
-/*}*/
+.page-banner {
+    position: relative;
+}
+.page-banner:after {
+    background-image: url("../images/header-bg.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    /*min-height: 575px;*/
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    max-width: 100%;
+    overflow: hidden;
+    height: auto;
+    width: 100%;
+    /*display: none;*/
+}
 .hvr-grow {
     display: inline-block;
     vertical-align: middle;
