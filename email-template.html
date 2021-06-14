@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Email Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+     <style>
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+            background: #f1f1f1;
+        }
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            table-layout: fixed !important;
+            margin: 0 auto !important;
+        }
+        a {
+            text-decoration: none;
+        }
+        .bg_white{
+            background: #ffffff;
+        }
+        .email-section{
+            padding: 20px 25px 30px 25px;
+            border-radius: 0 0 10px 10px;
+        }
+        body{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 1.8;
+            color: rgba(0,0,0,.4);
+        }
+
+        hr.custom-hr {
+            margin: 30px 0 20px;
+            border: none;
+            border-bottom: 1px solid #C4C4C4;
+        }
+        .footer-links a{
+            color: #717171;
+            text-transform: capitalize;
+            font-size: 14px;
+            line-height: 19px;
+            /*font-family: 'Montserrat-Regular', sans-serif;*/
+            font-weight: 400;
+        }
+        .heading-section p {
+            color: #333333;
+            font-size: 16px;
+            line-height: 21px;
+            /*font-family: 'Montserrat-Regular', sans-serif;*/
+            font-weight: 400;
+        }
+        .heading-section h2 {
+            color: #191919;
+            font-size: 36px;
+            line-height: 22px;
+            text-transform: uppercase;
+            letter-spacing: 14px;
+            /*font-family: 'Montserrat-SemiBold', sans-serif;*/
+            font-weight: 700;
+        }
+        .email-table {
+            border: 0;
+            width: 100%;
+            margin: auto;
+            box-shadow: 3px 3px 8px #0000000F;
+        }
+        .inner-table {
+            width: 100%;
+        }
+        .logo-img {
+            max-width: 100%;
+        }
+        th {
+            display: none;
+        }
+        .logo-link {
+            width: 100%;
+            float: left;
+            line-height: 0;
+        }
+        .heading-section p,h2 {
+            margin-top: 0;
+        }
+        @media(max-width: 575px) {
+            .footer-links span{
+                display: none;
+            }
+            .footer-links a {
+                width: 100%;
+                float: left;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body style="margin: 0; padding: 0 !important;">
+<div style="max-width: 500px; margin: 0 auto;" class="email-container">
+    <table aria-label="Outside Table" class="email-table">
+        <tr>
+            <th scope="col"></th>
+            <td class="bg_white logo" style="padding: 0; text-align: center; border-radius: 10px 10px 0 0">
+                <a href="#" class="logo-link"><img src="images/top-header.png" alt="Logo" class="logo-img"></a>
+            </td>
+        </tr>
+        <tr>
+            <td class="bg_white" style="border-radius: 0 0 10px 10px;">
+                <table aria-label="Inside Table" class="inner-table">
+                    <tr>
+                        <th scope="col"></th>
+                        <td class="bg_white email-section">
+                            <div class="heading-section" style="text-align: center;">
+                                <p style="margin-bottom: 45px">Hi,<br> We’re sending you this email because you requested a password reset. Please use the verification code.</p>
+                                <h2 style="margin-bottom: 60px">456789</h2>
+                                <p style="margin-bottom: 10px">If you didn't make this request, you can ignore this email. Your password will not be changed.</p>
+                                <p style="margin-bottom: 0">Thanks!<br> #Let’s Eat Team</p>
+                                <hr class="custom-hr">
+                                <div class="footer-links"><a href="#">345 Lorem Ipsum</a><span> • </span><a href="#">consetetur sadipscing</a><span> • </span><a href="#">temporinvid</a></div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
