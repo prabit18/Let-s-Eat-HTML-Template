@@ -19,13 +19,13 @@
     font-size: 14px;
     line-height: 28px;
     color: #F2F4FA;
-    font-family: Montserrat-SemiBold, serif;
+    font-family: Montserrat-SemiBold, sans-serif;
 }
 .footer-one li a {
     font-size: 14px;
     line-height: 28px;
     color: #C0C6D9;
-    font-family: Montserrat-Regular, serif;
+    font-family: Montserrat-Regular, sans-serif;
 }
 .footer-one li a:hover {
     color: #F2F4FA;
@@ -75,7 +75,7 @@ ul.social-icons {
     font-size: 14px;
     line-height: 27px;
     color: #909AB9;
-    font-family: Montserrat-Regular, serif;
+    font-family: Montserrat-Regular, sans-serif;
 }
 
 @media(max-width: 1023px) {
