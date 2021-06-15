@@ -21,7 +21,7 @@
     font-size: 14px;
     line-height: 18px;
     color: #404040;
-    font-family: Montserrat-Regular, serif;
+    font-family: Montserrat-Regular, sans-serif;
 }
 
 .filter {
@@ -37,7 +37,7 @@
     font-size: 30px;
     line-height: 18px;
     color: #404040;
-    font-family: Montserrat-Bold, serif;
+    font-family: Montserrat-Bold, sans-serif;
 }
 
 /*overflow*/
@@ -111,14 +111,14 @@
     line-height: 18px;
     color: #283350;
     padding-bottom: 10px;
-    font-family: Montserrat-Bold, serif;
+    font-family: Montserrat-Bold, sans-serif;
 }
 
 .food-desc p {
     font-size: 14px;
     line-height: 16px;
     color: #3B4148;
-    font-family: Montserrat-Regular, serif;
+    font-family: Montserrat-Regular, sans-serif;
 }
 
 .delivery-detail {
@@ -139,7 +139,7 @@
     font-size: 13px;
     line-height: 18px;
     color: #3B4148;
-    font-family: Montserrat-Regular, serif;
+    font-family: Montserrat-Regular, sans-serif;
 }
 
 .bg-rating {
@@ -158,7 +158,7 @@
 
 p.rating-content {
     padding-left: 3px;
-    font-family: Montserrat-Regular, serif;
+    font-family: Montserrat-Regular, sans-serif;
     color: #283350;
     font-size: 13px;
     line-height: 16px;

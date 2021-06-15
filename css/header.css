@@ -22,7 +22,7 @@ header.custom-header {
 .header-right li a {
     font-size: 15px;
     line-height: 18px;
-    font-family: Montserrat-Regular, serif;
+    font-family: Montserrat-Regular, sans-serif;
     color: #FFFFFF;
     padding: 5px 10px;
     display: flex;
@@ -75,7 +75,7 @@ header.custom-header {
     border-radius: 20px;
     padding: 0;
     background: #FFFFFF;
-    font-family: Montserrat-Regular, serif;
+    font-family: Montserrat-Regular, sans-serif;
     color: #2a3251;
     transition: width 0.2s linear;
 }
@@ -124,7 +124,7 @@ header.custom-header {
     color: #293250;
     font-size: 15px;
     line-height: 18px;
-    font-family: Montserrat-Medium, serif;
+    font-family: Montserrat-Medium, sans-serif;
     padding-right: 10px;
 }
 ul.location-search {
@@ -205,12 +205,12 @@ li.search-li {
     background-color: #575F7C;
     line-height: 18px;
     color: #FFFFFF;
-    font-family: Montserrat-Regular, serif;
+    font-family: Montserrat-Regular, sans-serif;
     width: calc(100% - 40px);
 }
 .select-field input::placeholder {
     color: #FFFFFF;
-    font-family: Montserrat-Light, serif;
+    font-family: Montserrat-Light, sans-serif;
 }
 .select-menu {
     width: 515px;
@@ -252,7 +252,7 @@ li.search-li {
     font-size: 20px;
     color: #2a3251;
     text-align: left;
-    font-family: Montserrat-SemiBold, serif;
+    font-family: Montserrat-SemiBold, sans-serif;
 }
 .current-location {
     display: flex;
@@ -267,7 +267,7 @@ li.search-li {
     padding-left: 15px;
     color: #0A83EA;
     font-size: 20px;
-    font-family: Montserrat-SemiBold, serif;
+    font-family: Montserrat-SemiBold, sans-serif;
     text-align: left;
 }
 .using-gps {
@@ -276,7 +276,7 @@ li.search-li {
     font-size: 15px;
     color: #9c9c9c;
     text-align: left;
-    font-family: Montserrat-Medium, serif;
+    font-family: Montserrat-Medium, sans-serif;
 }
 .inner-content:hover,
 .recent-location-inner:hover {
@@ -310,7 +310,7 @@ li.search-li {
 }
 .location-name {
     font-size: 15px;
-    font-family: Montserrat-Regular, serif;
+    font-family: Montserrat-Regular, sans-serif;
     text-overflow: ellipsis;
     overflow: hidden;
     line-height: 18px;
@@ -346,7 +346,7 @@ li.search-li {
 }
 .cart-qty span {
     color: #2A3251;
-    font-family: Montserrat-SemiBold, serif;
+    font-family: Montserrat-SemiBold, sans-serif;
     font-size: 10px;
     line-height: 11px;
 }
@@ -391,11 +391,11 @@ li.search-li {
     white-space: nowrap;
     text-overflow: ellipsis;
     padding-left: 10px;
-    font-family: Montserrat-Medium, serif;
+    font-family: Montserrat-Medium, sans-serif;
     color: #FFFFFF;
 }
 .select-placeholder span {
-    font-family: Montserrat-Light, serif;
+    font-family: Montserrat-Light, sans-serif;
 }
 .search-icon-outer {
     height: 40px;
@@ -461,7 +461,7 @@ li.search-li {
         position: absolute;
         font-size: 14px;
         line-height: 16px;
-        font-family: 'Montserrat-Light', serif;
+        font-family: 'Montserrat-Light', sans-serif;
         left: 30px;
         top: 50%;
         transform: translateY(-50%);
@@ -477,7 +477,7 @@ li.search-li {
         box-shadow: none!important;
         font-size: 14px;
         line-height: 25px;
-        font-family: Montserrat-Regular, serif;
+        font-family: Montserrat-Regular, sans-serif;
         height: 35px;
         outline: none;
         border: 1px solid #909AB9;
@@ -566,7 +566,7 @@ li.search-li {
     .location-guide a {
         font-size: 16px;
         line-height: 18px;
-        font-family: 'Montserrat-Medium',serif;
+        font-family: 'Montserrat-Medium',sans-serif;
         color: #283350;
     }
     .location-guide a::after {
@@ -603,7 +603,7 @@ li.search-li {
         font-size: 22px;
         line-height: 27px;
         color: #283350;
-        font-family: Montserrat-Bold, serif
+        font-family: Montserrat-Bold, sans-serif
     }
     .address-popup .modal-header {
         padding: 30px 15px 15px;
