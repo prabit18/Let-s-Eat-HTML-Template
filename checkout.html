@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lib/owl.carousel.css">
+    <link rel="stylesheet" href="css/lib/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/cart.css">
+</head>
+<body class="custom-body">
+<div class="page-banner">
+    <header class="custom-header">
+        <div class="container custom-container">
+            <nav class="navbar custom-navbar">
+                <a class="header-logo" href="home.html"><img alt="Logo" src="images/le-logo.svg"></a>
+                <div class="header-actions">
+                    <ul class="location-search">
+                        <li aria-expanded="false" aria-haspopup="true" class="select-li dropdown-toggle"
+                            data-toggle="dropdown" id="dropdownMenuButton">
+                            <div class="select-field">
+                                <em class="outer-icon">
+                                    <img alt="location" class="location-icon" src="images/location.svg">
+                                </em>
+                                <label>
+                                    <input placeholder="Sugnall Street, Liverpool, UK" value="">
+                                </label>
+                                <div aria-labelledby="dropdownMenuButton" class="select-menu dropdown-menu">
+                                    <div class="inner-content">
+                                        <div class="current-location">
+                                            <em>
+                                                <svg fill="#0A83EA" height="14" role="img"
+                                                     viewBox="0 0 20 20" width="14" xmlns="http://www.w3.org/2000/svg">
+                                                    <title>current-location</title>
+                                                    <path d="M13.58 10c0 1.977-1.603 3.58-3.58 3.58s-3.58-1.603-3.58-3.58c0-1.977 1.603-3.58 3.58-3.58v0c1.977 0 3.58 1.603 3.58 3.58v0zM20 9.52v0.96c0 0.265-0.215 0.48-0.48 0.48v0h-1.72c-0.447 3.584-3.256 6.393-6.802 6.836l-0.038 0.004v1.72c0 0.265-0.215 0.48-0.48 0.48v0h-0.96c-0.265 0-0.48-0.215-0.48-0.48v0-1.72c-3.575-0.455-6.375-3.262-6.816-6.802l-0.004-0.038h-1.74c-0.265 0-0.48-0.215-0.48-0.48v0-0.96c0-0.265 0.215-0.48 0.48-0.48v0h1.74c0.445-3.578 3.245-6.385 6.781-6.836l0.039-0.004v-1.72c0-0.265 0.215-0.48 0.48-0.48v0h0.96c0.265 0 0.48 0.215 0.48 0.48v0 1.72c3.584 0.447 6.393 3.256 6.836 6.802l0.004 0.038h1.72c0.265 0 0.48 0.215 0.48 0.48v0zM15.96 10c0-3.292-2.668-5.96-5.96-5.96s-5.96 2.668-5.96 5.96c0 3.292 2.668 5.96 5.96 5.96v0c3.292 0 5.96-2.668 5.96-5.96v0z"></path>
+                                                </svg>
+                                            </em>
+                                            <p>Use current location</p>
+                                        </div>
+                                        <p class="using-gps">Using GPS</p>
+                                    </div>
+                                    <div class="recent-location">Recent Locations</div>
+                                    <div class="recent-location-inner">
+                                        <div class="location-content">
+                                            <em>
+                                                <svg class="clock-icon" fill="#1C1C1C" height="15"
+                                                     role="img" viewBox="0 0 20 20" width="15" xmlns="http://www.w3.org/2000/svg">
+                                                    <title>time</title>
+                                                    <path d="M14.76 9.040h-4.22l-2.58-4.28c-0.147-0.354-0.489-0.598-0.889-0.598-0.53 0-0.96 0.43-0.96 0.96 0 0.227 0.079 0.436 0.211 0.6l-0.001-0.002 2.86 4.76c0.172 0.278 0.474 0.46 0.82 0.46 0 0 0 0 0.001 0h4.76c0.467-0.070 0.822-0.469 0.822-0.95s-0.354-0.88-0.817-0.949l-0.005-0.001zM10 0c-5.523 0-10 4.477-10 10s4.477 10 10 10c5.523 0 10-4.477 10-10v0c0-5.523-4.477-10-10-10v0zM10 18.58c-4.739 0-8.58-3.841-8.58-8.58s3.841-8.58 8.58-8.58c4.739 0 8.58 3.841 8.58 8.58v0c0 4.739-3.841 8.58-8.58 8.58v0z"></path>
+                                                </svg>
+                                            </em>
+                                        </div>
+                                        <div class="location-name">Sugnall Street, Liverpool, UK</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="search-li">
+                            <div class="search-container">
+                                <form class="search-form">
+                                    <label>
+                                        <input class="form-field"
+                                               placeholder="Search for restaurant, cuisine or your favourite dish"
+                                               type="search">
+                                    </label>
+                                    <div class="search"><span>Search</span><img alt="search" src="images/search.svg">
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="header-right">
+                        <li>
+                            <a href="#">
+                                <img alt="help" src="images/help.svg">
+                                <span>Help</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="cart">
+                                    <img alt="cart" src="images/cart.svg">
+                                    <div class="cart-qty">
+                                        <span>2</span>
+                                    </div>
+                                </div>
+                                <span>Cart</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img alt="login" src="images/login.svg">
+                                <span>Login</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="search-outer">
+        <div class="search-inner">
+            <div class="select-outer" data-target="#exampleModal1" data-toggle="modal">
+                <div class="select-inner">
+                    <div class="outer-icon">
+                        <img alt="location" class="location-icon" src="images/location.svg">
+                    </div>
+                    <div class="select-placeholder">Sugnall Street, <span>Liverpool, UK</span></div>
+                </div>
+            </div>
+            <div class="search-icon-outer" data-target="#exampleModal" data-toggle="modal">
+                <img alt="search" class="search-icon" src="images/search.svg">
+            </div>
+        </div>
+    </div>
+    <section class="main-section">
+        <section class="cart-section">
+            <div class="container custom-container">
+                <div class="cart-body">
+                    <div class="row custom-row custom-scrollbar">
+                        <div class="col-lg-6">
+                            <div class="cart-left">
+                                <h2>Order Summary</h2>
+                                <div class="cart-left-content">
+                                    <div class="cart-details">
+                                        <div class="cart-details-header">
+                                            <h3>KFC</h3>
+                                            <p>95 Linthorpe Road, Middlesbrough, TS1 5DD</p>
+                                        </div>
+                                        <div class="toggle-section">
+                                            <div class="toggle-item">
+                                                <input type="radio" id="test1" name="radio-group" checked="">
+                                                <label for="test1" class="delivery">Delivery<br><span>30-40 Mins</span></label>
+                                            </div>
+                                            <div class="toggle-item">
+                                                <input type="radio" id="test2" name="radio-group">
+                                                <label for="test2" class="store-pick">Store Pick up<br><span>15-20 Mins</span></label>
+                                            </div>
+                                        </div>
+                                        <div class="preferred-time">
+                                            <p>Select preferred delivery time</p>
+                                            <div class="time-list-outer">
+                                                <div class="time-list-inner">
+                                                    <ul class="time-list custom-scrollbar">
+                                                        <li>
+                                                            <div class="time-item">
+                                                                <input type="radio" id="time1" name="time-group" checked>
+                                                                <label for="time1" class="time-item-label">As soon as possible</label>
+                                                            </div>
+                                                            <div class="time-item">
+                                                                <input type="radio" id="time2" name="time-group">
+                                                                <label for="time2" class="time-item-label">Saturday 10:30</label>
+                                                            </div>
+                                                            <div class="time-item">
+                                                                <input type="radio" id="time3" name="time-group">
+                                                                <label for="time3" class="time-item-label">Saturday 11:00</label>
+                                                            </div>
+                                                            <div class="time-item">
+                                                                <input type="radio" id="time4" name="time-group">
+                                                                <label for="time4" class="time-item-label">Saturday 11:30</label>
+                                                            </div>
+                                                            <div class="time-item">
+                                                                <input type="radio" id="time5" name="time-group">
+                                                                <label for="time5" class="time-item-label">Saturday 12:00</label>
+                                                            </div>
+                                                            <div class="time-item">
+                                                                <input type="radio" id="time6" name="time-group">
+                                                                <label for="time6" class="time-item-label">Saturday 12:30</label>
+                                                            </div>
+                                                            <div class="time-item">
+                                                                <input type="radio" id="time7" name="time-group">
+                                                                <label for="time7" class="time-item-label">Saturday 01:00</label>
+                                                            </div>
+                                                            <div class="time-item">
+                                                                <input type="radio" id="time8" name="time-group">
+                                                                <label for="time8" class="time-item-label">Saturday 01:30</label>
+                                                            </div>
+                                                            <div class="time-item">
+                                                                <input type="radio" id="time9" name="time-group">
+                                                                <label for="time9" class="time-item-label">Saturday 01:00</label>
+                                                            </div>
+                                                            <div class="time-item">
+                                                                <input type="radio" id="time10" name="time-group">
+                                                                <label for="time10" class="time-item-label">Saturday 01:30</label>
+                                                            </div>
+                                                            <div class="time-item">
+                                                                <input type="radio" id="time11" name="time-group">
+                                                                <label for="time11" class="time-item-label">Saturday 01:00</label>
+                                                            </div>
+                                                            <div class="time-item">
+                                                                <input type="radio" id="time12" name="time-group">
+                                                                <label for="time12" class="time-item-label">Saturday 01:30</label>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="selected-items">
+                                            <div class="select-item">
+                                                <div class="select-item-inner">
+                                                    <div class="selected-item-left veg">
+                                                        <h4>Dream Team Bucket</h4>
+                                                        <p>£5.00</p>
+                                                    </div>
+                                                    <div class="selected-item-right">
+                                                        <div class="new-counter quantity-block">
+                                                            <div class="new-up">
+                                                                <button class="quantity-arrow-minus quantity">-</button>
+                                                            </div>
+                                                            <label class="label-input">
+                                                                <input class="quantity-num form-control quantity qty" type="text" value="1">
+                                                            </label>
+                                                            <div class="new-down">
+                                                                <button class="quantity-arrow-plus quantity">+</button>
+                                                            </div>
+                                                        </div>
+                                                        <h4>£5.00</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="select-item">
+                                                <div class="select-item-inner">
+                                                    <div class="selected-item-left non-veg">
+                                                        <h4>Dream Team Bucket</h4>
+                                                        <p>£5.00</p>
+                                                    </div>
+                                                    <div class="selected-item-right">
+                                                        <div class="new-counter quantity-block">
+                                                            <div class="new-up">
+                                                                <button class="quantity-arrow-minus quantity">-</button>
+                                                            </div>
+                                                            <label class="label-input">
+                                                                <input class="quantity-num form-control quantity qty" type="text" value="1">
+                                                            </label>
+                                                            <div class="new-down">
+                                                                <button class="quantity-arrow-plus quantity">+</button>
+                                                            </div>
+                                                        </div>
+                                                        <h4>£5.00</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="select-item">
+                                                <div class="not-available-text">
+                                                    <p>Below Item not available</p>
+                                                    <a href="#">Remove</a>
+                                                </div>
+                                                <div class="select-item-inner not-available">
+                                                    <div class="selected-item-left veg">
+                                                        <h4>Cheese Burst Paneer Burger - Medium</h4>
+                                                        <p>£6.20</p>
+                                                    </div>
+                                                    <div class="selected-item-right">
+                                                        <div class="new-counter quantity-block">
+                                                            <div class="new-up">
+                                                                <button class="quantity-arrow-minus quantity">-</button>
+                                                            </div>
+                                                            <label class="label-input">
+                                                                <input class="quantity-num form-control quantity qty" type="text" value="2">
+                                                            </label>
+                                                            <div class="new-down">
+                                                                <button class="quantity-arrow-plus quantity">+</button>
+                                                            </div>
+                                                        </div>
+                                                        <h4>£12.40</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="apply-offers">
+                                        <div class="apply-offer-header">
+                                            <img src="images/offers.svg" alt="Offers">
+                                            <h3>APPLY offer</h3>
+                                        </div>
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="apply-code"></label>
+                                                <input type="text" id="apply-code" class="form-control" placeholder="Enter coupon code if you have">
+                                                <button type="button" class="form-control" disabled>Apply</button>
+                                            </div>
+                                        </form>
+                                        <div class="pricing">
+                                            <h4>Subtotal <span>£17:40</span></h4>
+                                            <p>Taxes and other Charges <span>0.40</span></p>
+                                            <p>delivery charges <span>0.40</span></p>
+                                            <p>Offers/Coupons Discount <span>0.00</span></p>
+                                            <h3>Grand Total <span>£18:20</span></h3>
+                                        </div>
+                                        <div class="suggestion">
+                                            <h4>Suggestions</h4>
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="exampleFormControlTextarea1"></label>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Any Suggestions?"></textarea>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="disclaimer-section">
+                                        <div class="disclaimer-content">
+                                            <img src="images/Icon-info.svg" alt="Info_Icon">
+                                            <div class="disclaimer-text">
+                                                <p><span class="text-bold">Loremipsum dolor sit amet, consetet</span><br>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam noneirteminv iduntut labore et dolore magna aliquyam erat.</p>
+                                                <p class="text-red">consetetur sadipscing elitr, sed diam noneir teminviduntutlabore</p>
+                                            </div>
+                                        </div>
+                                        <div class="proceed-button">
+                                            <a href="#">Proceed to Checkout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="delivery-address">
+                                <div class="address-header">
+                                    <div class="address-left">
+                                        <img src="images/address_icon.svg" alt="Address_Icon">
+                                        <div class="address-text">
+                                            <h2>Delivery Address</h2>
+                                            <p>Set your delivery address or add new</p>
+                                        </div>
+                                    </div>
+                                    <div class="add-button">
+                                        <a href="#" data-toggle="modal" data-target="#setDeliveryLocation">Add New</a>
+                                    </div>
+                                </div>
+                                <div class="address-outer custom-scrollbar">
+                                    <div class="address-item">
+                                        <div class="">
+                                            <input type="radio" id="address1" name="address-group" checked>
+                                            <label for="address1">Unit 223, Sea View Cottages, 82, Wood St<br> Liverpool, L1 4DQ, UK</label>
+                                        </div>
+                                        <div class="address-actions">
+                                            <a href="#" data-toggle="modal" data-target="#editAddress" class="edit">Edit</a>
+                                            <a href="#" data-toggle="modal" data-target="#deleteAddress" class="delete">Delete</a>
+                                        </div>
+                                    </div>
+                                    <div class="address-item">
+                                        <div class="">
+                                            <input type="radio" id="address2" name="address-group">
+                                            <label for="address2">23 Southgyle Crescent, Colquitt Street<br> Liverpool, L1 4DE</label>
+                                        </div>
+                                        <div class="address-actions">
+                                            <a href="#" data-toggle="modal" data-target="#editAddress" class="edit">Edit</a>
+                                            <a href="#" data-toggle="modal" data-target="#deleteAddress" class="delete">Delete</a>
+                                        </div>
+                                    </div>
+                                    <div class="address-item">
+                                        <div class="">
+                                            <input type="radio" id="address3" name="address-group">
+                                            <label for="address3">23 Southgyle Crescent, Colquitt Street<br> Liverpool, L1 4DE</label>
+                                        </div>
+                                        <div class="address-actions">
+                                            <a href="#" data-toggle="modal" data-target="#editAddress" class="edit">Edit</a>
+                                            <a href="#" data-toggle="modal" data-target="#deleteAddress" class="delete">Delete</a>
+                                        </div>
+                                    </div>
+                                    <div class="address-item">
+                                        <div class="">
+                                            <input type="radio" id="address4" name="address-group">
+                                            <label for="address4">23 Southgyle Crescent, Colquitt Street<br> Liverpool, L1 4DE</label>
+                                        </div>
+                                        <div class="address-actions">
+                                            <a href="#" data-toggle="modal" data-target="#editAddress" class="edit">Edit</a>
+                                            <a href="#" data-toggle="modal" data-target="#deleteAddress" class="delete">Delete</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="payment">
+                                <div class="address-header">
+                                    <div class="address-left">
+                                        <img src="images/payment_icon.svg" alt="Payment_Icon">
+                                        <div class="address-text">
+                                            <h2>Payment</h2>
+                                            <p>You can select a payment method from your listed options</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="payment-options">
+                                    <div class="payment-item">
+                                        <div class="payment-select">
+                                            <input type="radio" id="payment1" name="payment-group" checked>
+                                            <label for="payment1">Pay with Debit or Credit Card</label>
+                                        </div>
+                                        <label for="payment1" class="label-img"><img src="images/cc_icon.svg" alt="Card_Payment"></label>
+                                    </div>
+                                    <div class="payment-item">
+                                        <div class="payment-select">
+                                            <input type="radio" id="payment2" name="payment-group">
+                                            <label for="payment2">Pay with PayPal</label>
+                                        </div>
+                                        <label for="payment2" class="label-img"><img src="images/paypal.svg" alt="Paypal"></label>
+                                    </div>
+                                    <div class="payment-item">
+                                        <div class="payment-select">
+                                            <input type="radio" id="payment3" name="payment-group">
+                                            <label for="payment3">Visa Check Out</label>
+                                        </div>
+                                        <label for="payment3" class="label-img"><img src="images/visa_icon.svg" alt="Visa"></label>
+                                    </div>
+                                    <div class="payment-item">
+                                        <div class="payment-select">
+                                            <input type="radio" id="payment4" name="payment-group">
+                                            <label for="payment4">Cash on Delivery</label>
+                                        </div>
+                                        <label for="payment4" class="label-img"><img src="images/cash_icon.svg" alt="Cash_on_delivery"></label>
+                                    </div>
+                                </div>
+                                <div class="proceed-button">
+                                    <a href="#">Place your Order</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+</div>
+<footer class="custom-footer">
+    <div class="footer-one">
+        <div class="container custom-container">
+            <div class="row">
+                <div class="col-md-3 col-sm-4 col-6">
+                    <div class="footer-links">
+                        <h3>COMPANY</h3>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-6">
+                    <div class="footer-links">
+                        <h3>CONTACT</h3>
+                        <ul>
+                            <li><a href="#">Help & Support</a></li>
+                            <li><a href="#">Partner with Us</a></li>
+                            <li><a href="#">We Deliver to</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-6">
+                    <div class="footer-links legal">
+                        <h3>LEGAL</h3>
+                        <ul>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Cancellation & Refund</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                            <li><a href="#">Offer Terms</a></li>
+                            <li><a href="#">Phishing & Fraud</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12 col-6 footer-up-down">
+                    <div class="dwn-app">
+                        <a href="#"><img src="images/appStore.svg" alt="AppStore"></a>
+                        <a href="#"><img src="images/googlePlay.svg" alt="GooglePlay"></a>
+                    </div>
+                    <ul class="social-icons">
+                        <li class="hvr-grow"><a href="#"><img src="images/fb.svg" alt="Facebook"></a></li>
+                        <li class="hvr-grow"><a href="#"><img src="images/insta.svg" alt="Instagram"></a></li>
+                        <li class="hvr-grow"><a href="#"><img src="images/twit.svg" alt="Twitter"></a></li>
+                        <li class="hvr-grow"><a href="#"><img src="images/pin.svg" alt="Pinterest"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-two">
+        <div class="container custom-container">
+            <div class="row">
+                <div class="col-md-9 col-5">
+                    <div class="footer-logo">
+                        <img src="images/le-logo.svg" alt="Logo">
+                    </div>
+                </div>
+                <div class="col-md-3 col-7">
+                    <div class="copyright">
+                        <p>© 2021 letseat.co.uk</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--Popup Begin-->
+<div class="search-popup">
+    <div class="modal fade search-modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" id="exampleModalLabel">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="images/new-close.svg" alt="close-icon">
+                </button>
+                <div class="modal-header">
+                    <div class="location-guide">
+                        <a href="#" data-toggle="modal" data-target="#exampleModal1" data-dismiss="modal" aria-label="Close">Sugnall Street, Liverpool, UK</a>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <form class="search-form" method="post">
+                        <div class="form-group material-textfield">
+                            <div><img class="search-icon" src="images/search.svg" alt="search"></div>
+                            <input class="form-control" id="first-name" name="first-name" placeholder="Search for restaurant, cuisine or a dish" type="text" autocomplete="off">
+                            <label for="first-name" class="text-label">Search for restaurant, cuisine or a dish</label>
+                        </div>
+                    </form>
+                    <div class="resto-list">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="restaurant-info">
+                                    <img class="search-list-img" src="images/food-list2.jpg" alt="food-item">
+                                    <div class="resto-detail">
+                                        <div class="food-desc">
+                                            <h4>KFC</h4>
+                                            <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="restaurant-info">
+                                    <img class="search-list-img" src="images/food-list4.jpg" alt="food-item">
+                                    <div class="resto-detail">
+                                        <div class="food-desc">
+                                            <h4>KFC</h4>
+                                            <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="restaurant-info">
+                                    <img class="search-list-img" src="images/food-list6.jpg" alt="food-item">
+                                    <div class="resto-detail">
+                                        <div class="food-desc">
+                                            <h4>KFC</h4>
+                                            <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="address-popup">
+    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" id="exampleModalLabel1">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="images/new-close.svg" alt="close-icon">
+                </button>
+                <div class="modal-header">
+                    <h2>Select delivery location</h2>
+                </div>
+                <div class="modal-body">
+                    <form class="location-search-form" method="post">
+                        <div class="form-group material-textfield">
+                            <div><img class="search-icon" src="images/search.svg" alt="search"></div>
+                            <label for="location" style="display: none;"></label><input class="form-control" id="location" name="location" placeholder="Sugnall Street, Liverpool, UK" type="text" autocomplete="off">
+                        </div>
+                    </form>
+                    <div class="detect-location">
+                        <div class="inner-content">
+                            <div class="current-location">
+                                <em>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="#0A83EA" width="14" height="14" viewBox="0 0 20 20" role="img">
+                                        <title>current-location</title>
+                                        <path d="M13.58 10c0 1.977-1.603 3.58-3.58 3.58s-3.58-1.603-3.58-3.58c0-1.977 1.603-3.58 3.58-3.58v0c1.977 0 3.58 1.603 3.58 3.58v0zM20 9.52v0.96c0 0.265-0.215 0.48-0.48 0.48v0h-1.72c-0.447 3.584-3.256 6.393-6.802 6.836l-0.038 0.004v1.72c0 0.265-0.215 0.48-0.48 0.48v0h-0.96c-0.265 0-0.48-0.215-0.48-0.48v0-1.72c-3.575-0.455-6.375-3.262-6.816-6.802l-0.004-0.038h-1.74c-0.265 0-0.48-0.215-0.48-0.48v0-0.96c0-0.265 0.215-0.48 0.48-0.48v0h1.74c0.445-3.578 3.245-6.385 6.781-6.836l0.039-0.004v-1.72c0-0.265 0.215-0.48 0.48-0.48v0h0.96c0.265 0 0.48 0.215 0.48 0.48v0 1.72c3.584 0.447 6.393 3.256 6.836 6.802l0.004 0.038h1.72c0.265 0 0.48 0.215 0.48 0.48v0zM15.96 10c0-3.292-2.668-5.96-5.96-5.96s-5.96 2.668-5.96 5.96c0 3.292 2.668 5.96 5.96 5.96v0c3.292 0 5.96-2.668 5.96-5.96v0z"></path>
+                                    </svg>
+                                </em>
+                                <p>Use current location</p>
+                            </div>
+                            <p class="using-gps">Using GPS</p>
+                        </div>
+                        <div class="recent-location">Recent Locations</div>
+                        <div class="recent-location-outer">
+                            <div class="recent-location-inner">
+                                <div class="location-content">
+                                    <em>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="15" height="15" viewBox="0 0 20 20" role="img" class="clock-icon">
+                                            <title>time</title>
+                                            <path d="M14.76 9.040h-4.22l-2.58-4.28c-0.147-0.354-0.489-0.598-0.889-0.598-0.53 0-0.96 0.43-0.96 0.96 0 0.227 0.079 0.436 0.211 0.6l-0.001-0.002 2.86 4.76c0.172 0.278 0.474 0.46 0.82 0.46 0 0 0 0 0.001 0h4.76c0.467-0.070 0.822-0.469 0.822-0.95s-0.354-0.88-0.817-0.949l-0.005-0.001zM10 0c-5.523 0-10 4.477-10 10s4.477 10 10 10c5.523 0 10-4.477 10-10v0c0-5.523-4.477-10-10-10v0zM10 18.58c-4.739 0-8.58-3.841-8.58-8.58s3.841-8.58 8.58-8.58c4.739 0 8.58 3.841 8.58 8.58v0c0 4.739-3.841 8.58-8.58 8.58v0z"></path>
+                                        </svg>
+                                    </em>
+                                </div>
+                                <div class="location-name">Sugnall Street, Liverpool, UK</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End Popup-->
+<!--Address popup-->
+<div class="modal fade address-modal delete-modal" id="deleteAddress" tabindex="-1" role="dialog" aria-labelledby="deleteAddressLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content" id="deleteAddressLabel">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <img src="images/close.svg" alt="close-icon">
+            </button>
+            <div class="modal-header">
+            </div>
+            <div class="modal-body delete-body">
+                <img src="images/exc-icon.svg" alt="Delete_Image">
+                <p>Are you sure you want to delete this address</p>
+                <div class="address-buttons">
+                    <a href="#" class="no">No</a>
+                    <a href="#" class="yes">Yes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade address-modal edit-address" id="editAddress" tabindex="-1" role="dialog" aria-labelledby="editAddressLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content" id="editAddressLabel">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <img src="images/close.svg" alt="close-icon">
+            </button>
+            <div class="modal-header">
+                <h2>Edit Address</h2>
+            </div>
+            <div class="modal-body">
+                <div class="google-map" id="map"></div>
+                <div class="address-form">
+                    <form>
+                        <div class="form-group location-data">
+                            <img src="images/Icon_checkmark.svg" alt="icon_checkmark" class="checkmark_img">
+                            <label for="edit-field1"></label>
+                            <input type="text" id="edit-field1" name="edit-field1" class="form-control">
+                            <a href="#" class="change-button" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#changeLocation">Change</a>
+                        </div>
+                        <div class="form-group">
+                            <label for="edit-field2"></label>
+                            <input type="text" id="edit-field2" name="edit-field2" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="edit-field3"></label>
+                            <input type="text" id="edit-field3" name="edit-field3" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="edit-field4"></label>
+                            <input type="text" id="edit-field4" name="edit-field4" class="form-control" placeholder="How to reach/ Landmark (Optional)">
+                        </div>
+                        <div class="form-row custom-form-row">
+                            <div class="form-group">
+                                <input type="radio" id="radio1" name="edit-group" checked="">
+                                <label for="radio1">Home</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="radio" id="radio2" name="edit-group">
+                                <label for="radio2">Office</label>
+                            </div>
+                        </div>
+                        <div class="proceed-button">
+                            <a href="#" class="disabled">Save and Proceed</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade address-modal set-delivery-location" id="setDeliveryLocation" tabindex="-1" role="dialog" aria-labelledby="setDeliveryLocationLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content" id="setDeliveryLocationLabel">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <img src="images/close.svg" alt="close-icon">
+            </button>
+            <div class="modal-header">
+                <h2>Set your delivery location</h2>
+            </div>
+            <div class="modal-body">
+                <div class="google-map high-google-map" id="map1"></div>
+                <div class="address-form">
+                    <form>
+                        <div class="form-group location-data">
+                            <img src="images/Icon_checkmark.svg" alt="icon_checkmark" class="checkmark_img">
+                            <label for="set-delivery-location1"></label>
+                            <input type="text" id="set-delivery-location1" name="set-delivery-location1" class="form-control">
+                            <a href="#" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#changeLocation" class="change-button">Change</a>
+                        </div>
+                        <div class="proceed-button">
+                            <a href="#" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#addAddress">Continue</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade address-modal change-location" id="changeLocation" tabindex="-1" role="dialog" aria-labelledby="changeLocationLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content" id="changeLocationLabel">
+            <button type="button" class="close close-back" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#setDeliveryLocation">
+            </button>
+            <div class="modal-header">
+                <h2>Search Location</h2>
+            </div>
+            <div class="modal-body">
+                <div class="address-form">
+                    <form>
+                        <div class="form-group location-data">
+                            <img src="images/location_green.svg" alt="icon_location" class="checkmark_img">
+                            <label for="change-location"></label>
+                            <input type="text" id="change-location" name="change-location" class="form-control" placeholder="Search for new location">
+                        </div>
+                        <div class="use-location-content">
+                            <a href="#" class="use-current-location">
+                                <img src="images/current_location.svg" alt="current_location">
+                                Use current location
+                            </a>
+                            <div class="near-locations">
+                                <h3>Near by location</h3>
+                                <div class="nearby-location-inner custom-scrollbar">
+                                    <div class="near-location-item">
+                                        <img src="images/Icon_material-location-on.svg" alt="location">
+                                        <div class="near-location-content">
+                                            <h4>Lorem Ipsum Dolor Sitamet</h4>
+                                            <p>Dolor Sit Amet, Consetetur, Sadipscing Diam, Eirmod Tempornvidunt, L1 4DQ</p>
+                                        </div>
+                                    </div>
+                                    <div class="near-location-item">
+                                        <img src="images/Icon_material-location-on.svg" alt="location">
+                                        <div class="near-location-content">
+                                            <h4>Lorem Ipsum Dolor Sitamet</h4>
+                                            <p>Dolor Sit Amet, Consetetur, Sadipscing Diam, Eirmod Tempornvidunt, L1 4DQ</p>
+                                        </div>
+                                    </div>
+                                    <div class="near-location-item">
+                                        <img src="images/Icon_material-location-on.svg" alt="location">
+                                        <div class="near-location-content">
+                                            <h4>Lorem Ipsum Dolor Sitamet</h4>
+                                            <p>Dolor Sit Amet, Consetetur, Sadipscing Diam, Eirmod Tempornvidunt, L1 4DQ</p>
+                                        </div>
+                                    </div>
+                                    <div class="near-location-item">
+                                        <img src="images/Icon_material-location-on.svg" alt="location">
+                                        <div class="near-location-content">
+                                            <h4>Lorem Ipsum Dolor Sitamet</h4>
+                                            <p>Dolor Sit Amet, Consetetur, Sadipscing Diam, Eirmod Tempornvidunt, L1 4DQ</p>
+                                        </div>
+                                    </div>
+                                    <div class="near-location-item">
+                                        <img src="images/Icon_material-location-on.svg" alt="location">
+                                        <div class="near-location-content">
+                                            <h4>Lorem Ipsum Dolor Sitamet</h4>
+                                            <p>Dolor Sit Amet, Consetetur, Sadipscing Diam, Eirmod Tempornvidunt, L1 4DQ</p>
+                                        </div>
+                                    </div>
+                                    <div class="near-location-item">
+                                        <img src="images/Icon_material-location-on.svg" alt="location">
+                                        <div class="near-location-content">
+                                            <h4>Lorem Ipsum Dolor Sitamet</h4>
+                                            <p>Dolor Sit Amet, Consetetur, Sadipscing Diam, Eirmod Tempornvidunt, L1 4DQ</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Search Results-->
+<!--                        <ul class="location-results custom-scrollbar">-->
+<!--                            <li>-->
+<!--                                <h4>Lorem Ipsum, Dolorsit Amet Consetetur</h4>-->
+<!--                                <p>Lorem ipsum</p>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <h4>Lorem Ipsum, Dolorsit Amet Consetetur</h4>-->
+<!--                                <p>Lorem ipsum</p>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <h4>Lorem Ipsum, Dolorsit Amet Consetetur</h4>-->
+<!--                                <p>Lorem ipsum</p>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+                        <!--End of Search Results-->
+                        <div class="proceed-button">
+                            <a href="#">Set Location</a>
+                        <!--Disabled Button-->
+<!--                            <a href="#" class="disabled">Set Location</a>-->
+                        <!--End of Disabled Button-->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade address-modal edit-address" id="addAddress" tabindex="-1" role="dialog" aria-labelledby="addAddressLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content" id="addAddressLabel">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <img src="images/close.svg" alt="close-icon">
+            </button>
+            <div class="modal-header">
+                <h2>Add Address</h2>
+            </div>
+            <div class="modal-body">
+                <div class="google-map" id="map2"></div>
+                <div class="address-form">
+                    <form>
+                        <div class="form-group location-data">
+                            <img src="images/Icon_checkmark.svg" alt="icon_checkmark" class="checkmark_img">
+                            <label for="add-field1"></label>
+                            <input type="text" id="add-field1" name="add-field1" class="form-control">
+                            <a href="#" class="change-button" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#changeLocation">Change</a>
+                        </div>
+                        <div class="form-group">
+                            <label for="add-field2"></label>
+                            <input type="text" id="add-field2" name="add-field2" class="form-control" placeholder="Address Line 1">
+                        </div>
+                        <div class="form-group">
+                            <label for="add-field3"></label>
+                            <input type="text" id="add-field3" name="add-field3" class="form-control" placeholder="Address Line 2">
+                        </div>
+                        <div class="form-group">
+                            <label for="add-field4"></label>
+                            <input type="text" id="add-field4" name="add-field4" class="form-control" placeholder="How to reach/ Landmark (Optional)">
+                        </div>
+                        <div class="form-row custom-form-row">
+                            <div class="form-group">
+                                <input type="radio" id="add1" name="add-group">
+                                <label for="add1">Home</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="radio" id="add2" name="add-group">
+                                <label for="add2">Office</label>
+                            </div>
+                        </div>
+                        <div class="proceed-button">
+                            <a href="#" class="disabled" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#addAddress1" >Save and Proceed</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade address-modal edit-address" id="addAddress1" tabindex="-1" role="dialog" aria-labelledby="addAddressLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content" id="addAddressLabel1">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <img src="images/close.svg" alt="close-icon">
+            </button>
+            <div class="modal-header">
+                <h2>Add Address</h2>
+            </div>
+            <div class="modal-body">
+                <div class="google-map high-google-map" id="map3"></div>
+                <div class="address-form">
+                    <form>
+                        <div class="form-group location-data">
+                            <img src="images/Icon_checkmark.svg" alt="icon_checkmark" class="checkmark_img">
+                            <label for="add-field11"></label>
+                            <input type="text" id="add-field11" name="add-field11" class="form-control">
+                            <a href="#" class="change-button" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#changeLocation">Change</a>
+                        </div>
+                        <div class="form-row custom-form-row">
+                            <div class="form-group">
+                                <input type="radio" id="add3" name="add-group1" checked="">
+                                <label for="add3">Home</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="radio" id="add4" name="add-group1">
+                                <label for="add4">Office</label>
+                            </div>
+                        </div>
+                        <div class="proceed-button">
+                            <a href="#">Save and Proceed</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!--End Address popup-->
+<script src="js/lib/jquery-3.5.1.slim.min.js"></script>
+<script src="js/lib/popper.min.js"></script>
+<script src="js/lib/bootstrap.min.js"></script>
+<script src="js/lib/owl.carousel.js"></script>
+<script>
+    $(".search").on("click", function(){
+        $(".search-container").toggleClass("active");
+    });
+    $(".preferred-time").click(function (){
+        $('.preferred-time').toggleClass('open');
+    });
+    $(".time-item-label").click(function (){
+        $('.preferred-time').removeClass('open');
+    });
+
+    //Watch for closing modals
+    $('.modal').on('hidden.bs.modal', function () {
+        //If there are any visible
+        if($(".modal:visible").length > 0) {
+            //Slap the class on it (wait a moment for things to settle)
+            setTimeout(function() {
+                $('body').addClass('modal-open');
+            },0)
+        }
+    });
+</script>
+<script>
+    function initMap() {
+        var uluru = {lat: 28.501859, lng: 77.410320};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 4,
+            center: uluru
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+
+        var uluru1 = {lat: 28.501859, lng: 77.410320};
+        var map1 = new google.maps.Map(document.getElementById('map1'), {
+            zoom: 4,
+            center: uluru1
+        });
+        var marker1 = new google.maps.Marker({
+            position: uluru1,
+            map: map1
+        });
+
+        var uluru2 = {lat: 28.501859, lng: 77.410320};
+        var map2 = new google.maps.Map(document.getElementById('map2'), {
+            zoom: 4,
+            center: uluru2
+        });
+        var marker2 = new google.maps.Marker({
+            position: uluru2,
+            map: map2
+        });
+
+        var uluru3 = {lat: 28.501859, lng: 77.410320};
+        var map3 = new google.maps.Map(document.getElementById('map3'), {
+            zoom: 4,
+            center: uluru3
+        });
+        var marker3 = new google.maps.Marker({
+            position: uluru3,
+            map: map3
+        });
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2bXKNDezDf6YNVc-SauobynNHPo4RJb8&callback=initMap">
+</script>
+</body>
+</html>
