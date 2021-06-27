@@ -1,0 +1,36 @@
+variables:
+  SONAR_USER_HOME: "${CI_PROJECT_DIR}/.sonar"  # Defines the location of the analysis task cache
+  GIT_DEPTH: "0"  # Tells git to fetch all the branches of the project, required by the analysis task
+stages:
+  - SonarCloud-Quality-Check
+  - Deploy
+SonarCloud-Quality-Check:
+  stage: SonarCloud-Quality-Check
+  image:
+    name: sonarsource/sonar-scanner-cli:latest
+    entrypoint: [""]
+  cache:
+    key: "${CI_JOB_NAME}"
+    paths:
+      - .sonar/cache
+  script:
+    - sonar-scanner -X
+  only:
+    - merge_requests
+    - master
+    - main
+    - staging
+    - develop
+
+Deploy:
+  stage: Deploy
+  image:
+    name: amazon/aws-cli
+    entrypoint: [""]
+  script:
+    - aws --version
+    - aws s3 sync . s3://$S3_BUCKET --exclude '.gitlab-ci.yml' --exclude '.git' --exclude '.gitignore' --exclude '.idea/'
+    - aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths "/*"
+  only:
+    - master
+    - main
