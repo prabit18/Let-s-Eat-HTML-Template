@@ -61,11 +61,19 @@
     margin-bottom: 15px;
     position: relative;
 }
+a.back-to-restaurant{
+    position: relative;
+    top: 0;
+    left: -25px;
+    width: 15px;
+    height: 15px;
+    z-index: 999;
+}
 .change-location .modal-header h2:before,
-.cart-left h2:before {
+.cart-left a:before {
     position: absolute;
-    top: calc(50% - 6px);
-    left: -20px;
+    top: 3px;
+    left: 5px;
     content: '';
     border: solid #44566F;
     border-width: 0 1.5px 1.5px 0;
@@ -73,6 +81,10 @@
     padding: 5px;
     transform: rotate(135deg);
     cursor: pointer;
+}
+.change-location .modal-header h2:before {
+    top: calc(50% - 6px);
+    left: -20px;
 }
 .toggle-section {
     border: 1px solid #909AB9;
@@ -1163,11 +1175,14 @@ button.quantity-arrow-plus {
     .custom-row {
         margin: 0 -15px;
     }
-    .cart-left h2:before {
-        left: 5px;
+    .cart-left a:before {
+        left: 20px;
     }
     .cart-left h2 {
         padding-left: 25px;
+    }
+    a.back-to-restaurant {
+        left: -15px;
     }
 }
 @media(max-width: 575px) {
@@ -1364,8 +1379,8 @@ button.quantity-arrow-plus {
     .custom-row .col-lg-6 {
         padding: 0 5px;
     }
-    .cart-left h2:before {
-        left: 10px;
+    .cart-left a:before {
+        left: 15px;
     }
     .cart-left h2 {
         padding-left: 30px;
@@ -1434,5 +1449,8 @@ button.quantity-arrow-plus {
     }
     .change-location.address-modal .close {
         left: 15px;
+    }
+    a.back-to-restaurant {
+        left: -5px;
     }
 }

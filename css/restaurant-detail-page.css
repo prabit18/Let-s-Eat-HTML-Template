@@ -867,12 +867,6 @@ p.food-item-price {
 }
 
 /*header-change*/
-header.custom-header.new-header {
-    position: absolute;
-    z-index: 10000;
-    left: 0;
-    width: 100%;
-}
 
 .custom-header.new-header .navbar {
     padding: 25px 0 10px;
@@ -1287,7 +1281,7 @@ header.custom-header.new-header {
 
 @media (max-width: 1023px) {
     section.main-section {
-        margin-top: 5px;
+        margin-top: 0;
     }
 
     .restaurant-list .col-md-4 {
@@ -1477,7 +1471,7 @@ header.custom-header.new-header {
 
 @media (max-width: 600px) {
     section.main-section {
-        margin-top: 4px;
+        margin-top: 0;
     }
 
     .restaurant-image img {
