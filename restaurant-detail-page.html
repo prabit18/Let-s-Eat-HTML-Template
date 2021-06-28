@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <title>Restaurant List</title>
+    <link href="css/lib/bootstrap.min.css" rel="stylesheet">
+    <link href="css/lib/owl.carousel.css" rel="stylesheet">
+    <link href="css/lib/owl.theme.default.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+    <link href="css/header.css" rel="stylesheet" type="text/css">
+    <link href="css/footer.css" rel="stylesheet" type="text/css">
+    <link href="css/home.css" rel="stylesheet" type="text/css">
+    <link href="css/restaurant-detail-page.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header class="custom-header new-header">
+    <div class="container custom-container">
+        <nav class="navbar custom-navbar">
+            <a class="header-logo" href="index.html"><img alt="Logo" src="images/le-logo.svg"></a>
+            <div class="header-actions">
+                <ul class="location-search">
+                    <li aria-expanded="false" aria-haspopup="true" class="select-li dropdown-toggle"
+                        data-toggle="dropdown" id="dropdownMenuButton">
+                        <div class="select-field">
+                            <em class="outer-icon">
+                                <img alt="location" class="location-icon" src="images/location.svg">
+                            </em>
+                            <label>
+                                <input placeholder="Sugnall Street, Liverpool, UK" value="">
+                            </label>
+                            <div aria-labelledby="dropdownMenuButton" class="select-menu dropdown-menu">
+                                <div class="inner-content">
+                                    <div class="current-location">
+                                        <em>
+                                            <svg fill="#0A83EA" height="14" role="img"
+                                                 viewBox="0 0 20 20" width="14" xmlns="http://www.w3.org/2000/svg">
+                                                <title>current-location</title>
+                                                <path d="M13.58 10c0 1.977-1.603 3.58-3.58 3.58s-3.58-1.603-3.58-3.58c0-1.977 1.603-3.58 3.58-3.58v0c1.977 0 3.58 1.603 3.58 3.58v0zM20 9.52v0.96c0 0.265-0.215 0.48-0.48 0.48v0h-1.72c-0.447 3.584-3.256 6.393-6.802 6.836l-0.038 0.004v1.72c0 0.265-0.215 0.48-0.48 0.48v0h-0.96c-0.265 0-0.48-0.215-0.48-0.48v0-1.72c-3.575-0.455-6.375-3.262-6.816-6.802l-0.004-0.038h-1.74c-0.265 0-0.48-0.215-0.48-0.48v0-0.96c0-0.265 0.215-0.48 0.48-0.48v0h1.74c0.445-3.578 3.245-6.385 6.781-6.836l0.039-0.004v-1.72c0-0.265 0.215-0.48 0.48-0.48v0h0.96c0.265 0 0.48 0.215 0.48 0.48v0 1.72c3.584 0.447 6.393 3.256 6.836 6.802l0.004 0.038h1.72c0.265 0 0.48 0.215 0.48 0.48v0zM15.96 10c0-3.292-2.668-5.96-5.96-5.96s-5.96 2.668-5.96 5.96c0 3.292 2.668 5.96 5.96 5.96v0c3.292 0 5.96-2.668 5.96-5.96v0z"></path>
+                                            </svg>
+                                        </em>
+                                        <p>Use current location</p>
+                                    </div>
+                                    <p class="using-gps">Using GPS</p>
+                                </div>
+                                <div class="recent-location">Recent Locations</div>
+                                <div class="recent-location-inner">
+                                    <div class="location-content">
+                                        <em>
+                                            <svg class="clock-icon" fill="#1C1C1C" height="15"
+                                                 role="img" viewBox="0 0 20 20" width="15"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <title>time</title>
+                                                <path d="M14.76 9.040h-4.22l-2.58-4.28c-0.147-0.354-0.489-0.598-0.889-0.598-0.53 0-0.96 0.43-0.96 0.96 0 0.227 0.079 0.436 0.211 0.6l-0.001-0.002 2.86 4.76c0.172 0.278 0.474 0.46 0.82 0.46 0 0 0 0 0.001 0h4.76c0.467-0.070 0.822-0.469 0.822-0.95s-0.354-0.88-0.817-0.949l-0.005-0.001zM10 0c-5.523 0-10 4.477-10 10s4.477 10 10 10c5.523 0 10-4.477 10-10v0c0-5.523-4.477-10-10-10v0zM10 18.58c-4.739 0-8.58-3.841-8.58-8.58s3.841-8.58 8.58-8.58c4.739 0 8.58 3.841 8.58 8.58v0c0 4.739-3.841 8.58-8.58 8.58v0z"></path>
+                                            </svg>
+                                        </em>
+                                    </div>
+                                    <div class="location-name">Sugnall Street, Liverpool, UK</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="search-li">
+                        <div class="search-container">
+                            <form class="search-form">
+                                <label>
+                                    <input class="form-field"
+                                           placeholder="Search for restaurant, cuisine or your favourite dish"
+                                           type="search">
+                                </label>
+                                <div class="search"><span>Search</span><img alt="search" src="images/search.svg"></div>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="header-right">
+                    <li>
+                        <a href="empty-cart.html">
+                            <img alt="help" src="images/help.svg">
+                            <span>Help</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="checkout.html">
+                            <div class="cart">
+                                <img alt="cart" src="images/cart.svg">
+                                <div class="cart-qty">
+                                    <span>2</span>
+                                </div>
+                            </div>
+                            <span>Cart</span>
+                        </a>
+                    </li>
+                    <li>
+                        <!--if the user logged in then add login-signup-link class so that dropdown will appear
+                        <a href="#" class="login-signup-link" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="images/login.svg" alt="login">
+                            <span>Login/Sign Up</span>
+                        </a>-->
+                        <a aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="#"
+                           id="dropdownMenuButton1">
+                            <img alt="login" src="images/login.svg">
+                            <span>Login/Sign Up</span>
+                        </a>
+                        <ul aria-labelledby="dropdownMenuButton1" class="dropdown-menu">
+                            <li>
+                                <a href="#">Profile</a>
+                            </li>
+                            <li>
+                                <a href="#">Orders</a>
+                            </li>
+                            <li>
+                                <a href="#">Favourites</a>
+                            </li>
+                            <li>
+                                <a href="#">Rewards</a>
+                            </li>
+                            <li>
+                                <a href="#">Notifications</a>
+                            </li>
+                            <li>
+                                <a href="#">Reviews</a>
+                            </li>
+                            <li>
+                                <a href="#">Settings</a>
+                            </li>
+                            <li>
+                                <a class="logout-link" href="#">Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<div class="search-outer">
+    <div class="search-inner">
+        <div class="select-outer" data-target="#exampleModal1" data-toggle="modal">
+            <div class="select-inner">
+                <div class="outer-icon">
+                    <img alt="location" class="location-icon" src="images/location.svg">
+                </div>
+                <div class="select-placeholder">Sugnall Street, <span>Liverpool, UK</span></div>
+            </div>
+        </div>
+        <div class="search-icon-outer" data-target="#exampleModal" data-toggle="modal">
+            <img alt="search" class="search-icon" src="images/search.svg">
+        </div>
+    </div>
+</div>
+<div class="page-banner">
+    <section class="main-section">
+        <!--*offer section-->
+        <div class="offer-section-outer">
+            <div class="container custom-container">
+                <div class="restaurant-offer-detail">
+                    <div class="row restaurant-row">
+                        <div class="col-md-8 restaurant-col">
+                            <div class="restaurant-detail-outer">
+                                <div class="restaurant-image">
+                                    <img alt="restaurant-image" src="images/restaurant_image.jpg">
+                                </div>
+                                <div class="restaurant-header-info">
+                                    <div class="restaurant-detail">
+                                        <h3>KFC</h3>
+                                        <p>American Fast Food</p>
+                                        <p class="restaurant-address">95 Linthorpe Road, Middlesbrough, TS1 5DD</p>
+                                    </div>
+                                    <div class="offer-delivery-detail">
+                                        <ul>
+                                            <li class="rating-box"><span><img alt="star-icon"
+                                                                              src="images/Star-icon.svg">4.4</span></li>
+                                            <li>Delivery Fee <span>£1.50</span></li>
+                                            <li>Min. Order <span>£8</span></li>
+                                            <li><span>Delivering Now</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 restaurant-col">
+                            <div class="provided-offer">
+                                <div class="offer-content">
+                                    <img alt="offer-title" src="images/offer-title.svg">
+                                    <div class="offer-name">
+                                        <p>Lorem ipsum dolor sit amet, consetetur adipscing</p>
+                                    </div>
+                                    <div class="offer-name">
+                                        <p>Sed diam nonumy eirmod tempor invidunt boret dolore magna aliquyam erat</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--*offer section end-->
+        <section class="restaurant-list">
+            <div class="container custom-container">
+                <div class="row">
+                    <div class="col-md-8 restaurant-list-col">
+                        <div class="menu-section">
+                            <div class="menu-header">
+                                <div class="mobile-search-bar">
+                                    <label class="restaurant-list-label" for="search-dish"></label>
+                                        <input name="search-dish" placeholder="Search your dish" id="search-dish">
+                                    <img alt="close Icon" class="mobile-close" src="images/close_icon.svg">
+                                </div>
+                                <div class="menu-header-inner">
+                                    <div class="menu-hand" onclick="openFilter()">
+                                        <img alt="menu-icon" src="images/menu_icon.svg">
+                                    </div>
+                                    <ul class="menu-list">
+                                        <li class="active">
+                                            <a class="active" href="#">Menu</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Overview</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Reviews</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="menu-search">
+                                    <form>
+                                        <label class="restaurant-list-label" for="search-your-dish"></label>
+                                            <input name="Search" placeholder="Search your dish" id="search-your-dish">
+                                        <img alt="Search Icon" class="menu-search-img" src="images/Group%202500.svg">
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="menu-body">
+                                <div class="side-menu-list" id="sideFilter">
+                                    <div class="close-menu" onclick="closeNav()">
+                                        <img alt="close-icon" src="images/close_icon.svg">
+                                    </div>
+                                    <ul class="menu-feild frame">
+                                        <li class="active food-filter"><a href="#">Recommended (16)</a></li>
+                                        <li class="food-filter"><a href="#">Today’s Exclusive Dishes (1)</a></li>
+                                        <li class="food-filter"><a href="#">Match Day Special Combos (3)</a></li>
+                                        <li class="food-filter"><a href="#">Group Meals (4)</a></li>
+                                        <li class="food-filter"><a href="#">Burgers (11)</a></li>
+                                        <li class="food-filter"><a href="#">Rice Bowls (3)</a></li>
+                                        <li class="food-filter"><a href="#">Snacks (13)</a></li>
+                                        <li class="food-filter"><a href="#">Sides & Beverages (6)</a></li>
+                                    </ul>
+                                </div>
+                                <div class="menu-item-list">
+                                    <h2>Recommended (16)</h2>
+                                    <div class="menu-items">
+                                        <img alt="food-item" src="images/image_res001.jpg">
+                                        <div class="menu-item-description">
+                                            <div class="menu-name">
+                                                <div class="menu-wrap">
+                                                    <h4>Dream Team Bucket</h4>
+                                                    <div class="customize-list">
+                                                        <span>£5.00</span>
+                                                    </div>
+
+                                                </div>
+                                                <div class="menu-add-btn proceed-add">
+                                                    <a href="#">Add</a>
+                                                </div>
+                                            </div>
+                                            <div class="menu-description">
+                                                <p>Lorem ipsum dolor sit amet, consetetur eirmod tempor invidunt ut
+                                                    labore et dolore magna.</p>
+                                            </div>
+                                            <div class="menu-add-btn-small proceed-add">
+                                                <a href="#">Add</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--veg-item-->
+                                    <div class="menu-items">
+                                        <img alt="food-item" src="images/image_res002.jpg">
+                                        <div class="menu-item-description">
+                                            <div class="menu-name">
+                                                <div class="menu-wrap">
+                                                    <h4>Dream Team Bucket</h4>
+                                                    <div class="customize-list">
+                                                        <span class="veg-item">£5.00</span>
+                                                        <a class="Customizable" data-target="#exampleModal2"
+                                                           data-toggle="modal"
+                                                           href="#">Customizable</a>
+                                                    </div>
+
+                                                </div>
+                                                <!--add button
+                                                <div class="menu-add-btn">-->
+                                                <!--<a href="#">Add</a>-->
+                                                <!--</div>-->
+                                                <div class="new-counter quantity-block">
+                                                    <div class="new-up">
+                                                        <button class="quantity-arrow-minus quantity">-</button>
+                                                    </div>
+                                                    <label class="restaurant-list-label" for="quantity-number"></label>
+                                                        <input about="317" class="quantity-num form-control quantity qty"
+                                                               type="number" value="1" id="quantity-number">
+                                                    <div class="new-down">
+                                                        <button class="quantity-arrow-plus quantity">+</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="menu-description">
+                                                <p>Lorem ipsum dolor sit amet, consetetur eirmod tempor invidunt ut
+                                                    labore et dolore magna.</p>
+                                            </div>
+                                            <div class="new-counter quantity-block small">
+                                                <div class="new-up">
+                                                    <button class="quantity-arrow-minus quantity">-</button>
+                                                </div>
+                                                <label class="restaurant-list-label" for="quantity-change"></label>
+                                                    <input about="317" class="quantity-num form-control quantity qty"
+                                                           type="number" value="1" id="quantity-change">
+                                                <div class="new-down">
+                                                    <button class="quantity-arrow-plus quantity">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu-items">
+                                        <img alt="food-item" src="images/image_res008.jpg">
+                                        <div class="menu-item-description">
+                                            <div class="menu-name">
+                                                <div class="menu-wrap">
+                                                    <h4>Dream Team Bucket</h4>
+                                                    <div class="customize-list">
+                                                        <span>£5.00</span>
+                                                        <a class="Customizable" data-target="#exampleModal2"
+                                                           data-toggle="modal"
+                                                           href="#">Customizable</a>
+                                                    </div>
+
+                                                </div>
+                                                <div class="menu-add-btn">
+                                                    <a href="#">Add</a>
+                                                </div>
+                                            </div>
+                                            <div class="menu-description">
+                                                <p>Lorem ipsum dolor sit amet, consetetur eirmod tempor invidunt ut
+                                                    labore et dolore magna.</p>
+                                            </div>
+                                            <div class="menu-add-btn-small proceed-add">
+                                                <a href="#">Add</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu-items">
+                                        <img alt="food-item" src="images/image_res004.jpg">
+                                        <div class="menu-item-description">
+                                            <div class="menu-name">
+                                                <div class="menu-wrap">
+                                                    <h4>Dream Team Bucket</h4>
+                                                    <div class="customize-list">
+                                                        <span>£5.00</span>
+                                                    </div>
+
+                                                </div>
+                                                <div class="menu-add-btn">
+                                                    <a href="#">Add</a>
+                                                </div>
+                                            </div>
+                                            <div class="menu-description">
+                                                <p>Lorem ipsum dolor sit amet, consetetur eirmod tempor invidunt ut
+                                                    labore et dolore magna.</p>
+                                            </div>
+                                            <div class="menu-add-btn-small proceed-add">
+                                                <a href="#">Add</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu-items">
+                                        <img alt="food-item" src="images/image_res005.jpg">
+                                        <div class="menu-item-description">
+                                            <div class="menu-name">
+                                                <div class="menu-wrap">
+                                                    <h4>Dream Team Bucket</h4>
+                                                    <div class="customize-list">
+                                                        <span>£5.00</span>
+                                                        <a class="Customizable" data-target="#exampleModal2"
+                                                           data-toggle="modal"
+                                                           href="#">Customizable</a>
+                                                    </div>
+
+                                                </div>
+                                                <div class="menu-add-btn">
+                                                    <a href="#">Add</a>
+                                                </div>
+                                            </div>
+                                            <div class="menu-description">
+                                                <p>Lorem ipsum dolor sit amet, consetetur eirmod tempor invidunt ut
+                                                    labore et dolore magna.</p>
+                                            </div>
+                                            <div class="menu-add-btn-small proceed-add">
+                                                <a href="#">Add</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--veg-item-->
+                                    <div class="menu-items">
+                                        <img alt="food-item" src="images/image_res002.jpg">
+                                        <div class="menu-item-description">
+                                            <div class="menu-name">
+                                                <div class="menu-wrap">
+                                                    <h4>Dream Team Bucket</h4>
+                                                    <div class="customize-list">
+                                                        <span class="veg-item">£5.00</span>
+                                                    </div>
+
+                                                </div>
+                                                <div class="menu-add-btn">
+                                                    <a href="#">Add</a>
+                                                </div>
+                                            </div>
+                                            <div class="menu-description">
+                                                <p>Lorem ipsum dolor sit amet, consetetur eirmod tempor invidunt ut
+                                                    labore et dolore magna.</p>
+                                            </div>
+                                            <div class="menu-add-btn-small proceed-add">
+                                                <a href="#">Add</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu-items">
+                                        <img alt="food-item" src="images/image_res001.jpg">
+                                        <div class="menu-item-description">
+                                            <div class="menu-name">
+                                                <div class="menu-wrap">
+                                                    <h4>Dream Team Bucket</h4>
+                                                    <div class="customize-list">
+                                                        <span>£5.00</span>
+                                                    </div>
+
+                                                </div>
+                                                <div class="menu-add-btn">
+                                                    <a href="#">Add</a>
+                                                </div>
+                                            </div>
+                                            <div class="menu-description">
+                                                <p>Lorem ipsum dolor sit amet, consetetur eirmod tempor invidunt ut
+                                                    labore et dolore magna.</p>
+                                            </div>
+                                            <div class="menu-add-btn-small proceed-add">
+                                                <a href="#">Add</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--veg-item-->
+                                    <div class="menu-items">
+                                        <img alt="food-item" src="images/image_res007.jpg">
+                                        <div class="menu-item-description">
+                                            <div class="menu-name">
+                                                <div class="menu-wrap">
+                                                    <h4>Dream Team Bucket</h4>
+                                                    <div class="customize-list">
+                                                        <span class="veg-item">£5.00</span>
+                                                        <a class="Customizable" data-target="#exampleModal2"
+                                                           data-toggle="modal"
+                                                           href="#">Customizable</a>
+                                                    </div>
+
+                                                </div>
+                                                <div class="menu-add-btn">
+                                                    <a href="#">Add</a>
+                                                </div>
+                                            </div>
+                                            <div class="menu-description">
+                                                <p>Lorem ipsum dolor sit amet, consetetur eirmod tempor invidunt ut
+                                                    labore et dolore magna.</p>
+                                            </div>
+                                            <div class="menu-add-btn-small proceed-add">
+                                                <a href="#">Add</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu-items">
+                                        <img alt="food-item" src="images/image_res008.jpg">
+                                        <div class="menu-item-description">
+                                            <div class="menu-name">
+                                                <div class="menu-wrap">
+                                                    <h4>Dream Team Bucket</h4>
+                                                    <div class="customize-list">
+                                                        <span>£5.00</span>
+                                                        <a class="Customizable" data-target="#exampleModal2"
+                                                           data-toggle="modal"
+                                                           href="#">Customizable</a>
+                                                    </div>
+
+                                                </div>
+                                                <div class="menu-add-btn">
+                                                    <a href="#">Add</a>
+                                                </div>
+                                            </div>
+                                            <div class="menu-description">
+                                                <p>Lorem ipsum dolor sit amet, consetetur eirmod tempor invidunt ut
+                                                    labore et dolore magna.</p>
+                                            </div>
+                                            <div class="menu-add-btn-small proceed-add">
+                                                <a href="#">Add</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu-items">
+                                        <img alt="food-item" src="images/image_res009.jpg">
+                                        <div class="menu-item-description">
+                                            <div class="menu-name">
+                                                <div class="menu-wrap">
+                                                    <h4>Dream Team Bucket</h4>
+                                                    <div class="customize-list">
+                                                        <span>£5.00</span>
+                                                    </div>
+
+                                                </div>
+                                                <div class="menu-add-btn">
+                                                    <a href="#">Add</a>
+                                                </div>
+                                            </div>
+                                            <div class="menu-description">
+                                                <p>Lorem ipsum dolor sit amet, consetetur eirmod tempor invidunt ut
+                                                    labore et dolore magna.</p>
+                                            </div>
+                                            <div class="menu-add-btn-small proceed-add">
+                                                <a href="#">Add</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu-items">
+                                        <img alt="food-item" src="images/image_res005.jpg">
+                                        <div class="menu-item-description">
+                                            <div class="menu-name">
+                                                <div class="menu-wrap">
+                                                    <h4>Dream Team Bucket</h4>
+                                                    <div class="customize-list">
+                                                        <span>£5.00</span>
+                                                        <a class="Customizable" data-target="#exampleModal2"
+                                                           data-toggle="modal"
+                                                           href="#">Customizable</a>
+                                                    </div>
+
+                                                </div>
+                                                <div class="menu-add-btn">
+                                                    <a href="#">Add</a>
+                                                </div>
+                                            </div>
+                                            <div class="menu-description">
+                                                <p>Lorem ipsum dolor sit amet, consetetur eirmod tempor invidunt ut
+                                                    labore et dolore magna.</p>
+                                            </div>
+                                            <div class="menu-add-btn-small proceed-add">
+                                                <a href="#">Add</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--veg-item-->
+                                    <div class="menu-items">
+                                        <img alt="food-item" src="images/image_res002.jpg">
+                                        <div class="menu-item-description">
+                                            <div class="menu-name">
+                                                <div class="menu-wrap">
+                                                    <h4>Dream Team Bucket</h4>
+                                                    <div class="customize-list">
+                                                        <span class="veg-item">£5.00</span>
+                                                    </div>
+
+                                                </div>
+                                                <div class="menu-add-btn">
+                                                    <a href="#">Add</a>
+                                                </div>
+                                            </div>
+                                            <div class="menu-description">
+                                                <p>Lorem ipsum dolor sit amet, consetetur eirmod tempor invidunt ut
+                                                    labore et dolore magna.</p>
+                                            </div>
+                                            <div class="menu-add-btn-small proceed-add">
+                                                <a href="#">Add</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu-items">
+                                        <img alt="food-item" src="images/image_res001.jpg">
+                                        <div class="menu-item-description">
+                                            <div class="menu-name">
+                                                <div class="menu-wrap">
+                                                    <h4>Dream Team Bucket</h4>
+                                                    <div class="customize-list">
+                                                        <span class="veg-item">£5.00</span>
+                                                    </div>
+
+                                                </div>
+                                                <div class="menu-add-btn">
+                                                    <a href="#">Add</a>
+                                                </div>
+                                            </div>
+                                            <div class="menu-description">
+                                                <p>Lorem ipsum dolor sit amet, consetetur eirmod tempor invidunt ut
+                                                    labore et dolore magna.</p>
+                                            </div>
+                                            <div class="menu-add-btn-small proceed-add">
+                                                <a href="#">Add</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-overlay" onclick="closeNav()"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 cart-summery-col">
+                        <!--                        "if the cart is empty"
+                                                        <div class="order-summery card">-->
+                        <!--                            <div class="card-header">-->
+                        <!--                                <img src="images/summary_title.svg" alt="summery-title">-->
+                        <!--                            </div>-->
+                        <!--                            <div class="card-body">-->
+                        <!--                                <div class="instructions">-->
+                        <!--                                    <img src="images/info-circle.svg" alt="info-circle">-->
+                        <!--                                    <p>Click here if you or someone you are ordering for has a food allergy</p>-->
+                        <!--                                </div>-->
+                        <!--                                <div class="delivery-option">-->
+                        <!--                                    <div class="delivery">-->
+                        <!--                                        <img src="images/blue-delivery-icon.svg" alt="delivery-icon">-->
+                        <!--                                        <div class="delivery-time">-->
+                        <!--                                            <p>Delivery</p>-->
+                        <!--                                            <p class="time">30-40 Mins</p>-->
+                        <!--                                        </div>-->
+                        <!--                                    </div>-->
+                        <!--                                    <div class="store-pickup">-->
+                        <!--                                        <img src="images/store_pickup.svg" alt="store-icon">-->
+                        <!--                                        <div class="store-time">-->
+                        <!--                                            <p>Store Pick up</p>-->
+                        <!--                                            <p class="time">15-20 Mins</p>-->
+                        <!--                                        </div>-->
+                        <!--                                    </div>-->
+                        <!--                                </div>-->
+                        <!--                                <div class="empty-cart-summery">-->
+                        <!--                                    <img src="images/empty-bg.svg" alt="empty-cart">-->
+                        <!--                                    <p>your cart is currently empty</p>-->
+                        <!--                                </div>-->
+                        <!--                            </div>-->
+                        <!--                        </div>-->
+
+                        <!--if the cart is not empty-->
+                        <div class="order-summery card">
+                            <div class="card-header">
+                                <img alt="summery-title" src="images/summary_title.svg">
+                            </div>
+                            <div class="card-body">
+                                <div class="instructions">
+                                    <img alt="info-circle" src="images/info-circle.svg">
+                                    <p>Click here if you or someone you are ordering for has a food allergy</p>
+                                </div>
+                                <div class="delivery-option">
+                                    <div class="toggle-section">
+                                        <div class="toggle-item">
+                                            <input id="test3" name="radio-group" type="radio">
+                                            <label class="delivery"
+                                                   for="test3">Delivery<br><span>30-40 Mins</span></label>
+                                        </div>
+                                        <div class="toggle-item">
+                                            <input checked="" id="test4" name="radio-group" type="radio">
+                                            <label class="store-pick" for="test4">Store Pick
+                                                up<br><span>15-20 Mins</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="added-items">
+                                    <div class="added-restaurant">
+                                        <h4>KFC</h4>
+                                        <p>95 Linthorpe Road, Middlesbrough, TS1…</p>
+                                    </div>
+                                    <div class="added-food-box">
+                                        <div class="summery-food-item">
+                                            <div class="food-item-wrap">
+                                                <p>Dream Team Bucket</p>
+                                                <p class="food-item-price">£5.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="quantity-change">
+                                            <div class="new-counter quantity-block">
+                                                <div class="new-up">
+                                                    <button class="quantity-arrow-minus quantity">-</button>
+                                                </div>
+                                                <input about="317" class="quantity-num form-control quantity qty"
+                                                       type="number" value="1">
+                                                <div class="new-down">
+                                                    <button class="quantity-arrow-plus quantity">+</button>
+                                                </div>
+                                            </div>
+                                            <p>£5.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="proceed-btn">
+                                    <a href="#">Proceed</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="proceed-outer-box"></div>
+                    <div class="navbar-bottom" id="bottom-nav">
+                        <div class="item-count">
+                            <p>2 Items</p>
+                            <h3>£6.20 <span>(Plus Taxes & other charges)</span></h3>
+                        </div>
+                        <div class="item-proceed-btn">
+                            <a href="#">Proceed</a>
+                        </div>
+                    </div>
+                    <div class="proceed-items">
+                        <div class="box-header">
+                            <h3>Your Order</h3>
+                            <img alt="close-icon" class="proceed-close" src="images/close_icon-2.svg">
+                        </div>
+                        <div class="outer-menu">
+                            <div class="menu-item-description">
+                                <div class="menu-name">
+                                    <div class="menu-wrap">
+                                        <h4>Dream Team Bucket</h4>
+                                        <div class="customize-list">
+                                            <span class="veg-item">£5.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="new-counter quantity-block small">
+                                        <div class="new-up">
+                                            <button class="quantity-arrow-minus quantity">-</button>
+                                        </div>
+                                        <input about="317" class="quantity-num form-control quantity qty" type="number"
+                                               value="1">
+                                        <div class="new-down">
+                                            <button class="quantity-arrow-plus quantity">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-description">
+                                    <p>Lorem ipsum dolor sit amet, consetetur eirmod tempor invidunt ut labore et dolore
+                                        magna.</p>
+                                </div>
+                            </div>
+                            <div class="menu-item-description">
+                                <div class="menu-name">
+                                    <div class="menu-wrap">
+                                        <h4>Dream Team Bucket</h4>
+                                        <div class="customize-list">
+                                            <span>£5.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-add-btn-small proceed-add">
+                                        <a href="#">Add</a>
+                                    </div>
+                                </div>
+                                <div class="menu-description">
+                                    <p>Lorem ipsum dolor sit amet, consetetur eirmod tempor invidunt ut labore et dolore
+                                        magna.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!--Popup Begin-->
+    <div class="search-popup">
+        <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade search-modal" id="exampleModal"
+             role="dialog" tabindex="-1">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content" id="exampleModalLabel">
+                    <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                        <img alt="close-icon" src="images/new-close.svg">
+                    </button>
+                    <div class="modal-header">
+                        <div class="location-guide">
+                            <a aria-label="Close" data-dismiss="modal" data-target="#exampleModal1" data-toggle="modal"
+                               href="#">Sugnall Street, Liverpool, UK</a>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <form class="search-form" method="post">
+                            <div class="form-group material-textfield">
+                                <div><img alt="search" class="search-icon" src="images/search.svg"></div>
+                                <input autocomplete="off" class="form-control" id="first-name"
+                                       name="first-name" placeholder="Search for restaurant, cuisine or a dish"
+                                       type="text">
+                                <label class="text-label" for="first-name">Search for restaurant, cuisine or a
+                                    dish</label>
+                            </div>
+                        </form>
+                        <div class="resto-list">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="restaurant-info">
+                                        <img alt="food-item" class="search-list-img" src="images/food-list2.jpg">
+                                        <div class="resto-detail">
+                                            <div class="food-desc">
+                                                <h4>KFC</h4>
+                                                <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="restaurant-info">
+                                        <img alt="food-item" class="search-list-img" src="images/food-list4.jpg">
+                                        <div class="resto-detail">
+                                            <div class="food-desc">
+                                                <h4>KFC</h4>
+                                                <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="restaurant-info">
+                                        <img alt="food-item" class="search-list-img" src="images/food-list6.jpg">
+                                        <div class="resto-detail">
+                                            <div class="food-desc">
+                                                <h4>KFC</h4>
+                                                <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="address-popup">
+        <div aria-hidden="true" aria-labelledby="exampleModalLabel1" class="modal fade" id="exampleModal1" role="dialog"
+             tabindex="-1">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content" id="exampleModalLabel1">
+                    <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                        <img alt="close-icon" src="images/new-close.svg">
+                    </button>
+                    <div class="modal-header">
+                        <h2>Select delivery location</h2>
+                    </div>
+                    <div class="modal-body">
+                        <form class="location-search-form" method="post">
+                            <div class="form-group material-textfield">
+                                <div><img alt="search" class="search-icon" src="images/search.svg"></div>
+                                <label for="location" style="display: none;"></label><input autocomplete="off"
+                                                                                            class="form-control"
+                                                                                            id="location"
+                                                                                            name="location"
+                                                                                            placeholder="Sugnall Street, Liverpool, UK"
+                                                                                            type="text">
+                            </div>
+                        </form>
+                        <div class="detect-location">
+                            <div class="inner-content">
+                                <div class="current-location">
+                                    <em>
+                                        <svg fill="#0A83EA" height="14" role="img" viewBox="0 0 20 20"
+                                             width="14" xmlns="http://www.w3.org/2000/svg">
+                                            <title>current-location</title>
+                                            <path d="M13.58 10c0 1.977-1.603 3.58-3.58 3.58s-3.58-1.603-3.58-3.58c0-1.977 1.603-3.58 3.58-3.58v0c1.977 0 3.58 1.603 3.58 3.58v0zM20 9.52v0.96c0 0.265-0.215 0.48-0.48 0.48v0h-1.72c-0.447 3.584-3.256 6.393-6.802 6.836l-0.038 0.004v1.72c0 0.265-0.215 0.48-0.48 0.48v0h-0.96c-0.265 0-0.48-0.215-0.48-0.48v0-1.72c-3.575-0.455-6.375-3.262-6.816-6.802l-0.004-0.038h-1.74c-0.265 0-0.48-0.215-0.48-0.48v0-0.96c0-0.265 0.215-0.48 0.48-0.48v0h1.74c0.445-3.578 3.245-6.385 6.781-6.836l0.039-0.004v-1.72c0-0.265 0.215-0.48 0.48-0.48v0h0.96c0.265 0 0.48 0.215 0.48 0.48v0 1.72c3.584 0.447 6.393 3.256 6.836 6.802l0.004 0.038h1.72c0.265 0 0.48 0.215 0.48 0.48v0zM15.96 10c0-3.292-2.668-5.96-5.96-5.96s-5.96 2.668-5.96 5.96c0 3.292 2.668 5.96 5.96 5.96v0c3.292 0 5.96-2.668 5.96-5.96v0z"></path>
+                                        </svg>
+                                    </em>
+                                    <p>Use current location</p>
+                                </div>
+                                <p class="using-gps">Using GPS</p>
+                            </div>
+                            <div class="recent-location">Recent Locations</div>
+                            <div class="recent-location-outer">
+                                <div class="recent-location-inner">
+                                    <div class="location-content">
+                                        <em>
+                                            <svg class="clock-icon" fill="#1C1C1C" height="15"
+                                                 role="img" viewBox="0 0 20 20" width="15"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <title>time</title>
+                                                <path d="M14.76 9.040h-4.22l-2.58-4.28c-0.147-0.354-0.489-0.598-0.889-0.598-0.53 0-0.96 0.43-0.96 0.96 0 0.227 0.079 0.436 0.211 0.6l-0.001-0.002 2.86 4.76c0.172 0.278 0.474 0.46 0.82 0.46 0 0 0 0 0.001 0h4.76c0.467-0.070 0.822-0.469 0.822-0.95s-0.354-0.88-0.817-0.949l-0.005-0.001zM10 0c-5.523 0-10 4.477-10 10s4.477 10 10 10c5.523 0 10-4.477 10-10v0c0-5.523-4.477-10-10-10v0zM10 18.58c-4.739 0-8.58-3.841-8.58-8.58s3.841-8.58 8.58-8.58c4.739 0 8.58 3.841 8.58 8.58v0c0 4.739-3.841 8.58-8.58 8.58v0z"></path>
+                                            </svg>
+                                        </em>
+                                    </div>
+                                    <div class="location-name">Sugnall Street, Liverpool, UK</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="customize-list-popup">
+        <div aria-hidden="true" aria-labelledby="exampleModalLabel2" class="modal fade" id="exampleModal2" role="dialog"
+             tabindex="-1">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content" id="exampleModalLabel2">
+                    <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                        <img alt="close-icon" src="images/new-close.svg">
+                    </button>
+                    <div class="modal-header">
+                        <h2>Cheese Burst Paneer Burger</h2>
+                    </div>
+                    <div class="modal-body">
+                        <div class="quantity">
+                            <p>Quantity</p>
+                        </div>
+                        <div class="customize-items-box">
+                            <div class="customize-items">
+                                <div class="customize-items-outer">
+                                    <div class="customize-items-description">
+                                        <h4>Medium Burger</h4>
+                                        <p>Cheese Burst Paneer Medium Burger + 4 Pc Nuggets + Coke (S)</p>
+                                    </div>
+                                    <div class="customize-items-price">
+                                        <h4>£2.80</h4>
+                                    </div>
+                                </div>
+                                <div class="new-counter quantity-block">
+                                    <div class="new-up">
+                                        <button class="quantity-arrow-minus quantity">-</button>
+                                    </div>
+                                    <input about="317" class="quantity-num form-control quantity qty" type="number"
+                                           value="1">
+                                    <div class="new-down">
+                                        <button class="quantity-arrow-plus quantity">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="customize-items">
+                                <div class="customize-items-outer">
+                                    <div class="customize-items-description">
+                                        <h4>Medium Burger</h4>
+                                        <p>Cheese Burst Paneer Medium Burger + 4 Pc Nuggets + Coke (S)</p>
+                                    </div>
+                                    <div class="customize-items-price">
+                                        <h4>£2.80</h4>
+                                    </div>
+                                </div>
+                                <div class="customize-items-btn">
+                                    <a href="#">Add</a>
+                                </div>
+                            </div>
+                            <div class="customize-items">
+                                <div class="customize-items-outer">
+                                    <div class="customize-items-description">
+                                        <h4>Medium Burger</h4>
+                                        <p>Cheese Burst Paneer Medium Burger + 4 Pc Nuggets + Coke (S)</p>
+                                    </div>
+                                    <div class="customize-items-price">
+                                        <h4>£2.80</h4>
+                                    </div>
+                                </div>
+                                <div class="customize-items-btn">
+                                    <a href="#">Add</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--if no item is added to the cart-->
+                        <!--                        <div class="add-to-order">-->
+                        <!--                            <a href="#">Add to Order</a>-->
+                        <!--                        </div>-->
+                        <!--if the item is added to the cart-->
+                        <div class="add-to-order enable">
+                            <a href="#">Add to Order</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Popup-->
+
+    <script src="js/lib/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/lib/popper.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/lib/owl.carousel.js"></script>
+    <script>
+        $(".search").on("click", function () {
+            $(".search-container").toggleClass("active");
+        });
+        $(".proceed-add").on("click", function () {
+            $(".navbar-bottom").toggleClass("open");
+        })
+        $(".menu-search-img").on("click", function () {
+            $(".mobile-search-bar").toggleClass("open");
+        })
+        $(".mobile-close").on("click", function () {
+            $(".mobile-search-bar").toggleClass("open");
+        })
+        $(".item-count").on("click", function () {
+            $(".proceed-items").toggleClass("open");
+            $(".item-count").toggleClass("open");
+        })
+        $(".proceed-close").on("click", function () {
+            $(".proceed-items").removeClass("open");
+            $(".item-count").removeClass("open");
+        })
+        // $(".food-filter").click(function() {
+        //     let id = $(this).attr("name")
+        //     console.log("#"+id)
+        //     $('html, body').animate({
+        //         scrollTop: $("#"+id).offset().top
+        //     }, 2000);
+        // });
+
+        $(window).scroll(function () {                  // assign scroll event listener
+            var currentScroll = $(window).scrollTop(); // get current position
+            console.log(window.screen.availWidth)
+            let top = "195px"
+            if (window.screen.availWidth <= 1023) {
+                top = "68px"
+            }
+            if (window.screen.availWidth <= 576) {
+                top = "65px"
+            }
+
+            if(window.screen.availWidth <= 1200 ){
+                if (currentScroll >= 165) {
+                    $('#sideFilter').css({
+                        position: 'fixed',
+                        top: top
+                    });
+                }
+
+                else {
+                    $('#sideFilter').css({
+                        position: 'absolute',
+                        top: '0'
+                    });
+                }
+            }
+
+        });
+
+
+        function closeNav() {
+            $('html,.no-overlay-display').attr("style", "overflow:auto;height:auto;");
+            $('.filter-overlay').removeClass("filter-open");
+            document.getElementById("sideFilter").style.width = "0";
+        }
+
+        function openFilter() {
+            document.getElementById("sideFilter").style.width = "calc(100% - 60px)";
+            $('html,.no-overlay-display').attr("style", "overflow:hidden;height:100%;");
+            $('.filter-overlay').addClass("filter-open");
+        }
+
+    </script>
+</div>
+</body>
+</html>
