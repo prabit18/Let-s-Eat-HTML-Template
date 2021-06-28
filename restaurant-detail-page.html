@@ -152,8 +152,9 @@
         </div>
     </div>
 </div>
-<div class="page-banner">
+
     <section class="main-section">
+        <div class="page-banner restaurant-page-banner">
         <!--*offer section-->
         <div class="offer-section-outer">
             <div class="container custom-container">
@@ -201,8 +202,8 @@
         </div>
         <!--*offer section end-->
         <section class="restaurant-list">
-            <div class="container custom-container">
-                <div class="row">
+            <div class="container custom-container restaurant-container">
+                <div class="row restaurant-row">
                     <div class="col-md-8 restaurant-list-col">
                         <div class="menu-section">
                             <div class="menu-header">
@@ -691,8 +692,9 @@
                                                 <div class="new-up">
                                                     <button class="quantity-arrow-minus quantity">-</button>
                                                 </div>
+                                                <label class="restaurant-list-label" for="quantity-one"></label>
                                                 <input about="317" class="quantity-num form-control quantity qty"
-                                                       type="number" value="1">
+                                                       type="number" value="1" id="quantity-one">
                                                 <div class="new-down">
                                                     <button class="quantity-arrow-plus quantity">+</button>
                                                 </div>
@@ -737,8 +739,9 @@
                                         <div class="new-up">
                                             <button class="quantity-arrow-minus quantity">-</button>
                                         </div>
+                                        <label class="restaurant-list-label" for="quantity-two"></label>
                                         <input about="317" class="quantity-num form-control quantity qty" type="number"
-                                               value="1">
+                                               value="1" id="quantity-two">
                                         <div class="new-down">
                                             <button class="quantity-arrow-plus quantity">+</button>
                                         </div>
@@ -771,6 +774,7 @@
                 </div>
             </div>
         </section>
+        </div>
     </section>
 
     <!--Popup Begin-->
@@ -926,8 +930,9 @@
                                     <div class="new-up">
                                         <button class="quantity-arrow-minus quantity">-</button>
                                     </div>
+                                    <label class="restaurant-list-label" for="quantity-three"></label>
                                     <input about="317" class="quantity-num form-control quantity qty" type="number"
-                                           value="1">
+                                           value="1" id="quantity-three">
                                     <div class="new-down">
                                         <button class="quantity-arrow-plus quantity">+</button>
                                     </div>
@@ -1015,7 +1020,7 @@
             console.log(window.screen.availWidth)
             let top = "195px"
             if (window.screen.availWidth <= 1023) {
-                top = "68px"
+                top = "82px"
             }
             if (window.screen.availWidth <= 576) {
                 top = "65px"
@@ -1053,6 +1058,5 @@
         }
 
     </script>
-</div>
 </body>
 </html>
