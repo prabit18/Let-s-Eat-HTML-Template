@@ -16,7 +16,7 @@
     <header class="custom-header">
         <div class="container custom-container">
             <nav class="navbar custom-navbar">
-                <a class="header-logo" href="home.html"><img src="images/le-logo.svg" alt="Logo"></a>
+                <a class="header-logo" href="index.html"><img src="images/le-logo.svg" alt="Logo"></a>
                 <div class="header-actions">
                     <ul class="location-search">
                         <li class="select-li dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -86,7 +86,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#" data-toggle="modal" data-target="#loginModal">
                                 <img src="images/login.svg" alt="login">
                                 <span>Login</span>
                             </a>
@@ -1439,6 +1439,164 @@
         </div>
     </div>
 <!--End Popup-->
+<!--SignUp popups-->
+    <div class="modal fade login-modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" id="loginModalLabel">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="images/close.svg" alt="close-icon">
+                </button>
+                <div class="modal-header">
+                    <h2>Login</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Login with your Mobile No. or Email ID</p>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" id="mob-email" name="mob-email" class="form-control">
+                            <label for="mob-email" class="input-label">Enter Mobile No./Email ID</label>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="form-control login-buttons" value="Send OTP" data-toggle="modal" data-target="#mobileOtpModal" data-dismiss="modal" aria-label="Close">Send OTP</button>
+                        </div>
+                    </form>
+                    <div class="or">
+                        <span>or</span>
+                    </div>
+                    <div class="login-with">
+                        <a href="#"><img src="images/g-icon.svg" alt="Google_Icon">with Google</a>
+                        <a href="#"><img src="images/f-icon.svg" alt="Facebook_Icon">with Facebook</a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <p>Don’t have an account? <a href="#" data-toggle="modal" data-target="#signupModal" data-dismiss="modal" aria-label="Close">Sign up</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade login-modal" id="mobileOtpModal" tabindex="-1" role="dialog" aria-labelledby="mobileOtpModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" id="mobileOtpModalLabel">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="images/close.svg" alt="close-icon">
+                </button>
+                <div class="modal-header">
+                    <h2>Enter OTP</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="mobile-otp">
+                        <p>6 digit OTP has been sent to your Mobile Number, ********34, please enter to Log in <span>OTP valid for 10 minutes.</span></p>
+                        <a href="#" data-toggle="modal" data-target="#loginModal" data-dismiss="modal" aria-label="Close">Change Mobile Number</a>
+                    </div>
+                    <form class="digit-group" data-group-name="digits" data-autosubmit="false" autocomplete="off">
+                        <div class="form-group">
+                            <label for="digit-1"></label><input class="ml-0" type="password" id="digit-1" name="digit-1" data-next="digit-2" />
+                            <label for="digit-2"></label><input type="password" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" />
+                            <label for="digit-3"></label><input type="password" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" />
+                            <label for="digit-4"></label><input type="password" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3" />
+                            <label for="digit-5"></label><input type="password" id="digit-5" name="digit-5" data-next="digit-6" data-previous="digit-4" />
+                            <label for="digit-6"></label><input type="password" id="digit-6" name="digit-6" data-previous="digit-5" />
+                        </div>
+                    </form>
+                    <div class="remain-timer">
+                        <h2 id="timer"></h2>
+                        <div class="resend-otp">
+                            <p>Did not receive? <a href="#">Resend</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade login-modal signup-modal" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" id="signupModalLabel">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="images/close.svg" alt="close-icon">
+                </button>
+                <div class="modal-header">
+                    <h2>Sign up</h2>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group full-name">
+                            <input type="text" id="full-name" name="full-name" class="form-control">
+                            <label for="full-name" class="input-label">Full Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" class="form-control">
+                            <label for="email" class="input-label">Email ID</label>
+                        </div>
+                        <p class="text-agree">Signing up for an account, you agree to our <br><a href="#">Terms & Conditions</a>, <a href="#">Privacy Policy</a> and <a href="#">Cancellation & Refund Policies</a></p>
+                        <div class="form-group">
+                            <button type="button" class="form-control login-buttons" value="Send OTP" data-toggle="modal" data-target="#emailOtpModal" data-dismiss="modal" aria-label="Close">Send OTP</button>
+                        </div>
+                    </form>
+                    <div class="or">
+                        <span>or</span>
+                    </div>
+                    <div class="login-with">
+                        <a href="#"><img src="images/g-icon.svg" alt="Google_Icon">with Google</a>
+                        <a href="#"><img src="images/f-icon.svg" alt="Facebook_Icon">with Facebook</a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <p>Already have an account? <a href="#" data-toggle="modal" data-target="#loginModal" data-dismiss="modal" aria-label="Close">Log in</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade login-modal signup-modal" id="emailOtpModal" tabindex="-1" role="dialog" aria-labelledby="emailOtpModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" id="emailOtpModalLabel">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="images/close.svg" alt="close-icon">
+                </button>
+                <div class="modal-header">
+                    <h2>Enter OTP</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="mobile-otp">
+                        <p>6 digit OTP has been sent to your Mobile Number, ********34, please enter to Log in <span>OTP valid for 10 minutes.</span></p>
+                        <a href="#" data-toggle="modal" data-target="#signupModal" data-dismiss="modal" aria-label="Close">Change Email ID</a>
+                    </div>
+                    <form class="digit-group" data-group-name="digits" data-autosubmit="false" autocomplete="off">
+                        <div class="form-group">
+                            <label for="digit-11"></label><input class="ml-0" type="password" id="digit-11" name="digit-11" data-next="digit-12" />
+                            <label for="digit-12"></label><input type="password" id="digit-12" name="digit-12" data-next="digit-13" data-previous="digit-11" />
+                            <label for="digit-13"></label><input type="password" id="digit-13" name="digit-13" data-next="digit-14" data-previous="digit-12" />
+                            <label for="digit-14"></label><input type="password" id="digit-14" name="digit-14" data-next="digit-15" data-previous="digit-13" />
+                            <label for="digit-15"></label><input type="password" id="digit-15" name="digit-15" data-next="digit-16" data-previous="digit-14" />
+                            <label for="digit-16"></label><input type="password" id="digit-16" name="digit-16" data-previous="digit-15" />
+                        </div>
+                    </form>
+                    <div class="remain-timer">
+                        <h2 id="newtimer"></h2>
+                        <div class="resend-otp">
+                            <p>Did not receive? <a href="#" data-toggle="modal" data-target="#successModal" data-dismiss="modal" aria-label="Close">Resend</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade login-modal signup-modal" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" id="successModalLabel">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="images/close.svg" alt="close-icon">
+                </button>
+                <div class="modal-header">
+                </div>
+                <div class="modal-body success-body">
+                    <img src="images/success_icon.svg" alt="Success_Image">
+                    <p>You have Successfully Signed up!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--End SignUp popups-->
     <script src="js/lib/jquery-3.5.1.slim.min.js"></script>
     <script src="js/lib/popper.min.js"></script>
     <script src="js/lib/bootstrap.min.js"></script>
@@ -1526,6 +1684,75 @@
                 }
             }
         })
+
+        let timerOn = true;
+        function timer(remaining) {
+            var m = Math.floor(remaining / 60);
+            var s = remaining % 60;
+            m = m < 10 ? '0' + m : m;
+            s = s < 10 ? '0' + s : s;
+            document.getElementById('timer').innerHTML = m + ':' + s;
+            remaining -= 1;
+            if(remaining >= 0 && timerOn) {
+                setTimeout(function() {
+                    timer(remaining);
+                }, 1000);
+            }
+        }
+        timer(600);
+
+        let newtimerOn = true;
+        function newtimer(remaining) {
+            var m = Math.floor(remaining / 60);
+            var s = remaining % 60;
+            m = m < 10 ? '0' + m : m;
+            s = s < 10 ? '0' + s : s;
+            document.getElementById('newtimer').innerHTML = m + ':' + s;
+            remaining -= 1;
+            if(remaining >= 0 && newtimerOn) {
+                setTimeout(function() {
+                    newtimer(remaining);
+                }, 1000);
+            }
+        }
+        newtimer(600);
+
+
+        $('.digit-group').find('input').each(function() {
+            $(this).attr('maxlength', 1);
+            $(this).on('keyup', function(e) {
+                var parent = $($(this).parent());
+
+                if(e.keyCode === 8 || e.keyCode === 37) {
+                    var prev = parent.find('input#' + $(this).data('previous'));
+
+                    if(prev.length) {
+                        $(prev).select();
+                    }
+                } else if((e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 65 && e.keyCode <= 90) || (e.keyCode >= 96 && e.keyCode <= 105) || e.keyCode === 39) {
+                    var next = parent.find('input#' + $(this).data('next'));
+
+                    if(next.length) {
+                        $(next).select();
+                    } else {
+                        if(parent.data('autosubmit')) {
+                            parent.submit();
+                        }
+                    }
+                }
+            });
+        });
+
+        //Watch for closing modals
+        $('.modal').on('hidden.bs.modal', function () {
+            //If there are any visible
+            if($(".modal:visible").length > 0) {
+                //Slap the class on it (wait a moment for things to settle)
+                setTimeout(function() {
+                    $('body').addClass('modal-open');
+                },0)
+            }
+        });
     </script>
 </body>
 </html>
