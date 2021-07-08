@@ -97,7 +97,7 @@ ul.social-icons {
         padding: 50px 50px 25px;
     }
     .footer-two {
-        padding: 15px 60px 20px;
+        padding: 15px 50px 20px;
     }
     .social-icons li {
         margin-right: 10px;
@@ -158,6 +158,9 @@ ul.social-icons {
 @media(max-width: 400px) {
     .footer-one {
         padding: 50px 0 25px;
+    }
+    .footer-two {
+        padding: 15px 0 20px;
     }
 }
 @media(max-width: 360px) {

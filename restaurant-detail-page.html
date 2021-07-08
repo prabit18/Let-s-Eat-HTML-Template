@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Restaurant List</title>
+    <title>Restaurant Details</title>
     <link href="css/lib/bootstrap.min.css" rel="stylesheet">
     <link href="css/lib/owl.carousel.css" rel="stylesheet">
     <link href="css/lib/owl.theme.default.css" rel="stylesheet">
@@ -153,7 +153,7 @@
     </div>
 </div>
 
-    <section class="main-section">
+    <section class="main-section restaurant-main">
         <div class="page-banner restaurant-page-banner">
         <!--*offer section-->
         <div class="offer-section-outer">
@@ -706,7 +706,7 @@
                             </div>
                             <div class="card-footer">
                                 <div class="proceed-btn">
-                                    <a href="#">Proceed</a>
+                                    <a href="checkout.html">Proceed</a>
                                 </div>
                             </div>
                         </div>
@@ -747,10 +747,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="menu-description">
-                                    <p>Lorem ipsum dolor sit amet, consetetur eirmod tempor invidunt ut labore et dolore
-                                        magna.</p>
-                                </div>
                             </div>
                             <div class="menu-item-description">
                                 <div class="menu-name">
@@ -764,10 +760,6 @@
                                         <a href="#">Add</a>
                                     </div>
                                 </div>
-                                <div class="menu-description">
-                                    <p>Lorem ipsum dolor sit amet, consetetur eirmod tempor invidunt ut labore et dolore
-                                        magna.</p>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -776,6 +768,76 @@
         </section>
         </div>
     </section>
+    <footer class="custom-footer">
+    <div class="footer-one">
+        <div class="container custom-container">
+            <div class="row">
+                <div class="col-md-3 col-sm-4 col-6">
+                    <div class="footer-links">
+                        <h3>COMPANY</h3>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-6">
+                    <div class="footer-links">
+                        <h3>CONTACT</h3>
+                        <ul>
+                            <li><a href="#">Help & Support</a></li>
+                            <li><a href="#">Partner with Us</a></li>
+                            <li><a href="#">We Deliver to</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-6">
+                    <div class="footer-links legal">
+                        <h3>LEGAL</h3>
+                        <ul>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Cancellation & Refund</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                            <li><a href="#">Offer Terms</a></li>
+                            <li><a href="#">Phishing & Fraud</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12 col-6 footer-up-down">
+                    <div class="dwn-app">
+                        <a href="#"><img src="images/appStore.svg" alt="AppStore"></a>
+                        <a href="#"><img src="images/googlePlay.svg" alt="GooglePlay"></a>
+                    </div>
+                    <ul class="social-icons">
+                        <li class="hvr-grow"><a href="#"><img src="images/fb.svg" alt="Facebook"></a></li>
+                        <li class="hvr-grow"><a href="#"><img src="images/insta.svg" alt="Instagram"></a></li>
+                        <li class="hvr-grow"><a href="#"><img src="images/twit.svg" alt="Twitter"></a></li>
+                        <li class="hvr-grow"><a href="#"><img src="images/pin.svg" alt="Pinterest"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-two">
+        <div class="container custom-container">
+            <div class="row">
+                <div class="col-md-9 col-5">
+                    <div class="footer-logo">
+                        <img src="images/le-logo.svg" alt="Logo">
+                    </div>
+                </div>
+                <div class="col-md-3 col-7">
+                    <div class="copyright">
+                        <p>© 2021 letseat.co.uk</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
     <!--Popup Begin-->
     <div class="search-popup">
@@ -1002,10 +1064,12 @@
         $(".item-count").on("click", function () {
             $(".proceed-items").toggleClass("open");
             $(".item-count").toggleClass("open");
+            $('.filter-overlay').addClass("filter-open");
         })
         $(".proceed-close").on("click", function () {
             $(".proceed-items").removeClass("open");
             $(".item-count").removeClass("open");
+            $('.filter-overlay').removeClass("filter-open");
         })
         // $(".food-filter").click(function() {
         //     let id = $(this).attr("name")
@@ -1020,10 +1084,10 @@
             console.log(window.screen.availWidth)
             let top = "195px"
             if (window.screen.availWidth <= 1023) {
-                top = "82px"
+                top = "0"
             }
             if (window.screen.availWidth <= 576) {
-                top = "65px"
+                top = "0"
             }
 
             if(window.screen.availWidth <= 1200 ){

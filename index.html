@@ -86,44 +86,43 @@
                             </a>
                         </li>
                         <li class="dropdown">
-                            <!--if the user logged in then add login-signup-link class so that dropdown will appear
-                            <a href="#" class="login-signup-link" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a href="#" data-toggle="modal" data-target="#loginModal">
                                 <img src="images/login.svg" alt="login">
                                 <span>Login/Sign Up</span>
-                            </a>-->
-                            <a aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="#"
-                               id="dropdownMenuButton1">
-                                <img alt="login" src="images/login.svg">
-                                <span>Login/Sign Up</span>
                             </a>
-                            <ul aria-labelledby="dropdownMenuButton1" class="dropdown-menu profile-menu">
-                                <li>
-                                    <a href="#">Profile</a>
-                                </li>
-                                <li>
-                                    <a href="#">Orders</a>
-                                </li>
-                                <li>
-                                    <a href="#">Favourites</a>
-                                </li>
-                                <li>
-                                    <a href="#">Rewards</a>
-                                </li>
-                                <li>
-                                    <a href="#">Notifications</a>
-                                </li>
-                                <li>
-                                    <a href="#">Reviews</a>
-                                </li>
-                                <li>
-                                    <a href="#">Settings</a>
-                                </li>
-                                <li>
-                                    <a class="logout-link" href="#">Logout</a>
-                                </li>
-                            </ul>
+                            <!--if the user logged in then add login-signup-link class so that dropdown will appear-->
+                           <!-- <a aria-expanded="false" class="login-signup-link" aria-haspopup="true" data-toggle="dropdown" href="#"-->
+<!--                               id="dropdownMenuButton1">-->
+<!--                                <img alt="login" src="images/login.svg">-->
+<!--                                <span>Login/Sign Up</span>-->
+<!--                            </a>-->
+<!--                            <ul aria-labelledby="dropdownMenuButton1" class="dropdown-menu profile-menu">-->
+<!--                                <li>-->
+<!--                                    <a href="#">Profile</a>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <a href="#">Orders</a>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <a href="#">Favourites</a>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <a href="#">Rewards</a>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <a href="#">Notifications</a>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <a href="#">Reviews</a>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <a href="#">Settings</a>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <a class="logout-link" href="#">Logout</a>-->
+<!--                                </li>-->
+<!--                            </ul> -->
                         </li>
-
                     </ul>
                 </div>
             </nav>
@@ -182,7 +181,7 @@
                                     <div class="removable"></div>
                                     <img src="images/Inspiration.svg" alt="Inspiration For Your Order">
                                     <div class="view-all-btn white-btn">
-                                        <a href="#">View All</a>
+                                        <a href="restaurants-listing.html">View All</a>
                                     </div>
                                 </div>
                                 <div class="owl-carousel custom-navigation" id="mainCategory">
@@ -1646,10 +1645,15 @@
             responsive:{
                 0:{
                     items:1.5,
-                    margin:10
+                    margin:15
                 },
                 400:{
+                    items:1.8,
+                    margin:15
+                },
+                480:{
                     items:2.5,
+                    margin:15
                 },
                 600:{
                     items:3.5,
@@ -1661,15 +1665,19 @@
         })
         $('#mainCategory').owlCarousel({
             loop:true,
-            margin:10,
+            margin:15,
             nav:true,
             responsiveClass:true,
             responsive:{
                 0:{
                     items:1.5,
-                    margin:10
+                    margin:15
                 },
                 400:{
+                    items:1.8,
+                    margin:15
+                },
+                480:{
                     items:2.5,
                     margin:15
                 },
@@ -1690,15 +1698,19 @@
 
         $('.home-slider').owlCarousel({
             loop:true,
-            margin:5,
+            margin:15,
             nav:true,
             responsiveClass:true,
             responsive:{
                 0:{
-                    items:1.1,
-                    margin:5
+                    items:1.2,
+                    margin:15
                 },
-                400:{
+                480:{
+                    items:1.5,
+                    margin:15
+                },
+                576:{
                     items:1.8,
                     margin:5
                 },
