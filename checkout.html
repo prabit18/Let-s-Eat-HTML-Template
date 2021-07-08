@@ -77,7 +77,7 @@
                     </ul>
                     <ul class="header-right">
                         <li>
-                            <a href="#">
+                            <a href="empty-cart.html">
                                 <img alt="help" src="images/help.svg">
                                 <span>Help</span>
                             </a>
@@ -94,10 +94,37 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a aria-expanded="false" class="login-signup-link" aria-haspopup="true" data-toggle="dropdown" href="#"
+                               id="dropdownMenuButton1">
                                 <img alt="login" src="images/login.svg">
-                                <span>Login</span>
+                                <span>Login/Sign Up</span>
                             </a>
+                            <ul aria-labelledby="dropdownMenuButton1" class="dropdown-menu profile-menu">
+                                <li>
+                                    <a href="#">Profile</a>
+                                </li>
+                                <li>
+                                    <a href="#">Orders</a>
+                                </li>
+                                <li>
+                                   <a href="#">Favourites</a>
+                                </li>
+                                <li>
+                                    <a href="#">Rewards</a>
+                                </li>
+                                <li>
+                                    <a href="#">Notifications</a>
+                               </li>
+                                <li>
+                                    <a href="#">Reviews</a>
+                                </li>
+                                <li>
+                                    <a href="#">Settings</a>
+                              </li>
+                                <li>
+                                    <a class="logout-link" href="#">Logout</a>
+                               </li>
+                           </ul>
                         </li>
 
                     </ul>
@@ -315,7 +342,7 @@
                                             </div>
                                         </div>
                                         <div class="proceed-button">
-                                            <a href="#">Proceed to Checkout</a>
+                                            <a href="#" data-toggle="modal" data-target="#setDeliveryLocation">Proceed to Checkout</a>
                                         </div>
                                     </div>
                                 </div>

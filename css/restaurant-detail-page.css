@@ -23,6 +23,17 @@
 }
 
 /*end frame*/
+.page-banner.restaurant-page-banner {
+    background-image: url(../images/header-bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    background-position: bottom;
+    min-height: 420px;
+    background-attachment: fixed;
+}
 .restaurant-offer-detail {
     display: flex;
     display: -webkit-flex;
@@ -54,9 +65,6 @@
 /*header-info*/
 .offer-section-outer {
     background-color: #2a3251;
-    position: sticky;
-    z-index: 9999;
-    top: 0;
     padding-top: 15px;
 }
 
@@ -183,9 +191,9 @@ section.main-section {
     border-radius: 0 20px 0 0;
     align-items: center;
     position: sticky;
-    top: 195px;
+    top: 82px;
     left: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 ul.menu-list {
@@ -196,8 +204,8 @@ ul.menu-list {
 }
 
 .menu-list li a {
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 16px;
     color: #283350;
     font-family: 'Montserrat-Medium', sans-serif;
 }
@@ -258,26 +266,29 @@ ul.menu-list {
 .menu-item-list {
     padding: 0 30px 0 15px;
 }
-
+.page-banner:after{
+    display: none;
+}
 ul.menu-feild {
     text-align: right;
     overflow: auto;
     max-height: 350px;
     position: sticky;
-    top: 285px;
+    top: 170px;
     left: 0;
+    padding-bottom: 35px;
 }
 
 .menu-feild li a {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 15px;
+    line-height: 18px;
     text-align: right;
     color: #3B4148;
     font-family: 'Montserrat-Medium', sans-serif;
 }
 
 .menu-feild li {
-    padding: 10px;
+    padding: 5px 15px;
     border-right: 1px solid lightgray;
 }
 
@@ -312,7 +323,7 @@ section.restaurant-list:after {
     padding-top: 30px;
     padding-bottom: 15px;
     position: sticky;
-    top: 255px;
+    top: 140px;
     left: 0;
     background-color: #fff;
     z-index: 1;
@@ -332,6 +343,7 @@ section.restaurant-list {
     justify-content: center;
     -webkit-justify-content: center;
     padding: 20px 0;
+    border-bottom: 1px solid #C0C6D9!important;
 }
 
 .menu-items img {
@@ -529,6 +541,10 @@ button.quantity-arrow-minus {
     padding: 0;
 }
 
+.restaurant-offer-detail .col-md-8.restaurant-col {
+    padding-left: 0;
+}
+
 button.quantity-arrow-plus {
     right: 17px;
     top: 10px;
@@ -544,7 +560,7 @@ button.quantity-arrow-plus {
 /*order-summery*/
 .order-summery.card {
     position: sticky;
-    top: 205px;
+    top: 82px;
     left: 0;
     border-radius: 20px;
     box-shadow: 3px 3px 6px #909ab926;
@@ -798,7 +814,7 @@ p.food-item-price {
 }
 
 .menu-item-list .menu-item-description {
-    border-bottom: 1px solid #C0C6D9!important;
+    padding-bottom: 0;
 }
 
 .customize-items-btn a {
@@ -1074,6 +1090,8 @@ p.food-item-price {
 
 .outer-menu {
     padding: 0 15px;
+    max-height: 200px;
+    overflow: auto;
 }
 
 .item-proceed-btn {
@@ -1087,9 +1105,15 @@ p.food-item-price {
     border-bottom: 1px solid #C0C6D9;
 }
 
-.menu-item-description:last-child {
-    padding-bottom: 20px;
-    border-bottom: none;
+.menu-items:last-child .menu-item-description {
+    border-bottom: none!important;
+}
+
+.menu-items:last-child {
+    padding-bottom: 40px;
+}
+.main-section.restaurant-main {
+    padding-bottom: 0;
 }
 
 .navbar-bottom.dropdown-toggle::after {
@@ -1138,6 +1162,13 @@ p.food-item-price {
     padding-left: 65px;
     padding-right: 0;
 }
+
+.mobile-search-bar.open input::placeholder {
+    font-size: 12px;
+    line-height: 14px;
+}
+
+
 
 /*media query*/
 @media (max-width: 1200px) {
@@ -1231,7 +1262,7 @@ p.food-item-price {
     }
 
     .menu-items {
-        padding: 15px 0 0;
+        padding: 15px 0;
     }
 
     .menu-item-list h2 {
@@ -1310,6 +1341,10 @@ p.food-item-price {
         margin-top: 0;
     }
 
+    header.custom-header,.search-outer{
+        position: relative;
+    }
+
     .restaurant-list .col-md-4 {
         padding-left: 15px;
         max-width: 40%;
@@ -1318,7 +1353,6 @@ p.food-item-price {
 
     .search-outer {
         z-index: 11110;
-        padding: 15px 0 12px;
         top: 0;
     }
 
@@ -1331,12 +1365,8 @@ p.food-item-price {
         width: 175px;
     }
 
-    .menu-header {
-        top: 76px;
-    }
-
-    .order-summery.card {
-        top: 88px;
+    .menu-header,.order-summery.card  {
+        top: 0;
     }
 
 }
@@ -1347,6 +1377,10 @@ p.food-item-price {
         display: -webkit-flex;
         flex-direction: column;
         -webkit-flex-direction: column;
+    }
+
+    .offer-section-outer {
+        padding-top: 10px;
     }
 
     .menu-item-list {
@@ -1376,7 +1410,8 @@ p.food-item-price {
     }
 
     .menu-item-list h2 {
-        top: 293px;
+        position: sticky;
+        top: 60px;
     }
 
     .restaurant-list .col-md-4 {
@@ -1385,7 +1420,6 @@ p.food-item-price {
 
     .menu-header {
         border-radius: 0;
-        top: 74px;
     }
 
     .restaurant-list .col-md-8 {
@@ -1422,8 +1456,19 @@ p.food-item-price {
         align-items: center;
         -webkit-align-items: center;
     }
+
     .restaurant-container{
         padding: 0!important;
+    }
+
+    .menu-list li.active {
+        border-bottom: 3px solid #4b91de;
+        border-top: none;
+    }
+
+    .menu-list li {
+        border-top: none;
+        border-bottom: 3px solid transparent;
     }
 
 }
@@ -1462,11 +1507,6 @@ p.food-item-price {
     }
 
     .menu-item-list h2 {
-        top: 283px;
-    }
-
-    .menu-item-list h2 {
-        top: 283px;
         padding: 25px 0 10px;
         font-size: 18px;
         line-height: 14px;
@@ -1499,9 +1539,6 @@ p.food-item-price {
         font-size: 14px;
         line-height: 18px;
     }
-    .menu-header {
-        top: 70px;
-    }
 
     header.custom-header{
         height: 70px;
@@ -1523,12 +1560,7 @@ p.food-item-price {
         display: none;
     }
 
-    .search-outer {
-        padding: 15px 0 5px;
-    }
-
     .menu-item-list h2 {
-        top: 270px;
         padding: 25px 0 5px;
     }
 
@@ -1554,6 +1586,14 @@ p.food-item-price {
 @media (max-width: 575px) {
     .menu-add-btn {
         display: none;
+    }
+
+    .menu-items:last-child {
+        padding-bottom: 30px;
+    }
+
+    .outer-menu .menu-item-description {
+        padding: 15px 0;
     }
 
     .menu-add-btn-small {
@@ -1605,6 +1645,9 @@ p.food-item-price {
         height: 60px;
         padding: 0 50px 0 15px;
         border: 1px solid #C0C6D9;
+        font-size: 14px;
+        line-height: 16px;
+        font-family: 'Montserrat-Regular', sans-serif;
     }
 
     .mobile-search-bar.open img {
@@ -1686,14 +1729,10 @@ p.food-item-price {
         line-height: 16px;
     }
 
-    .menu-header {
-        top: 290px;
-    }
-
     .menu-item-list h2 {
         font-size: 16px;
         line-height: 12px;
-        padding: 20px 0 0;
+        padding: 20px 0 5px;
     }
 
     .menu-wrap h4, .menu-wrap span {
@@ -1705,20 +1744,33 @@ p.food-item-price {
         padding-right: 10px;
     }
 
-    .menu-header {
-        top: 70px;
-    }
-
 }
 
 @media (max-width: 400px) {
-    .menu-items {
-        flex-direction: column;
-        -webkit-flex-direction: column;
+    .close-menu {
+        width: 50px;
+        height: 50px;
+    }
+
+    .menu-item-list h2 {
+        top: 50px;
+    }
+
+    .menu-wrap h4, .menu-wrap span {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .menu-items:last-child {
+        padding-bottom: 20px;
+    }
+
+    .outer-menu .menu-name {
+        padding-bottom: 0;
     }
 
     .menu-item-description {
-        padding-top: 15px;
+        padding-top: 0;
     }
 
     section.main-section {
@@ -1732,7 +1784,10 @@ p.food-item-price {
     }
 
     .menu-items img {
-        margin-right: 0;
+        margin-right: 15px;
+        max-width: 80px;
+        max-height: 80px;
+        height: auto;
     }
 
     .navbar-bottom.open {
@@ -1746,8 +1801,8 @@ p.food-item-price {
         width: 100%;
         display: flex;
         display: -webkit-flex;
-        justify-content: flex-start;
-        -webkit-justify-content: flex-start;
+        justify-content: center;
+        -webkit-justify-content: center;
         padding-top: 15px;
     }
 
@@ -1767,10 +1822,6 @@ p.food-item-price {
 
     .menu-list li {
         padding: 10px 0;
-    }
-
-    .menu-list li.active {
-        border-top: 5px solid #4b91de;
     }
 
     .customize-items {
@@ -1848,7 +1899,6 @@ p.food-item-price {
     }
 
     .menu-item-description:last-child {
-        padding-bottom: 20px;
         border-bottom: none;
     }
 

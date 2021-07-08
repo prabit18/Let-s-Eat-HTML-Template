@@ -1,4 +1,7 @@
 /*header-sec*/
+.main-section {
+    padding-bottom: 60px;
+}
 .filter-section {
     display: flex;
     justify-content: space-between;
@@ -91,7 +94,7 @@
 .listing-box {
     background-color: #FFFFFF;
     border-radius: 20px;
-    padding: 35px;
+    padding: 35px 35px 0;
 }
 
 .food-item {
@@ -169,6 +172,7 @@ p.rating-content {
     border: 1px solid transparent;
     border-radius: 20px;
     margin-bottom: 30px;
+    height: 100%;
 }
 
 .food-product:hover {
@@ -278,7 +282,7 @@ p.rating-content {
     }
 
     .listing-box {
-        padding: 30px;
+        padding: 30px 30px 0;
     }
 
 
@@ -294,7 +298,7 @@ p.rating-content {
     }
 
     .listing-box {
-        padding: 15px;
+        padding: 15px 15px 0;
     }
 
     .resto-count h2 {
@@ -326,6 +330,9 @@ p.rating-content {
     .food-desc h4 {
         font-size: 15px;
         line-height: 17px;
+    }
+    .main-section {
+        padding-bottom: 30px;
     }
 }
 

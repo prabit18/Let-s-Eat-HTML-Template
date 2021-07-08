@@ -305,4 +305,12 @@ p.rating-content {
     .main-section {
         padding-bottom: 30px;
     }
+    .food-product {
+        padding: 0;
+        border: none;
+        border-radius: 0;
+    }
+    .food-product:hover {
+        border: none;
+    }
 }

@@ -189,7 +189,6 @@ a.back-to-restaurant{
     position: relative;
     margin-bottom: 0;
     border-radius: 6px;
-    box-shadow: 3px 3px 6px #0000001A;
     border: 1px solid #C0C6D9;
 }
 .preferred-time p:after {
@@ -226,6 +225,7 @@ a.back-to-restaurant{
 }
 .preferred-time.open .time-list-outer{
     max-height: 100vh;
+    box-shadow: 3px 3px 6px #0000001A;
 }
 .time-list-inner {
     border: 1px solid #C0C6D9;
@@ -694,8 +694,6 @@ button.quantity-arrow-plus {
 .address-outer {
     padding-left: 40px;
     border-bottom: 1px solid #C0C6D9;
-    max-height: 235px;
-    overflow: auto;
     padding-right: 10px;
 }
 .address-item {
@@ -709,7 +707,7 @@ button.quantity-arrow-plus {
     margin-bottom: 0;
 }
 .address-actions {
-    padding: 25px 0 0 25px;
+    padding: 15px 0 0 25px;
 }
 .address-actions a {
     font-size: 14px;
@@ -719,9 +717,13 @@ button.quantity-arrow-plus {
     text-decoration: underline !important;
     margin-right: 45px;
 }
-.address-actions a:hover {
+.address-actions a.edit {
     color: #0A83EA;
 }
+.address-actions a:hover{
+    color: #0961ad;
+}
+
 .address-actions a:last-child {
     margin-right: 0;
 }
@@ -763,7 +765,7 @@ button.quantity-arrow-plus {
     font-size: 12px;
     color: #3B4148;
     width: 100%;
-    padding: 20px 10px 20px 30px;
+    padding: 15px 10px 15px 30px;
 }
 .payment-select {
     width: 100%;
@@ -775,7 +777,7 @@ button.quantity-arrow-plus {
 .label-img {
     cursor: pointer;
     margin-bottom: 0;
-    padding: 20px 0;
+    padding: 15px 0;
 }
 .not-available .selected-item-right,
 .not-available .selected-item-left {
@@ -1218,10 +1220,10 @@ button.quantity-arrow-plus {
     }
     .payment-item [type="radio"]:checked + label,
     .payment-item [type="radio"]:not(:checked) + label {
-        padding: 15px 10px 15px 30px;
+        padding: 10px 10px 10px 30px;
     }
     .label-img {
-        padding: 15px 0;
+        padding: 10px 0;
     }
     .new-counter button.quantity-arrow-minus,
     .new-counter button.quantity-arrow-plus {
@@ -1251,13 +1253,10 @@ button.quantity-arrow-plus {
         padding: 5px 10px;
     }
     .address-actions {
-        padding: 15px 0 0 25px;
+        padding: 5px 0 0 25px;
     }
     .address-actions a {
         margin-right: 30px;
-    }
-    .address-outer {
-        max-height: 215px;
     }
     .proceed-button a {
         font-size: 13px;
