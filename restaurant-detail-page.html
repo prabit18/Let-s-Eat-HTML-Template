@@ -92,18 +92,13 @@
                             <span>Cart</span>
                         </a>
                     </li>
-                    <li>
-                        <!--if the user logged in then add login-signup-link class so that dropdown will appear
-                        <a href="#" class="login-signup-link" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img src="images/login.svg" alt="login">
-                            <span>Login/Sign Up</span>
-                        </a>-->
-                        <a aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="#"
+                    <li class="dropdown">
+                        <a aria-expanded="false" class="login-signup-link" aria-haspopup="true" data-toggle="dropdown" href="#"
                            id="dropdownMenuButton1">
                             <img alt="login" src="images/login.svg">
                             <span>Login/Sign Up</span>
                         </a>
-                        <ul aria-labelledby="dropdownMenuButton1" class="dropdown-menu">
+                        <ul aria-labelledby="dropdownMenuButton1" class="dropdown-menu profile-menu">
                             <li>
                                 <a href="#">Profile</a>
                             </li>
@@ -111,7 +106,7 @@
                                 <a href="#">Orders</a>
                             </li>
                             <li>
-                                <a href="#">Favourites</a>
+                            <a href="#">Favourites</a>
                             </li>
                             <li>
                                 <a href="#">Rewards</a>
@@ -130,12 +125,13 @@
                             </li>
                         </ul>
                     </li>
-
                 </ul>
             </div>
+            
         </nav>
     </div>
 </header>
+
 
 <div class="search-outer">
     <div class="search-inner">
@@ -206,34 +202,36 @@
                 <div class="row restaurant-row">
                     <div class="col-md-8 restaurant-list-col">
                         <div class="menu-section">
-                            <div class="menu-header">
-                                <div class="mobile-search-bar">
-                                    <label class="restaurant-list-label" for="search-dish"></label>
-                                        <input name="search-dish" placeholder="Search your dish" id="search-dish">
-                                    <img alt="close Icon" class="mobile-close" src="images/close_icon.svg">
-                                </div>
-                                <div class="menu-header-inner">
-                                    <div class="menu-hand" onclick="openFilter()">
-                                        <img alt="menu-icon" src="images/menu_icon.svg">
+                            <div class="header-border">
+                                <div class="menu-header">
+                                    <div class="mobile-search-bar">
+                                        <label class="restaurant-list-label" for="search-dish"></label>
+                                            <input name="search-dish" placeholder="Search your dish" id="search-dish">
+                                        <img alt="close Icon" class="mobile-close" src="images/close_icon.svg">
                                     </div>
-                                    <ul class="menu-list">
-                                        <li class="active">
-                                            <a class="active" href="#">Menu</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Overview</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Reviews</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="menu-search">
-                                    <form>
-                                        <label class="restaurant-list-label" for="search-your-dish"></label>
-                                            <input name="Search" placeholder="Search your dish" id="search-your-dish">
-                                        <img alt="Search Icon" class="menu-search-img" src="images/Group%202500.svg">
-                                    </form>
+                                    <div class="menu-header-inner">
+                                        <div class="menu-hand" onclick="openFilter()">
+                                            <img alt="menu-icon" src="images/menu_icon.svg">
+                                        </div>
+                                        <ul class="menu-list">
+                                            <li class="active">
+                                                <a class="active" href="#">Menu</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Overview</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Reviews</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="menu-search">
+                                        <form>
+                                            <label class="restaurant-list-label" for="search-your-dish"></label>
+                                                <input name="Search" placeholder="Search your dish" id="search-your-dish">
+                                            <img alt="Search Icon" class="menu-search-img" src="images/Group%202500.svg">
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                             <div class="menu-body">
@@ -838,7 +836,7 @@
         </div>
     </div>
 </footer>
-
+<div class="filter-overlay header-overlay" onclick="closeProfile()"></div>
     <!--Popup Begin-->
     <div class="search-popup">
         <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade search-modal" id="exampleModal"
@@ -1120,7 +1118,15 @@
             $('html,.no-overlay-display').attr("style", "overflow:hidden;height:100%;");
             $('.filter-overlay').addClass("filter-open");
         }
-
+        
+        $("#dropdownMenuButton1").on("click", function () {
+            $(".search-outer").addClass("show");
+            $('.header-overlay').addClass("profile-open");
+        })
+        function closeProfile(){
+            $(".search-outer").removeClass("show");
+            $('.header-overlay').removeClass("profile-open");
+        }
     </script>
 </body>
 </html>

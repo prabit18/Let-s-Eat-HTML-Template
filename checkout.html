@@ -526,7 +526,7 @@
         </div>
     </div>
 </footer>
-
+<div class="filter-overlay header-overlay" onclick="closeProfile()"></div>
 <!--Popup Begin-->
 <div class="search-popup">
     <div class="modal fade search-modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -940,6 +940,14 @@
     $(".time-item-label").click(function (){
         $('.preferred-time').removeClass('open');
     });
+    $("#dropdownMenuButton1").on("click", function () {
+        $(".search-outer").addClass("show");
+        $('.header-overlay').addClass("profile-open");
+    })
+    function closeProfile(){
+        $(".search-outer").removeClass("show");
+        $('.header-overlay').removeClass("profile-open");
+    }
 
     //Watch for closing modals
     $('.modal').on('hidden.bs.modal', function () {

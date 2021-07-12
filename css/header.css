@@ -358,7 +358,7 @@ li.search-li {
     top: 10px;
     z-index: 1111;
     padding: 5px 0;
-    transition: top 0.5s ease-in-out 0s, z-index 0.5s ease-in-out 0s;
+    transition: top 0.5s ease-in-out 0s;
 }
 .search-inner {
     -webkit-box-flex: 1;
@@ -423,7 +423,7 @@ li.search-li {
 /*login character escape*/
 .login-signup-link span {
     overflow: hidden;
-    display: -webkit-box!important;
+    display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     max-width: 105px;
@@ -468,7 +468,9 @@ a.login-signup-link span:after {
 .profile-menu.dropdown-menu li .logout-link{
     font-family: 'Montserrat-Medium', sans-serif;
 }
-
+.search-outer.show{
+    z-index: 0;
+}
 
 
 @media(min-width: 1024px) {

@@ -176,7 +176,7 @@ section.main-section {
 /*menu-section*/
 .menu-section {
     background-color: #FFFFFF;
-    border-radius: 0 20px 0 0;
+    border-radius: 20px 20px 0 0;
     box-shadow: 3px 3px 6px #909ab926;
     position: relative;
     z-index: 1;
@@ -188,12 +188,13 @@ section.main-section {
     justify-content: space-between;
     -webkit-justify-content: space-between;
     background-color: #FFFCDB;
-    border-radius: 0 20px 0 0;
+    border-radius: 20px 20px 0 0;
     align-items: center;
     position: sticky;
     top: 82px;
     left: 0;
     z-index: 2;
+    padding-left: 25px;
 }
 
 ul.menu-list {
@@ -306,6 +307,7 @@ ul.menu-feild {
 }
 
 section.restaurant-list:after {
+    display: none;
     content: '';
     position: absolute;
     top: 0;
@@ -967,7 +969,7 @@ p.food-item-price {
     padding-left: 65px;
 }
 
-.filter-overlay {
+.filter-overlay{
     display: block;
     position: fixed;
     width: 100%;
@@ -983,7 +985,7 @@ p.food-item-price {
     visibility: hidden;
     opacity: 0;
 }
-
+.profile-open.filter-overlay:not(.find-overlay),
 .filter-open.filter-overlay:not(.find-overlay) {
     transition: all .5s;
     visibility: visible;
@@ -1168,6 +1170,14 @@ p.food-item-price {
     line-height: 14px;
 }
 
+.header-border {
+    background-color: #2a3251;
+    position: sticky;
+    top: 81px;
+    z-index: 2;
+    overflow: hidden;
+}
+
 
 
 /*media query*/
@@ -1234,7 +1244,7 @@ p.food-item-price {
         width: 0;
         padding: 0;
     }
-
+    .profile-open.filter-overlay:not(.find-overlay),
     .menu-item-list h2, .filter-open.filter-overlay:not(.find-overlay) {
         z-index: 1;
     }
@@ -1357,7 +1367,7 @@ p.food-item-price {
     }
 
     .offer-section-outer {
-        z-index: 99991;
+        z-index: 0;
         position: relative;
     }
 
@@ -1365,8 +1375,9 @@ p.food-item-price {
         width: 175px;
     }
 
-    .menu-header,.order-summery.card  {
+    .menu-header, .order-summery.card,.header-border {
         top: 0;
+        padding-left: 0;
     }
 
 }
@@ -1574,7 +1585,7 @@ p.food-item-price {
     }
 
     ul.menu-list {
-        padding-left: 10px;
+        padding-left: 15px;
     }
 
     .provided-offer {
