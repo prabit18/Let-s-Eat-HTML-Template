@@ -92,7 +92,7 @@
                             <span>Cart</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="dropdown">
                         <a aria-expanded="false" class="login-signup-link" aria-haspopup="true" data-toggle="dropdown" href="#"
                            id="dropdownMenuButton1">
                             <img alt="login" src="images/login.svg">
@@ -106,32 +106,32 @@
                                 <a href="#">Orders</a>
                             </li>
                             <li>
-                               <a href="#">Favourites</a>
+                            <a href="#">Favourites</a>
                             </li>
                             <li>
                                 <a href="#">Rewards</a>
                             </li>
                             <li>
                                 <a href="#">Notifications</a>
-                           </li>
+                            </li>
                             <li>
                                 <a href="#">Reviews</a>
                             </li>
                             <li>
                                 <a href="#">Settings</a>
-                          </li>
+                            </li>
                             <li>
                                 <a class="logout-link" href="#">Logout</a>
-                           </li>
-                       </ul>
+                            </li>
+                        </ul>
                     </li>
-
-
                 </ul>
             </div>
+            
         </nav>
     </div>
 </header>
+
 
 <div class="search-outer">
     <div class="search-inner">
@@ -836,7 +836,7 @@
         </div>
     </div>
 </footer>
-
+<div class="filter-overlay header-overlay" onclick="closeProfile()"></div>
     <!--Popup Begin-->
     <div class="search-popup">
         <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade search-modal" id="exampleModal"
@@ -1118,7 +1118,15 @@
             $('html,.no-overlay-display').attr("style", "overflow:hidden;height:100%;");
             $('.filter-overlay').addClass("filter-open");
         }
-
+        
+        $("#dropdownMenuButton1").on("click", function () {
+            $(".search-outer").addClass("show");
+            $('.header-overlay').addClass("profile-open");
+        })
+        function closeProfile(){
+            $(".search-outer").removeClass("show");
+            $('.header-overlay').removeClass("profile-open");
+        }
     </script>
 </body>
 </html>

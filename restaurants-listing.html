@@ -1393,7 +1393,7 @@
             </div>
         </div>
     </footer>
-
+    <div class="filter-overlay header-overlay" onclick="closeProfile()"></div>
     <!--Popup Begin-->
     <div class="search-popup">
         <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade search-modal" id="exampleModal"
@@ -1525,6 +1525,14 @@
     $(".search").on("click", function () {
         $(".search-container").toggleClass("active");
     });
+    $("#dropdownMenuButton1").on("click", function () {
+        $(".search-outer").addClass("show");
+        $('.header-overlay').addClass("profile-open");
+    })
+    function closeProfile(){
+        $(".search-outer").removeClass("show");
+        $('.header-overlay').removeClass("profile-open");
+    }
 </script>
 </body>
 </html>
