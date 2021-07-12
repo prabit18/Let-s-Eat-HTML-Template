@@ -176,7 +176,7 @@ section.main-section {
 /*menu-section*/
 .menu-section {
     background-color: #FFFFFF;
-    border-radius: 0 20px 0 0;
+    border-radius: 20px 20px 0 0;
     box-shadow: 3px 3px 6px #909ab926;
     position: relative;
     z-index: 1;
@@ -188,12 +188,13 @@ section.main-section {
     justify-content: space-between;
     -webkit-justify-content: space-between;
     background-color: #FFFCDB;
-    border-radius: 0 20px 0 0;
+    border-radius: 20px 20px 0 0;
     align-items: center;
     position: sticky;
     top: 82px;
     left: 0;
     z-index: 2;
+    padding-left: 25px;
 }
 
 ul.menu-list {
@@ -306,6 +307,7 @@ ul.menu-feild {
 }
 
 section.restaurant-list:after {
+    display: none;
     content: '';
     position: absolute;
     top: 0;
@@ -1166,6 +1168,14 @@ p.food-item-price {
 .mobile-search-bar.open input::placeholder {
     font-size: 12px;
     line-height: 14px;
+}
+
+.header-border {
+    background-color: #2a3251;
+    position: sticky;
+    top: 81px;
+    z-index: 2;
+    overflow: hidden;
 }
 
 
