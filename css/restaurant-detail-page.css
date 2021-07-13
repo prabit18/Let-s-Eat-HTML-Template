@@ -987,10 +987,13 @@ p.food-item-price {
 }
 .profile-open.filter-overlay:not(.find-overlay),
 .filter-open.filter-overlay:not(.find-overlay) {
-    transition: all .5s;
+    transition: all 0.5s;
     visibility: visible;
     opacity: 1;
     z-index: 1111111;
+}
+.profile-open.filter-overlay:not(.find-overlay){
+    transition: none;
 }
 
 .close-menu {
@@ -1246,7 +1249,7 @@ p.food-item-price {
     }
     .profile-open.filter-overlay:not(.find-overlay),
     .menu-item-list h2, .filter-open.filter-overlay:not(.find-overlay) {
-        z-index: 1;
+        z-index: 2;
     }
 
     ul.menu-feild {
