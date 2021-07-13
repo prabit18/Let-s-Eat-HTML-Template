@@ -612,7 +612,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="filter-overlay" onclick="closeNav()"></div>
+                            <div class="filter-overlay sidemenu-overlay" onclick="closeNav()"></div>
                         </div>
                     </div>
                     <div class="col-md-4 cart-summery-col">
@@ -1109,14 +1109,14 @@
 
         function closeNav() {
             $('html,.no-overlay-display').attr("style", "overflow:auto;height:auto;");
-            $('.filter-overlay').removeClass("filter-open");
+            $('.sidemenu-overlay').removeClass("filter-open");
             document.getElementById("sideFilter").style.width = "0";
         }
 
         function openFilter() {
             document.getElementById("sideFilter").style.width = "calc(100% - 60px)";
             $('html,.no-overlay-display').attr("style", "overflow:hidden;height:100%;");
-            $('.filter-overlay').addClass("filter-open");
+            $('.sidemenu-overlay').addClass("filter-open");
         }
         
         $("#dropdownMenuButton1").on("click", function () {
