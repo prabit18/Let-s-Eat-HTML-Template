@@ -38,6 +38,7 @@
     display: flex;
     display: -webkit-flex;
     padding: 0 0 30px;
+    flex-direction: column;
 }
 
 .restaurant-detail-outer {
@@ -899,16 +900,6 @@ p.food-item-price {
     display: none;
 }
 
-.toggle-section {
-    border: 1px solid #909AB9;
-    display: flex;
-    display: -webkit-flex;
-    margin-bottom: 0;
-    width: fit-content;
-    border-radius: 25px;
-    overflow: hidden;
-}
-
 .delivery-option .toggle-item label {
     font-size: 12px!important;
     line-height: 20px!important;
@@ -1238,8 +1229,32 @@ p.food-item-price {
 .exist-item-popup .modal {
     z-index: 99990;
 }
-
-
+/*payment*/
+.delivery-option .toggle-section {
+    margin-bottom: 0;
+}
+.delivery-option .payment-item [type="radio"]:checked + label, .payment-item [type="radio"]:not(:checked) + label {
+    padding: 8px 10px 8px 26px;
+}
+/*not available*/
+.service-not-available p {
+    font-size: 10px;
+    line-height: 14px;
+    color: #FF7A7A;
+    font-family: 'Montserrat-Regular';
+    padding: 7px 20px 7px 40px;
+    margin-top: 3px;
+}
+.service-not-available {
+    background-color: #FFF2F2;
+    position: relative;
+}
+.service-not-available p::before {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    content: url(../images/new-exc-icon.svg);
+}
 
 
 
@@ -1284,11 +1299,6 @@ p.food-item-price {
 
     .delivery-option .toggle-item [type="radio"]:checked + label {
         width: 160px;
-    }
-
-    .toggle-section {
-        width: auto;
-        justify-content: space-between;
     }
 
     .side-menu-list {
@@ -1349,6 +1359,12 @@ p.food-item-price {
 
     .restaurant-container{
         padding: 0 15px 0 0!important;
+    }
+    /*payment*/
+    .delivery-option .toggle-section {
+        width: auto;
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -1544,6 +1560,9 @@ p.food-item-price {
     .menu-list li {
         border-top: none;
         border-bottom: 3px solid transparent;
+    }
+    .col-md-4.restaurant-col {
+        padding: 0;
     }
 
 }
