@@ -23,6 +23,7 @@
     font-family: "Montserrat-Medium";
     src: url('../fonts/Montserrat-Medium.ttf');
 }
+
 img {
     max-width: 100%;
 }
@@ -211,6 +212,58 @@ body {
     -webkit-transform: translateX(-4px);
     transform: translateX(-4px);
 }
+/*delivery-section*/
+.toggle-section {
+    border: 1px solid #C6CAD9;
+    display: flex;
+    display: -webkit-flex;
+    margin-bottom: 20px;
+    width: max-content;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.payment-item.delivery-item:first-child {
+    border-right: 1px solid #C6CAD9;
+    border-radius: 0;
+}
+
+.payment-item.delivery-item {
+    border: none;
+    margin-bottom: 0;
+    padding: 0 10px;
+    position: relative;
+}
+.payment-item {
+    background-color: #FFFFFF;
+    margin-bottom: 5px;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    padding: 0 20px 0 25px;
+    border: 1px solid #C0C6D9;
+    border-radius: 10px;
+}
+.payment-item [type="radio"]:checked + label, .payment-item [type="radio"]:not(:checked) + label {
+    font-size: 12px;
+    color: #3B4148;
+    width: 100%;
+    padding: 8px 10px 8px 30px;
+    font-family: 'Montserrat-Medium', sans-serif;
+}
+.payment-item [type="radio"]:checked + label span, .payment-item [type="radio"]:not(:checked) + label span {
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 11px;
+    line-height: 16px;
+    color: #71778B;
+}
+
+
+
+
+
 
 /*@media(max-width: 1199px) {*/
 /*    .page-banner:after {*/
@@ -560,7 +613,7 @@ body {
     transition: all 0.3s linear;
 }
 .login-modal .modal-body.success-body {
-    padding: 70px 50px 110px 50px;
+    padding: 35px 50px 75px 50px;
 }
 .login-modal .modal-body.success-body p {
     font-size: 20px;
@@ -687,6 +740,10 @@ body {
         font-size: 13px;
         line-height: 16px;
     }
+    /*payment*/
+    .payment-item [type="radio"]:checked + label, .payment-item [type="radio"]:not(:checked) + label {
+        padding: 10px 10px 10px 30px;
+    }
 }
 @media(max-width: 480px) {
     .login-modal .modal-body {
@@ -762,5 +819,12 @@ body {
     }
     .login-modal .modal-body.success-body p {
         font-size: 16px;
+    }
+    /*payment*/
+    .payment-item [type="radio"]:checked + label, .payment-item [type="radio"]:not(:checked) + label {
+        padding: 5px 10px 5px 25px;
+    }
+    .payment-item.delivery-item img {
+        display: none;
     }
 }

@@ -663,16 +663,19 @@
                                 </div>
                                 <div class="delivery-option">
                                     <div class="toggle-section">
-                                        <div class="toggle-item">
-                                            <input id="test3" name="radio-group" type="radio">
-                                            <label class="delivery"
-                                                   for="test3">Delivery<br><span>30-40 Mins</span></label>
+                                        <div class="payment-item delivery-item">
+                                            <input type="radio" id="test1" name="radio-group" checked="">
+                                            <label for="test1" class="delivery">Delivery<br><span>30-40 Mins</span></label>
+                                            <img src="images/new-delivery-icon.svg" alt="delivery-icon">
                                         </div>
-                                        <div class="toggle-item">
-                                            <input checked="" id="test4" name="radio-group" type="radio">
-                                            <label class="store-pick" for="test4">Store Pick
-                                                up<br><span>15-20 Mins</span></label>
+                                        <div class="payment-item delivery-item">
+                                            <input type="radio" id="test2" name="radio-group">
+                                            <label for="test2" class="store-pick">Store Pick up<br><span>15-20 Mins</span></label>
+                                            <img src="images/new-store-pickup.svg" alt="store-icon">
                                         </div>
+                                    </div>
+                                    <div class="service-not-available">
+                                        <p>Currently delivery service not available</p>
                                     </div>
                                 </div>
                                 <div class="added-items">
@@ -706,7 +709,7 @@
                             </div>
                             <div class="card-footer">
                                 <div class="proceed-btn">
-                                    <a href="checkout.html">Proceed</a>
+                                    <a href="#" data-toggle="modal" data-target="#loginModal">Proceed</a>
                                 </div>
                             </div>
                         </div>
@@ -837,8 +840,8 @@
             </div>
         </div>
     </div>
-</footer>
-<div class="filter-overlay header-overlay" onclick="closeProfile()"></div>
+    </footer>
+    <div class="filter-overlay header-overlay" onclick="closeProfile()"></div>
     <!--Popup Begin-->
     <div class="search-popup">
         <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade search-modal" id="exampleModal"

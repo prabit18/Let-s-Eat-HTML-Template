@@ -163,13 +163,15 @@
                                             <p>95 Linthorpe Road, Middlesbrough, TS1 5DD</p>
                                         </div>
                                         <div class="toggle-section">
-                                            <div class="toggle-item">
+                                            <div class="payment-item delivery-item">
                                                 <input type="radio" id="test1" name="radio-group" checked="">
                                                 <label for="test1" class="delivery">Delivery<br><span>30-40 Mins</span></label>
+                                                <img src="images/new-delivery-icon.svg" alt="delivery-icon">
                                             </div>
-                                            <div class="toggle-item">
+                                            <div class="payment-item delivery-item">
                                                 <input type="radio" id="test2" name="radio-group">
                                                 <label for="test2" class="store-pick">Store Pick up<br><span>15-20 Mins</span></label>
+                                                <img src="images/new-store-pickup.svg" alt="store-icon">
                                             </div>
                                         </div>
                                         <div class="preferred-time">
@@ -341,112 +343,115 @@
                                                 <p class="text-red">consetetur sadipscing elitr, sed diam noneir teminviduntutlabore</p>
                                             </div>
                                         </div>
-                                        <div class="proceed-button">
-                                            <a href="#" data-toggle="modal" data-target="#loginModal">Proceed to Checkout</a>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <div class="delivery-address">
-                                <div class="address-header">
-                                    <div class="address-left">
-                                        <img src="images/address_icon.svg" alt="Address_Icon">
-                                        <div class="address-text">
-                                            <h2>Delivery Address</h2>
-                                            <p>Set your delivery address or add new</p>
-                                        </div>
-                                    </div>
-                                    <div class="add-button">
-                                        <a href="#" data-toggle="modal" data-target="#setDeliveryLocation">Add New</a>
-                                    </div>
-                                </div>
-                                <div class="address-outer custom-scrollbar">
-                                    <div class="address-item">
-                                        <div class="">
-                                            <input type="radio" id="address1" name="address-group" checked>
-                                            <label for="address1">Unit 223, Sea View Cottages, 82, Wood St<br> Liverpool, L1 4DQ, UK</label>
-                                        </div>
-                                        <div class="address-actions">
-                                            <a href="#" data-toggle="modal" data-target="#editAddress" class="edit">Edit</a>
-                                            <a href="#" data-toggle="modal" data-target="#deleteAddress" class="delete">Delete</a>
-                                        </div>
-                                    </div>
-                                    <div class="address-item">
-                                        <div class="">
-                                            <input type="radio" id="address2" name="address-group">
-                                            <label for="address2">23 Southgyle Crescent, Colquitt Street<br> Liverpool, L1 4DE</label>
-                                        </div>
-                                        <div class="address-actions">
-                                            <a href="#" data-toggle="modal" data-target="#editAddress" class="edit">Edit</a>
-                                            <a href="#" data-toggle="modal" data-target="#deleteAddress" class="delete">Delete</a>
-                                        </div>
-                                    </div>
-                                    <div class="address-item">
-                                        <div class="">
-                                            <input type="radio" id="address3" name="address-group">
-                                            <label for="address3">23 Southgyle Crescent, Colquitt Street<br> Liverpool, L1 4DE</label>
-                                        </div>
-                                        <div class="address-actions">
-                                            <a href="#" data-toggle="modal" data-target="#editAddress" class="edit">Edit</a>
-                                            <a href="#" data-toggle="modal" data-target="#deleteAddress" class="delete">Delete</a>
-                                        </div>
-                                    </div>
-                                    <div class="address-item">
-                                        <div class="">
-                                            <input type="radio" id="address4" name="address-group">
-                                            <label for="address4">23 Southgyle Crescent, Colquitt Street<br> Liverpool, L1 4DE</label>
-                                        </div>
-                                        <div class="address-actions">
-                                            <a href="#" data-toggle="modal" data-target="#editAddress" class="edit">Edit</a>
-                                            <a href="#" data-toggle="modal" data-target="#deleteAddress" class="delete">Delete</a>
+                            <div class="checkout-header">
+                                <h2>Checkout</h2>
+                            </div>
+                            <div class="cart-details personal-cart-detail">
+                                <div class="delivery-address">
+                                    <div class="address-header">
+                                        <div class="address-left personal-detail">
+                                            <img src="images/Group 6593.svg" alt="Address_Icon">
+                                            <div class="address-text">
+                                                <h2>Personal Details</h2>
+                                                <h3>John Doe</h3>
+                                                <p>Email ID:<span> john.doe@gmail.com</span></p>
+                                                <div class="verify-no">
+                                                    <p class="verified-no">Phone Number:<span> +91 76543 21234</span></p>
+                                                    <p class="verified-content">Verified</p>
+                                                    <div class="add-button verify-now">
+                                                        <a href="#" data-toggle="modal" data-target="#emailOtpModal">Verify Now</a>
+                                                    </div>
+                                                </div>
+                                                <div class="not-verified">
+                                                    <p>Your phone number is not verified</p>
+                                                </div>
+                                                <div class="verify-btn">
+                                                    <a href="#" data-toggle="modal" data-target="#phoneModal">Verify Phone Number</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="payment">
-                                <div class="address-header">
-                                    <div class="address-left">
-                                        <img src="images/payment_icon.svg" alt="Payment_Icon">
-                                        <div class="address-text">
-                                            <h2>Payment</h2>
-                                            <p>You can select a payment method from your listed options</p>
+                            <div class="apply-offers personal-offer-detail">
+                                <div class="delivery-address">
+                                    <div class="address-header delivery-address-head">
+                                        <div class="address-left">
+                                            <img src="images/address_icon.svg" alt="Address_Icon">
+                                            <div class="address-text">
+                                                <h2>Delivery Address</h2>
+                                                <p>Set your delivery address or add new</p>
+                                            </div>
                                         </div>
+                                        <div class="add-button change-btn">
+                                            <a href="#" data-toggle="modal" data-target="#addAddress">Change</a>
+                                        </div>
+                                    </div>
+                                    <div class="address-outer custom-scrollbar">
+                                        <div class="address-item add-new-item">
+                                            <div class="address-element">
+                                                <div class="">
+                                                    <h6>Home</h6>
+                                                    <p>Unit 223, Sea View Cottages, 82, Wood St <br>Liverpool, L1 4DQ, United Kingdom</p>
+                                                </div>
+                                                <div class="address-actions">
+                                                    <a href="#" class="deliver-here">Deliver Here</a>
+                                                    <a href="#" data-toggle="modal" data-target="#editAddress" class="edit">Edit</a>
+                                                </div>
+                                            </div>
+                                            <div class="address-element">
+                                                <div class="">
+                                                    <h6>Office</h6>
+                                                    <p>Unit 223, Sea View Cottages, 82, Wood St <br>Liverpool, L1 4DQ, United Kingdom</p>
+                                                </div>
+                                                <div class="address-actions">
+                                                    <a href="#" class="deliver-here">Deliver Here</a>
+                                                    <a href="#" data-toggle="modal" data-target="#editAddress" class="edit">Edit</a>
+                                                </div>
+                                            </div>
+                                            <div class="add-new-address-box">
+                                                <button type="button" data-toggle="modal" data-target="#addAddress">+ Add New Address</button>
+                                            </div>
+                                        </div>
+                                        
                                     </div>
                                 </div>
-                                <div class="payment-options">
-                                    <div class="payment-item">
-                                        <div class="payment-select">
-                                            <input type="radio" id="payment1" name="payment-group" checked>
-                                            <label for="payment1">Pay with Debit or Credit Card</label>
+                            </div>
+                            <div class="disclaimer-section personal-desclaimer-detail">
+                                <div class="payment">
+                                    <div class="address-header">
+                                        <div class="address-left">
+                                            <img src="images/payment_icon.svg" alt="Payment_Icon">
+                                            <div class="address-text">
+                                                <h2>Payment</h2>
+                                                <p>You can select a payment method from your listed options</p>
+                                            </div>
                                         </div>
-                                        <label for="payment1" class="label-img"><img src="images/cc_icon.svg" alt="Card_Payment"></label>
                                     </div>
-                                    <div class="payment-item">
-                                        <div class="payment-select">
-                                            <input type="radio" id="payment2" name="payment-group">
-                                            <label for="payment2">Pay with PayPal</label>
+                                    <div class="payment-options">
+                                        <div class="payment-item">
+                                            <div class="payment-select">
+                                                <input type="radio" id="payment1" name="payment-group" checked>
+                                                <label for="payment1">Pay with Debit or Credit Card</label>
+                                            </div>
+                                            <label for="payment1" class="label-img"><img src="images/cc_icon.svg" alt="Card_Payment"></label>
                                         </div>
-                                        <label for="payment2" class="label-img"><img src="images/paypal.svg" alt="Paypal"></label>
-                                    </div>
-                                    <div class="payment-item">
-                                        <div class="payment-select">
-                                            <input type="radio" id="payment3" name="payment-group">
-                                            <label for="payment3">Visa Check Out</label>
+                                        <div class="payment-item">
+                                            <div class="payment-select">
+                                                <input type="radio" id="payment4" name="payment-group">
+                                                <label for="payment4">Cash on Delivery</label>
+                                            </div>
+                                            <label for="payment4" class="label-img"><img src="images/cash_icon.svg" alt="Cash_on_delivery"></label>
                                         </div>
-                                        <label for="payment3" class="label-img"><img src="images/visa_icon.svg" alt="Visa"></label>
                                     </div>
-                                    <div class="payment-item">
-                                        <div class="payment-select">
-                                            <input type="radio" id="payment4" name="payment-group">
-                                            <label for="payment4">Cash on Delivery</label>
-                                        </div>
-                                        <label for="payment4" class="label-img"><img src="images/cash_icon.svg" alt="Cash_on_delivery"></label>
+                                    <div class="proceed-button">
+                                        <a href="#">Place your Order</a>
                                     </div>
-                                </div>
-                                <div class="proceed-button">
-                                    <a href="#">Place your Order</a>
                                 </div>
                             </div>
                         </div>
@@ -707,6 +712,45 @@
         </div>
     </div>
 </div>
+<div class="modal fade login-modal phone-modal" id="phoneModal" tabindex="-1" role="dialog" aria-labelledby="phoneModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content" id="phoneModalLabel">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <img src="images/close.svg" alt="close-icon">
+            </button>
+            <div class="modal-header">
+            </div>
+            <div class="modal-body">
+                <h2>Enter Your Phone Number</h2>
+                <form>
+                    <div class="form-group mobile-no-field">
+                        <input type="text" id="mob-email" name="mob-email" class="form-control" placeholder="Mobile Number">
+                        <label for="mob-email" class="input-label"></label>
+                    </div>
+                    <div class="form-group">
+                        <!-- add id="otp-fade-btn" if phone no not entered -->
+                        <button type="button" class="form-control login-buttons otp-btn" value="Send OTP" data-toggle="modal" data-target="#mobileOtpModal" data-dismiss="modal" aria-label="Close">Send OTP</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade login-modal signup-modal" id="otp-successModal" tabindex="-1" role="dialog" aria-labelledby="otp-successModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content" id="otp-successModalLabel">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <img src="images/close.svg" alt="close-icon">
+            </button>
+            <div class="modal-header">
+            </div>
+            <div class="modal-body success-body">
+                <img src="images/Group 6414.svg" alt="Success_Image">
+                <p>You have Successfully Signed up!</p>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="modal fade address-modal set-delivery-location" id="setDeliveryLocation" tabindex="-1" role="dialog" aria-labelledby="setDeliveryLocationLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content" id="setDeliveryLocationLabel">
@@ -738,7 +782,7 @@
 <div class="modal fade address-modal change-location" id="changeLocation" tabindex="-1" role="dialog" aria-labelledby="changeLocationLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content" id="changeLocationLabel">
-            <button type="button" class="close close-back" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#setDeliveryLocation">
+            <button type="button" class="close close-back" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#addAddress">
             </button>
             <div class="modal-header">
                 <h2>Search Location</h2>
@@ -1076,7 +1120,7 @@
             <div class="modal-header">
             </div>
             <div class="modal-body success-body">
-                <img src="images/success_icon.svg" alt="Success_Image">
+                <img src="images/Group 6414.svg" alt="Success_Image">
                 <p>You have Successfully Signed up!</p>
             </div>
         </div>
@@ -1102,6 +1146,16 @@
     $("#dropdownMenuButton1").on("click", function () {
         $(".search-outer").addClass("show");
         $('.header-overlay').addClass("profile-open");
+    })
+    $(".not-verified").on("click", function () {
+        $(".verified-content").attr("style", "display:block");
+        $('.verify-now').attr("style", "display:none");
+        $('.not-verified').attr("style", "display:none");
+        $('.verify-btn').attr("style", "display:none");
+    })
+    $(".address-text").on("click", function () {
+        $(".change-btn").attr("style", "display:block");
+        $('.address-element').attr("style", "display:block");
     })
     function closeProfile(){
         $(".search-outer").removeClass("show");
@@ -1161,6 +1215,65 @@
             map: map3
         });
     }
+</script>
+<script>
+    let timerOn = true;
+        function timer(remaining) {
+            var m = Math.floor(remaining / 60);
+            var s = remaining % 60;
+            m = m < 10 ? '0' + m : m;
+            s = s < 10 ? '0' + s : s;
+            document.getElementById('timer').innerHTML = m + ':' + s;
+            remaining -= 1;
+            if(remaining >= 0 && timerOn) {
+                setTimeout(function() {
+                    timer(remaining);
+                }, 1000);
+            }
+        }
+        timer(600);
+
+        let newtimerOn = true;
+        function newtimer(remaining) {
+            var m = Math.floor(remaining / 60);
+            var s = remaining % 60;
+            m = m < 10 ? '0' + m : m;
+            s = s < 10 ? '0' + s : s;
+            document.getElementById('newtimer').innerHTML = m + ':' + s;
+            remaining -= 1;
+            if(remaining >= 0 && newtimerOn) {
+                setTimeout(function() {
+                    newtimer(remaining);
+                }, 1000);
+            }
+        }
+        newtimer(600);
+
+
+        $('.digit-group').find('input').each(function() {
+            $(this).attr('maxlength', 1);
+            $(this).on('keyup', function(e) {
+                var parent = $($(this).parent());
+
+                if(e.keyCode === 8 || e.keyCode === 37) {
+                    var prev = parent.find('input#' + $(this).data('previous'));
+
+                    if(prev.length) {
+                        $(prev).select();
+                    }
+                } else if((e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 65 && e.keyCode <= 90) || (e.keyCode >= 96 && e.keyCode <= 105) || e.keyCode === 39) {
+                    var next = parent.find('input#' + $(this).data('next'));
+
+                    if(next.length) {
+                        $(next).select();
+                    } else {
+                        if(parent.data('autosubmit')) {
+                            parent.submit();
+                        }
+                    }
+                }
+            });
+        });
 </script>
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2bXKNDezDf6YNVc-SauobynNHPo4RJb8&callback=initMap">
