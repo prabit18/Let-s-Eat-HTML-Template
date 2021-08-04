@@ -1632,6 +1632,10 @@ ul.menu-feild.frame.white-background {
     .delivery-option .toggle-item label {
         padding: 5px 20px 5px 50px;
     }
+    /*placeholder*/
+    .white-background.offer-sec{
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 1023px) {
@@ -1771,6 +1775,10 @@ ul.menu-feild.frame.white-background {
     }
     .col-md-4.restaurant-col {
         padding: 0;
+    }
+    /*placeholder*/
+    .white-background.offer-sec{
+        margin-top: 30px;
     }
 
 }
