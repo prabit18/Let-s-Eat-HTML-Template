@@ -203,6 +203,7 @@
                     <div class="col-md-8 restaurant-list-col">
                         <div class="menu-section">
                             <div class="header-border">
+                                <div id="snackbar">Restaurant added to Account > Favourites</div>
                                 <div class="menu-header">
                                     <div class="mobile-search-bar">
                                         <label class="restaurant-list-label" for="search-dish"></label>
@@ -222,6 +223,12 @@
                                             </li>
                                             <li>
                                                 <a href="#">Reviews</a>
+                                            </li>
+                                            <li class="favourite">
+                                                <a href="#">
+                                                    <img class="filled-heart" src="images/Fav-Filled.svg" alt="filled-heart-icon">
+                                                    <img class="empty-heart" src="images/Fav-Outline.svg" alt="heart-icon">Favourite
+                                                </a>
                                             </li>
                                         </ul>
                                     </div>
@@ -663,15 +670,17 @@
                                 </div>
                                 <div class="delivery-option">
                                     <div class="toggle-section">
-                                        <div class="payment-item delivery-item">
+                                        <div class="payment-item delivery-item active delivery-box">
                                             <input type="radio" id="test1" name="radio-group" checked="">
                                             <label for="test1" class="delivery">Delivery<br><span>30-40 Mins</span></label>
-                                            <img src="images/new-delivery-icon.svg" alt="delivery-icon">
+                                            <img src="images/act_delivery_icon.svg" alt="delivery-icon" class="black-img">
+                                            <img src="images/new-delivery-icon.svg" alt="delivery-icon" class="hide-img">
                                         </div>
-                                        <div class="payment-item delivery-item">
+                                        <div class="payment-item delivery-item store-box">
                                             <input type="radio" id="test2" name="radio-group">
                                             <label for="test2" class="store-pick">Store Pick up<br><span>15-20 Mins</span></label>
-                                            <img src="images/new-store-pickup.svg" alt="store-icon">
+                                            <img src="images/new-store-pickup.svg" alt="store-icon" class="black-img">
+                                            <img src="images/act_store_pickup.svg" alt="store-icon" class="hide-img">
                                         </div>
                                     </div>
                                     <div class="service-not-available">
@@ -1097,6 +1106,30 @@
             $(".item-count").removeClass("open");
             $('.filter-overlay').removeClass("filter-open");
         })
+        $(".empty-heart").on("click", function () {
+            $(".empty-heart").attr("style", "display:none;");
+            $(".filled-heart").attr("style", "display:inline-block;");
+            $("#snackbar").addClass("show");
+        })
+        $(".filled-heart").on("click", function () {
+            $(".filled-heart").attr("style", "display:none;");
+            $(".empty-heart").attr("style", "display:inline-block;"); 
+        })
+        $(".store-box").on("click", function () {
+            $(".delivery-box").removeClass('active');
+            $(".store-box").addClass("active");
+            $(".store-box").attr("style", "border-radius:0");
+            $('.hide-img').attr("style", "display:block");
+            $('.black-img').attr("style", "display:none");
+        })
+        $(".delivery-box").on("click", function () {
+            $(".store-box").removeClass('active');
+            $(".delivery-box").addClass("active");
+            $('.black-img').attr("style", "display:block");
+            $('.hide-img').attr("style", "display:none");
+        })
+
+
         // $(".food-filter").click(function() {
         //     let id = $(this).attr("name")
         //     console.log("#"+id)
@@ -1139,12 +1172,14 @@
             $('html,.no-overlay-display').attr("style", "overflow:auto;height:auto;");
             $('.sidemenu-overlay').removeClass("filter-open");
             document.getElementById("sideFilter").style.width = "0";
+            document.getElementById("#profile-menu").addClass("show");
         }
 
         function openFilter() {
             document.getElementById("sideFilter").style.width = "calc(100% - 60px)";
             $('html,.no-overlay-display').attr("style", "overflow:hidden;height:100%;");
             $('.sidemenu-overlay').addClass("filter-open");
+            document.getElementById("#profile-menu").removeClass("show");
         }
         
         $("#dropdownMenuButton1").on("click", function () {

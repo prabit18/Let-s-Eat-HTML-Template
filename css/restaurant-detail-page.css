@@ -1255,6 +1255,77 @@ p.food-item-price {
     left: 15px;
     content: url(../images/new-exc-icon.svg);
 }
+.favourite img{
+    width: 20px;
+    height: 16px;
+}
+img.empty-heart {
+    padding-right: 5px;
+}
+img.filled-heart{
+    display: none;
+}
+#snackbar {
+    visibility: hidden;
+    background-color: #FFEEB3;
+    color: #293250;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px 15px;
+    position: fixed;
+    z-index: 1;
+    left: 19%;
+    top: 235px;
+    font-size: 13px;
+    line-height: 18px;
+    font-family: Montserrat-Mdium, sans-serif;
+}
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+@-webkit-keyframes fadein {
+    from {top: 0; opacity: 0;} 
+    to {top: 30px; opacity: 1;}
+}  
+@keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 30px; opacity: 1;}
+}  
+@-webkit-keyframes fadeout {
+    from {top: 30px; opacity: 1;} 
+    to {top: 0; opacity: 0;}
+}  
+@keyframes fadeout {
+    from {top: 30px; opacity: 1;}
+    to {top: 0; opacity: 0;}
+}  
+  
+/*payent-toggle*/
+.payment-item.delivery-item.active {
+    background-color: #457CD6;
+}
+.payment-item.delivery-item input[type="radio"]:checked + label,
+.payment-item.delivery-item input[type="radio"]:checked + label span{
+    color: #FFFFFF;
+}
+.payment-item.delivery-item input[type="radio"]:checked + label:before {
+    border: 1px solid #FFFFFF;
+    background: #457cd6;
+}    
+.payment-item.delivery-item input[type="radio"]:checked + label:after {
+    background: #FFFFFF;
+}
+.post-login-address,.hide-img{
+    display: none;
+}
+
+
+
+
+
+
 /*detail-page-loader*/
 .white-background.restaurant-img-sec {
     margin-right: 30px;
@@ -1508,6 +1579,7 @@ ul.menu-feild.frame.white-background {
     .delivery-option .toggle-item [type="radio"]:checked + label {
         width: 160px;
     }
+    
 
     .side-menu-list {
         height: 100vh;
