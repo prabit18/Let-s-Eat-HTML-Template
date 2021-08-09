@@ -259,7 +259,9 @@ body {
     line-height: 16px;
     color: #71778B;
 }
-
+.login-modal .modal-body form .form-control:focus {
+    border-color: #3B4148;
+}
 
 
 

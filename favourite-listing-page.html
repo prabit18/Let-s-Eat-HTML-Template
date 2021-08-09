@@ -1,0 +1,1628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <title>Favourites List</title>
+    <link href="css/lib/bootstrap.min.css" rel="stylesheet">
+    <link href="css/lib/owl.carousel.css" rel="stylesheet">
+    <link href="css/lib/owl.theme.default.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+    <link href="css/header.css" rel="stylesheet" type="text/css">
+    <link href="css/footer.css" rel="stylesheet" type="text/css">
+    <link href="css/favourite-list.css" rel="stylesheet" type="text/css">
+    <link href="css/restaurant-list.css" rel="stylesheet" type="text/css">
+</head>
+<body class="custom-body">
+    <div class="page-banner">
+        <header class="custom-header">
+            <div class="container custom-container">
+                <nav class="navbar custom-navbar">
+                    <a class="header-logo" href="index.html"><img alt="Logo" src="images/le-logo.svg"></a>
+                    <div class="header-actions">
+                        <ul class="location-search">
+                            <li aria-expanded="false" aria-haspopup="true" class="select-li dropdown-toggle"
+                                data-toggle="dropdown" id="dropdownMenuButton">
+                                <div class="select-field">
+                                    <em class="outer-icon">
+                                        <img alt="location" class="location-icon" src="images/location.svg">
+                                    </em>
+                                    <label>
+                                        <input placeholder="Sugnall Street, Liverpool, UK" value="">
+                                    </label>
+                                    <div aria-labelledby="dropdownMenuButton" class="select-menu dropdown-menu">
+                                        <div class="inner-content">
+                                            <div class="current-location">
+                                                <em>
+                                                    <svg fill="#0A83EA" height="14" role="img"
+                                                         viewBox="0 0 20 20" width="14" xmlns="http://www.w3.org/2000/svg">
+                                                        <title>current-location</title>
+                                                        <path d="M13.58 10c0 1.977-1.603 3.58-3.58 3.58s-3.58-1.603-3.58-3.58c0-1.977 1.603-3.58 3.58-3.58v0c1.977 0 3.58 1.603 3.58 3.58v0zM20 9.52v0.96c0 0.265-0.215 0.48-0.48 0.48v0h-1.72c-0.447 3.584-3.256 6.393-6.802 6.836l-0.038 0.004v1.72c0 0.265-0.215 0.48-0.48 0.48v0h-0.96c-0.265 0-0.48-0.215-0.48-0.48v0-1.72c-3.575-0.455-6.375-3.262-6.816-6.802l-0.004-0.038h-1.74c-0.265 0-0.48-0.215-0.48-0.48v0-0.96c0-0.265 0.215-0.48 0.48-0.48v0h1.74c0.445-3.578 3.245-6.385 6.781-6.836l0.039-0.004v-1.72c0-0.265 0.215-0.48 0.48-0.48v0h0.96c0.265 0 0.48 0.215 0.48 0.48v0 1.72c3.584 0.447 6.393 3.256 6.836 6.802l0.004 0.038h1.72c0.265 0 0.48 0.215 0.48 0.48v0zM15.96 10c0-3.292-2.668-5.96-5.96-5.96s-5.96 2.668-5.96 5.96c0 3.292 2.668 5.96 5.96 5.96v0c3.292 0 5.96-2.668 5.96-5.96v0z"></path>
+                                                    </svg>
+                                                </em>
+                                                <p>Use current location</p>
+                                            </div>
+                                            <p class="using-gps">Using GPS</p>
+                                        </div>
+                                        <div class="recent-location">Recent Locations</div>
+                                        <div class="recent-location-inner">
+                                            <div class="location-content">
+                                                <em>
+                                                    <svg class="clock-icon" fill="#1C1C1C" height="15"
+                                                         role="img" viewBox="0 0 20 20" width="15" xmlns="http://www.w3.org/2000/svg">
+                                                        <title>time</title>
+                                                        <path d="M14.76 9.040h-4.22l-2.58-4.28c-0.147-0.354-0.489-0.598-0.889-0.598-0.53 0-0.96 0.43-0.96 0.96 0 0.227 0.079 0.436 0.211 0.6l-0.001-0.002 2.86 4.76c0.172 0.278 0.474 0.46 0.82 0.46 0 0 0 0 0.001 0h4.76c0.467-0.070 0.822-0.469 0.822-0.95s-0.354-0.88-0.817-0.949l-0.005-0.001zM10 0c-5.523 0-10 4.477-10 10s4.477 10 10 10c5.523 0 10-4.477 10-10v0c0-5.523-4.477-10-10-10v0zM10 18.58c-4.739 0-8.58-3.841-8.58-8.58s3.841-8.58 8.58-8.58c4.739 0 8.58 3.841 8.58 8.58v0c0 4.739-3.841 8.58-8.58 8.58v0z"></path>
+                                                    </svg>
+                                                </em>
+                                            </div>
+                                            <div class="location-name">Sugnall Street, Liverpool, UK</div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </li>
+                            <li class="search-li">
+                                <div class="search-container">
+                                    <form class="search-form">
+                                        <label>
+                                            <input class="form-field"
+                                                   placeholder="Search for restaurant, cuisine or your favourite dish"
+                                                   type="search">
+                                        </label>
+                                        <div class="search"><span>Search</span><img alt="search" src="images/search.svg">
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="header-right">
+                            <li>
+                                <a href="empty-cart.html">
+                                    <img alt="help" src="images/help.svg">
+                                    <span>Help</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="checkout.html">
+                                    <div class="cart">
+                                        <img alt="cart" src="images/cart.svg">
+                                        <div class="cart-qty">
+                                            <span>2</span>
+                                        </div>
+                                    </div>
+                                    <span>Cart</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a aria-expanded="false" class="login-signup-link" aria-haspopup="true" data-toggle="dropdown" href="#"
+                                   id="dropdownMenuButton1">
+                                    <img alt="login" src="images/login.svg">
+                                    <span>Login/Sign Up</span>
+                                </a>
+                                <ul aria-labelledby="dropdownMenuButton1" class="dropdown-menu profile-menu">
+                                    <li>
+                                        <a href="#">Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Orders</a>
+                                    </li>
+                                    <li>
+                                       <a href="#">Favourites</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Rewards</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Notifications</a>
+                                   </li>
+                                    <li>
+                                        <a href="#">Reviews</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Settings</a>
+                                  </li>
+                                    <li>
+                                        <a class="logout-link" href="#">Logout</a>
+                                   </li>
+                               </ul>
+                            </li>
+    
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="search-outer">
+            <div class="search-inner">
+                <div class="select-outer" data-target="#exampleModal1" data-toggle="modal">
+                    <div class="select-inner">
+                        <div class="outer-icon">
+                            <img alt="location" class="location-icon" src="images/location.svg">
+                        </div>
+                        <div class="select-placeholder">Sugnall Street, <span>Liverpool, UK</span></div>
+                    </div>
+                </div>
+                <div class="search-icon-outer" data-target="#exampleModal" data-toggle="modal">
+                    <img alt="search" class="search-icon" src="images/search.svg">
+                </div>
+            </div>
+        </div>
+        <section class="main-section">
+            <section class="restaurant-list">
+                    <div class="container custom-container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="listing-box favourite-listing-box">
+                                    <div class="col-lg-2 col-md-2" id="profile-menu">
+                                        <div class="favourite-menu-section">
+                                            <ul class="menu-feild frame favourite-menu">
+                                                <li class="food-filter"><a href="#">Profile</a></li>
+                                                <li class="food-filter"><a href="#">Orders</a></li>
+                                                <li class="food-filter active"><a href="#">Favourites</a></li>
+                                                <li class="food-filter"><a href="#">Address</a></li>
+                                                <li class="food-filter"><a href="#">Help</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-10 right-favourite-col">
+                                        <div class="filter-section">
+                                            <div class="resto-count favourite-menu-header">
+                                                <h2>Favourites</h2>
+                                            </div>
+                                        </div>
+                                        <div class="food-list row frame">
+                                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                                <div class="food-product hvr-shadow">
+                                                    <a class="clickable" href="#"></a>
+                                                    <div class="food-item">
+                                                        <img alt="food-item" src="images/food-list3.jpg">
+                                                        <div class="brand-logo">
+                                                            <img alt="restaurant-logo" src="images/wimpy.jpg">
+                                                        </div>
+                                                    </div>
+                                                    <div class="food-desc">
+                                                        <h4>KFC</h4>
+                                                        <p>Lorem ipsum dolor sit consetetur sadipscing elitr.Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                                    </div>
+                                                    <div class="delivery-detail">
+                                                        <div class="delivery-time">
+                                                            <img alt="deliver-icon" src="images/delivery-icon.svg">
+                                                            <span>44 min</span>
+                                                        </div>
+                                                        <div class="bg-rating">
+                                                            <img alt="bg-rating" src="images/bg-rating.svg">
+                                                            <div class="rating-rank">
+                                                                <img alt="star-icon" src="images/Star-icon.svg">
+                                                                <p class="rating-content">4.4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="whishlist-icon">
+                                                    <img src="images/Icon feather-heart.svg" alt="whishlist-icon">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                                <div class="food-product hvr-shadow">
+                                                    <a class="clickable" href="#"></a>
+                                                    <div class="food-item">
+                                                        <img alt="food-item" src="images/food-list6.jpg">
+                                                        <div class="brand-logo">
+                                                            <img alt="restaurant-logo" src="images/tb.jpg">
+                                                        </div>
+                                                    </div>
+                                                    <div class="food-desc">
+                                                        <h4>Canteen Central - Burgers, Pastas & More</h4>
+                                                        <p>Lorem ipsum dolor sit</p>
+                                                    </div>
+                                                    <div class="delivery-detail">
+                                                        <div class="delivery-time">
+                                                            <img alt="deliver-icon" src="images/delivery-icon.svg">
+                                                            <span>44 min</span>
+                                                        </div>
+                                                        <div class="bg-rating">
+                                                            <img alt="bg-rating" src="images/bg-rating.svg">
+                                                            <div class="rating-rank">
+                                                                <img alt="star-icon" src="images/Star-icon.svg">
+                                                                <p class="rating-content">4.4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="whishlist-icon">
+                                                    <img src="images/Icon feather-heart.svg" alt="whishlist-icon">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                                <div class="food-product hvr-shadow">
+                                                    <a class="clickable" href="#"></a>
+                                                    <div class="food-item">
+                                                        <img alt="food-item" src="images/food-list5.jpg">
+                                                        <div class="brand-logo">
+                                                            <img alt="restaurant-logo" src="images/ph.jpg">
+                                                        </div>
+                                                    </div>
+                                                    <div class="food-desc">
+                                                        <h4>McDonald’s</h4>
+                                                        <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                                    </div>
+                                                    <div class="delivery-detail">
+                                                        <div class="delivery-time">
+                                                            <img alt="deliver-icon" src="images/delivery-icon.svg">
+                                                            <span>44 min</span>
+                                                        </div>
+                                                        <div class="bg-rating">
+                                                            <img alt="bg-rating" src="images/bg-rating.svg">
+                                                            <div class="rating-rank">
+                                                                <img alt="star-icon" src="images/Star-icon.svg">
+                                                                <p class="rating-content">4.4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="whishlist-icon">
+                                                    <img src="images/Icon feather-heart.svg" alt="whishlist-icon">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                                <div class="food-product hvr-shadow">
+                                                    <a class="clickable" href="#"></a>
+                                                    <div class="food-item">
+                                                        <img alt="food-item" src="images/food-list15.jpg">
+                                                        <div class="brand-logo">
+                                                            <img alt="restaurant-logo" src="images/ph.jpg">
+                                                        </div>
+                                                    </div>
+                                                    <div class="food-desc">
+                                                        <h4>KFC</h4>
+                                                        <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                                    </div>
+                                                    <div class="delivery-detail">
+                                                        <div class="delivery-time">
+                                                            <img alt="deliver-icon" src="images/delivery-icon.svg">
+                                                            <span>44 min</span>
+                                                        </div>
+                                                        <div class="bg-rating">
+                                                            <img alt="bg-rating" src="images/bg-rating.svg">
+                                                            <div class="rating-rank">
+                                                                <img alt="star-icon" src="images/Star-icon.svg">
+                                                                <p class="rating-content">4.4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="whishlist-icon">
+                                                    <img src="images/Icon feather-heart.svg" alt="whishlist-icon">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                                <div class="food-product hvr-shadow">
+                                                    <a class="clickable" href="#"></a>
+                                                    <div class="food-item">
+                                                        <img alt="food-item" src="images/food-list16.jpg">
+                                                        <div class="brand-logo">
+                                                            <img alt="restaurant-logo" src="images/mcd.jpg">
+                                                        </div>
+                                                    </div>
+                                                    <div class="food-desc">
+                                                        <h4>KFC</h4>
+                                                        <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                                    </div>
+                                                    <div class="delivery-detail">
+                                                        <div class="delivery-time">
+                                                            <img alt="deliver-icon" src="images/delivery-icon.svg">
+                                                            <span>44 min</span>
+                                                        </div>
+                                                        <div class="bg-rating">
+                                                            <img alt="bg-rating" src="images/bg-rating.svg">
+                                                            <div class="rating-rank">
+                                                                <img alt="star-icon" src="images/Star-icon.svg">
+                                                                <p class="rating-content">4.4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="whishlist-icon">
+                                                    <img src="images/Icon feather-heart.svg" alt="whishlist-icon">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                                <div class="food-product hvr-shadow">
+                                                    <a class="clickable" href="#"></a>
+                                                    <div class="food-item">
+                                                        <img alt="food-item" src="images/food-list4.jpg">
+                                                        <div class="brand-logo">
+                                                            <img alt="restaurant-logo" src="images/kfc.jpg">
+                                                        </div>
+                                                    </div>
+                                                    <div class="food-desc">
+                                                        <h4>KFC</h4>
+                                                        <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                                    </div>
+                                                    <div class="delivery-detail">
+                                                        <div class="delivery-time">
+                                                            <img alt="deliver-icon" src="images/delivery-icon.svg">
+                                                            <span>44 min</span>
+                                                        </div>
+                                                        <div class="bg-rating">
+                                                            <img alt="bg-rating" src="images/bg-rating.svg">
+                                                            <div class="rating-rank">
+                                                                <img alt="star-icon" src="images/Star-icon.svg">
+                                                                <p class="rating-content">4.4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="whishlist-icon">
+                                                    <img src="images/Icon feather-heart.svg" alt="whishlist-icon">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                                <div class="food-product hvr-shadow">
+                                                    <a class="clickable" href="#"></a>
+                                                    <div class="food-item">
+                                                        <img alt="food-item" src="images/food-list0.jpg">
+                                                        <div class="brand-logo">
+                                                            <img alt="restaurant-logo" src="images/d.jpg">
+                                                        </div>
+                                                    </div>
+                                                    <div class="food-desc">
+                                                        <h4>KFC</h4>
+                                                        <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                                    </div>
+                                                    <div class="delivery-detail">
+                                                        <div class="delivery-time">
+                                                            <img alt="deliver-icon" src="images/delivery-icon.svg">
+                                                            <span>44 min</span>
+                                                        </div>
+                                                        <div class="bg-rating">
+                                                            <img alt="bg-rating" src="images/bg-rating.svg">
+                                                            <div class="rating-rank">
+                                                                <img alt="star-icon" src="images/Star-icon.svg">
+                                                                <p class="rating-content">4.4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="whishlist-icon">
+                                                    <img src="images/Icon feather-heart.svg" alt="whishlist-icon">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                                <div class="food-product hvr-shadow">
+                                                    <a class="clickable" href="#"></a>
+                                                    <div class="food-item">
+                                                        <img alt="food-item" src="images/food-list2.jpg">
+                                                        <div class="brand-logo">
+                                                            <img alt="restaurant-logo" src="images/kfc.jpg">
+                                                        </div>
+                                                        <div class="diamond-pro">
+                                                            <img alt="offer" src="images/diamond-pro.svg">
+                                                        </div>
+                                                    </div>
+                                                    <div class="food-desc">
+                                                        <h4>KFC</h4>
+                                                        <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                                    </div>
+                                                    <div class="delivery-detail">
+                                                        <div class="delivery-time">
+                                                            <img alt="deliver-icon" src="images/delivery-icon.svg">
+                                                            <span>44 min</span>
+                                                        </div>
+                                                        <div class="bg-rating">
+                                                            <img alt="bg-rating" src="images/bg-rating.svg">
+                                                            <div class="rating-rank">
+                                                                <img alt="star-icon" src="images/Star-icon.svg">
+                                                                <p class="rating-content">4.4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="whishlist-icon">
+                                                    <img src="images/Icon feather-heart.svg" alt="whishlist-icon">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                                <div class="food-product hvr-shadow">
+                                                    <a class="clickable" href="#"></a>
+                                                    <div class="food-item">
+                                                        <img alt="food-item" src="images/food-list3.jpg">
+                                                        <div class="brand-logo">
+                                                            <img alt="restaurant-logo" src="images/wimpy.jpg">
+                                                        </div>
+                                                    </div>
+                                                    <div class="food-desc">
+                                                        <h4>KFC</h4>
+                                                        <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                                    </div>
+                                                    <div class="delivery-detail">
+                                                        <div class="delivery-time">
+                                                            <img alt="deliver-icon" src="images/delivery-icon.svg">
+                                                            <span>44 min</span>
+                                                        </div>
+                                                        <div class="bg-rating">
+                                                            <img alt="bg-rating" src="images/bg-rating.svg">
+                                                            <div class="rating-rank">
+                                                                <img alt="star-icon" src="images/Star-icon.svg">
+                                                                <p class="rating-content">4.4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="whishlist-icon">
+                                                    <img src="images/Icon feather-heart.svg" alt="whishlist-icon">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                                <div class="food-product hvr-shadow">
+                                                    <a class="clickable" href="#"></a>
+                                                    <div class="food-item">
+                                                        <img alt="food-item" src="images/food-list6.jpg">
+                                                        <div class="brand-logo">
+                                                            <img alt="restaurant-logo" src="images/tb.jpg">
+                                                        </div>
+                                                        <div class="diamond-pro">
+                                                            <img alt="food-item" src="images/diamond-pro.svg">
+                                                        </div>
+                                                    </div>
+                                                    <div class="food-desc">
+                                                        <h4>KFC</h4>
+                                                        <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                                    </div>
+                                                    <div class="delivery-detail">
+                                                        <div class="delivery-time">
+                                                            <img alt="deliver-icon" src="images/delivery-icon.svg">
+                                                            <span>44 min</span>
+                                                        </div>
+                                                        <div class="bg-rating">
+                                                            <img alt="bg-rating" src="images/bg-rating.svg">
+                                                            <div class="rating-rank">
+                                                                <img alt="star-icon" src="images/Star-icon.svg">
+                                                                <p class="rating-content">4.4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="whishlist-icon">
+                                                    <img src="images/Icon feather-heart.svg" alt="whishlist-icon">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                                <div class="food-product hvr-shadow">
+                                                    <a class="clickable" href="#"></a>
+                                                    <div class="food-item">
+                                                        <img alt="food-item" src="images/food-list5.jpg">
+                                                        <div class="brand-logo">
+                                                            <img alt="restaurant-logo" src="images/ph.jpg">
+                                                        </div>
+                                                        <div class="diamond-pro">
+                                                            <img alt="offer" src="images/emerald-promo.svg">
+                                                        </div>
+                                                    </div>
+                                                    <div class="food-desc">
+                                                        <h4>KFC</h4>
+                                                        <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                                    </div>
+                                                    <div class="delivery-detail">
+                                                        <div class="delivery-time">
+                                                            <img alt="deliver-icon" src="images/delivery-icon.svg">
+                                                            <span>44 min</span>
+                                                        </div>
+                                                        <div class="bg-rating">
+                                                            <img alt="bg-rating" src="images/bg-rating.svg">
+                                                            <div class="rating-rank">
+                                                                <img alt="star-icon" src="images/Star-icon.svg">
+                                                                <p class="rating-content">4.4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="whishlist-icon">
+                                                    <img src="images/Icon feather-heart.svg" alt="whishlist-icon">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                                <div class="food-product hvr-shadow">
+                                                    <a class="clickable" href="#"></a>
+                                                    <div class="food-item">
+                                                        <img alt="food-item" src="images/food-list15.jpg">
+                                                        <div class="brand-logo">
+                                                            <img alt="restaurant-logo" src="images/ph.jpg">
+                                                        </div>
+                                                    </div>
+                                                    <div class="food-desc">
+                                                        <h4>KFC</h4>
+                                                        <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                                    </div>
+                                                    <div class="delivery-detail">
+                                                        <div class="delivery-time">
+                                                            <img alt="deliver-icon" src="images/delivery-icon.svg">
+                                                            <span>44 min</span>
+                                                        </div>
+                                                        <div class="bg-rating">
+                                                            <img alt="bg-rating" src="images/bg-rating.svg">
+                                                            <div class="rating-rank">
+                                                                <img alt="star-icon" src="images/Star-icon.svg">
+                                                                <p class="rating-content">4.4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="whishlist-icon">
+                                                    <img src="images/Icon feather-heart.svg" alt="whishlist-icon">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                                <div class="food-product hvr-shadow">
+                                                    <a class="clickable" href="#"></a>
+                                                    <div class="food-item">
+                                                        <img alt="food-item" src="images/food-list16.jpg">
+                                                        <div class="brand-logo">
+                                                            <img alt="restaurant-logo" src="images/mcd.jpg">
+                                                        </div>
+                                                    </div>
+                                                    <div class="food-desc">
+                                                        <h4>KFC</h4>
+                                                        <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                                    </div>
+                                                    <div class="delivery-detail">
+                                                        <div class="delivery-time">
+                                                            <img alt="deliver-icon" src="images/delivery-icon.svg">
+                                                            <span>44 min</span>
+                                                        </div>
+                                                        <div class="bg-rating">
+                                                            <img alt="bg-rating" src="images/bg-rating.svg">
+                                                            <div class="rating-rank">
+                                                                <img alt="star-icon" src="images/Star-icon.svg">
+                                                                <p class="rating-content">4.4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="whishlist-icon">
+                                                    <img src="images/Icon feather-heart.svg" alt="whishlist-icon">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                                <div class="food-product hvr-shadow">
+                                                    <a class="clickable" href="#"></a>
+                                                    <div class="food-item">
+                                                        <img alt="food-item" src="images/food-list4.jpg">
+                                                        <div class="brand-logo">
+                                                            <img alt="restaurant-logo" src="images/kfc.jpg">
+                                                        </div>
+                                                    </div>
+                                                    <div class="food-desc">
+                                                        <h4>KFC</h4>
+                                                        <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                                    </div>
+                                                    <div class="delivery-detail">
+                                                        <div class="delivery-time">
+                                                            <img alt="deliver-icon" src="images/delivery-icon.svg">
+                                                            <span>44 min</span>
+                                                        </div>
+                                                        <div class="bg-rating">
+                                                            <img alt="bg-rating" src="images/bg-rating.svg">
+                                                            <div class="rating-rank">
+                                                                <img alt="star-icon" src="images/Star-icon.svg">
+                                                                <p class="rating-content">4.4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="whishlist-icon">
+                                                    <img src="images/Icon feather-heart.svg" alt="whishlist-icon">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                                <div class="food-product hvr-shadow">
+                                                    <a class="clickable" href="#"></a>
+                                                    <div class="food-item">
+                                                        <img alt="food-item" src="images/food-list0.jpg">
+                                                        <div class="brand-logo">
+                                                            <img alt="restaurant-logo" src="images/d.jpg">
+                                                        </div>
+                                                    </div>
+                                                    <div class="food-desc">
+                                                        <h4>KFC</h4>
+                                                        <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                                    </div>
+                                                    <div class="delivery-detail">
+                                                        <div class="delivery-time">
+                                                            <img alt="deliver-icon" src="images/delivery-icon.svg">
+                                                            <span>44 min</span>
+                                                        </div>
+                                                        <div class="bg-rating">
+                                                            <img alt="bg-rating" src="images/bg-rating.svg">
+                                                            <div class="rating-rank">
+                                                                <img alt="star-icon" src="images/Star-icon.svg">
+                                                                <p class="rating-content">4.4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="whishlist-icon">
+                                                    <img src="images/Icon feather-heart.svg" alt="whishlist-icon">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                                <div class="food-product hvr-shadow">
+                                                    <a class="clickable" href="#"></a>
+                                                    <div class="food-item">
+                                                        <img alt="food-item" src="images/food-list2.jpg">
+                                                        <div class="brand-logo">
+                                                            <img alt="restaurant-logo" src="images/kfc.jpg">
+                                                        </div>
+                                                        <div class="diamond-pro">
+                                                            <img alt="offer" src="images/diamond-pro.svg">
+                                                        </div>
+                                                    </div>
+                                                    <div class="food-desc">
+                                                        <h4>KFC</h4>
+                                                        <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                                    </div>
+                                                    <div class="delivery-detail">
+                                                        <div class="delivery-time">
+                                                            <img alt="deliver-icon" src="images/delivery-icon.svg">
+                                                            <span>44 min</span>
+                                                        </div>
+                                                        <div class="bg-rating">
+                                                            <img alt="bg-rating" src="images/bg-rating.svg">
+                                                            <div class="rating-rank">
+                                                                <img alt="star-icon" src="images/Star-icon.svg">
+                                                                <p class="rating-content">4.4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="whishlist-icon">
+                                                    <img src="images/Icon feather-heart.svg" alt="whishlist-icon">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                                <div class="food-product hvr-shadow">
+                                                    <a class="clickable" href="#"></a>
+                                                    <div class="food-item">
+                                                        <img alt="food-item" src="images/food-list3.jpg">
+                                                        <div class="brand-logo">
+                                                            <img alt="restaurant-logo" src="images/wimpy.jpg">
+                                                        </div>
+                                                    </div>
+                                                    <div class="food-desc">
+                                                        <h4>KFC</h4>
+                                                        <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                                    </div>
+                                                    <div class="delivery-detail">
+                                                        <div class="delivery-time">
+                                                            <img alt="deliver-icon" src="images/delivery-icon.svg">
+                                                            <span>44 min</span>
+                                                        </div>
+                                                        <div class="bg-rating">
+                                                            <img alt="bg-rating" src="images/bg-rating.svg">
+                                                            <div class="rating-rank">
+                                                                <img alt="star-icon" src="images/Star-icon.svg">
+                                                                <p class="rating-content">4.4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="whishlist-icon">
+                                                    <img src="images/Icon feather-heart.svg" alt="whishlist-icon">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                                <div class="food-product hvr-shadow">
+                                                    <a class="clickable" href="#"></a>
+                                                    <div class="food-item">
+                                                        <img alt="food-item" src="images/food-list6.jpg">
+                                                        <div class="brand-logo">
+                                                            <img alt="restaurant-logo" src="images/tb.jpg">
+                                                        </div>
+                                                    </div>
+                                                    <div class="food-desc">
+                                                        <h4>KFC</h4>
+                                                        <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                                    </div>
+                                                    <div class="delivery-detail">
+                                                        <div class="delivery-time">
+                                                            <img alt="deliver-icon" src="images/delivery-icon.svg">
+                                                            <span>44 min</span>
+                                                        </div>
+                                                        <div class="bg-rating">
+                                                            <img alt="bg-rating" src="images/bg-rating.svg">
+                                                            <div class="rating-rank">
+                                                                <img alt="star-icon" src="images/Star-icon.svg">
+                                                                <p class="rating-content">4.4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="whishlist-icon">
+                                                    <img src="images/Icon feather-heart.svg" alt="whishlist-icon">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                                <div class="food-product hvr-shadow">
+                                                    <a class="clickable" href="#"></a>
+                                                    <div class="food-item">
+                                                        <img alt="food-item" src="images/food-list5.jpg">
+                                                        <div class="brand-logo">
+                                                            <img alt="restaurant-logo" src="images/ph.jpg">
+                                                        </div>
+                                                    </div>
+                                                    <div class="food-desc">
+                                                        <h4>KFC</h4>
+                                                        <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                                    </div>
+                                                    <div class="delivery-detail">
+                                                        <div class="delivery-time">
+                                                            <img alt="deliver-icon" src="images/delivery-icon.svg">
+                                                            <span>44 min</span>
+                                                        </div>
+                                                        <div class="bg-rating">
+                                                            <img alt="bg-rating" src="images/bg-rating.svg">
+                                                            <div class="rating-rank">
+                                                                <img alt="star-icon" src="images/Star-icon.svg">
+                                                                <p class="rating-content">4.4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="whishlist-icon">
+                                                    <img src="images/Icon feather-heart.svg" alt="whishlist-icon">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                                <div class="food-product hvr-shadow">
+                                                    <a class="clickable" href="#"></a>
+                                                    <div class="food-item">
+                                                        <img alt="food-item" src="images/food-list15.jpg">
+                                                        <div class="brand-logo">
+                                                            <img alt="restaurant-logo" src="images/ph.jpg">
+                                                        </div>
+                                                    </div>
+                                                    <div class="food-desc">
+                                                        <h4>KFC</h4>
+                                                        <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                                    </div>
+                                                    <div class="delivery-detail">
+                                                        <div class="delivery-time">
+                                                            <img alt="deliver-icon" src="images/delivery-icon.svg">
+                                                            <span>44 min</span>
+                                                        </div>
+                                                        <div class="bg-rating">
+                                                            <img alt="bg-rating" src="images/bg-rating.svg">
+                                                            <div class="rating-rank">
+                                                                <img alt="star-icon" src="images/Star-icon.svg">
+                                                                <p class="rating-content">4.4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="whishlist-icon">
+                                                    <img src="images/Icon feather-heart.svg" alt="whishlist-icon">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                                <div class="food-product hvr-shadow">
+                                                    <a class="clickable" href="#"></a>
+                                                    <div class="food-item">
+                                                        <img alt="food-item" src="images/food-list16.jpg">
+                                                        <div class="brand-logo">
+                                                            <img alt="restaurant-logo" src="images/mcd.jpg">
+                                                        </div>
+                                                    </div>
+                                                    <div class="food-desc">
+                                                        <h4>KFC</h4>
+                                                        <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                                    </div>
+                                                    <div class="delivery-detail">
+                                                        <div class="delivery-time">
+                                                            <img alt="deliver-icon" src="images/delivery-icon.svg">
+                                                            <span>44 min</span>
+                                                        </div>
+                                                        <div class="bg-rating">
+                                                            <img alt="bg-rating" src="images/bg-rating.svg">
+                                                            <div class="rating-rank">
+                                                                <img alt="star-icon" src="images/Star-icon.svg">
+                                                                <p class="rating-content">4.4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="whishlist-icon">
+                                                    <img src="images/Icon feather-heart.svg" alt="whishlist-icon">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                                <div class="food-product hvr-shadow">
+                                                    <a class="clickable" href="#"></a>
+                                                    <div class="food-item">
+                                                        <img alt="food-item" src="images/food-list4.jpg">
+                                                        <div class="brand-logo">
+                                                            <img alt="restaurant-logo" src="images/kfc.jpg">
+                                                        </div>
+                                                    </div>
+                                                    <div class="food-desc">
+                                                        <h4>KFC</h4>
+                                                        <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                                    </div>
+                                                    <div class="delivery-detail">
+                                                        <div class="delivery-time">
+                                                            <img alt="deliver-icon" src="images/delivery-icon.svg">
+                                                            <span>44 min</span>
+                                                        </div>
+                                                        <div class="bg-rating">
+                                                            <img alt="bg-rating" src="images/bg-rating.svg">
+                                                            <div class="rating-rank">
+                                                                <img alt="star-icon" src="images/Star-icon.svg">
+                                                                <p class="rating-content">4.4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="whishlist-icon">
+                                                    <img src="images/Icon feather-heart.svg" alt="whishlist-icon">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                                <div class="food-product hvr-shadow">
+                                                    <a class="clickable" href="#"></a>
+                                                    <div class="food-item">
+                                                        <img alt="food-item" src="images/food-list0.jpg">
+                                                        <div class="brand-logo">
+                                                            <img alt="restaurant-logo" src="images/d.jpg">
+                                                        </div>
+                                                    </div>
+                                                    <div class="food-desc">
+                                                        <h4>KFC</h4>
+                                                        <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                                    </div>
+                                                    <div class="delivery-detail">
+                                                        <div class="delivery-time">
+                                                            <img alt="deliver-icon" src="images/delivery-icon.svg">
+                                                            <span>44 min</span>
+                                                        </div>
+                                                        <div class="bg-rating">
+                                                            <img alt="bg-rating" src="images/bg-rating.svg">
+                                                            <div class="rating-rank">
+                                                                <img alt="star-icon" src="images/Star-icon.svg">
+                                                                <p class="rating-content">4.4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="whishlist-icon">
+                                                    <img src="images/Icon feather-heart.svg" alt="whishlist-icon">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                                <div class="food-product hvr-shadow">
+                                                    <a class="clickable" href="#"></a>
+                                                    <div class="food-item">
+                                                        <img alt="food-item" src="images/food-list2.jpg">
+                                                        <div class="brand-logo">
+                                                            <img alt="restaurant-logo" src="images/kfc.jpg">
+                                                        </div>
+                                                        <div class="diamond-pro">
+                                                            <img alt="offer" src="images/diamond-pro.svg">
+                                                        </div>
+                                                    </div>
+                                                    <div class="food-desc">
+                                                        <h4>KFC</h4>
+                                                        <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                                    </div>
+                                                    <div class="delivery-detail">
+                                                        <div class="delivery-time">
+                                                            <img alt="deliver-icon" src="images/delivery-icon.svg">
+                                                            <span>44 min</span>
+                                                        </div>
+                                                        <div class="bg-rating">
+                                                            <img alt="bg-rating" src="images/bg-rating.svg">
+                                                            <div class="rating-rank">
+                                                                <img alt="star-icon" src="images/Star-icon.svg">
+                                                                <p class="rating-content">4.4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="whishlist-icon">
+                                                    <img src="images/Icon feather-heart.svg" alt="whishlist-icon">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                                <div class="food-product hvr-shadow">
+                                                    <a class="clickable" href="#"></a>
+                                                    <div class="food-item">
+                                                        <img alt="food-item" src="images/food-list3.jpg">
+                                                        <div class="brand-logo">
+                                                            <img alt="restaurant-logo" src="images/wimpy.jpg">
+                                                        </div>
+                                                    </div>
+                                                    <div class="food-desc">
+                                                        <h4>KFC</h4>
+                                                        <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                                    </div>
+                                                    <div class="delivery-detail">
+                                                        <div class="delivery-time">
+                                                            <img alt="deliver-icon" src="images/delivery-icon.svg">
+                                                            <span>44 min</span>
+                                                        </div>
+                                                        <div class="bg-rating">
+                                                            <img alt="bg-rating" src="images/bg-rating.svg">
+                                                            <div class="rating-rank">
+                                                                <img alt="star-icon" src="images/Star-icon.svg">
+                                                                <p class="rating-content">4.4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="whishlist-icon">
+                                                    <img src="images/Icon feather-heart.svg" alt="whishlist-icon">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                                <div class="food-product hvr-shadow">
+                                                    <a class="clickable" href="#"></a>
+                                                    <div class="food-item">
+                                                        <img alt="food-item" src="images/food-list6.jpg">
+                                                        <div class="brand-logo">
+                                                            <img alt="restaurant-logo" src="images/tb.jpg">
+                                                        </div>
+                                                    </div>
+                                                    <div class="food-desc">
+                                                        <h4>KFC</h4>
+                                                        <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                                    </div>
+                                                    <div class="delivery-detail">
+                                                        <div class="delivery-time">
+                                                            <img alt="deliver-icon" src="images/delivery-icon.svg">
+                                                            <span>44 min</span>
+                                                        </div>
+                                                        <div class="bg-rating">
+                                                            <img alt="bg-rating" src="images/bg-rating.svg">
+                                                            <div class="rating-rank">
+                                                                <img alt="star-icon" src="images/Star-icon.svg">
+                                                                <p class="rating-content">4.4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="whishlist-icon">
+                                                    <img src="images/Icon feather-heart.svg" alt="whishlist-icon">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                                <div class="food-product hvr-shadow">
+                                                    <a class="clickable" href="#"></a>
+                                                    <div class="food-item">
+                                                        <img alt="food-item" src="images/food-list5.jpg">
+                                                        <div class="brand-logo">
+                                                            <img alt="restaurant-logo" src="images/ph.jpg">
+                                                        </div>
+                                                        <div class="diamond-pro">
+                                                            <img alt="offer" src="images/sapphire-promo.svg">
+                                                        </div>
+                                                    </div>
+                                                    <div class="food-desc">
+                                                        <h4>KFC</h4>
+                                                        <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                                    </div>
+                                                    <div class="delivery-detail">
+                                                        <div class="delivery-time">
+                                                            <img alt="deliver-icon" src="images/delivery-icon.svg">
+                                                            <span>44 min</span>
+                                                        </div>
+                                                        <div class="bg-rating">
+                                                            <img alt="bg-rating" src="images/bg-rating.svg">
+                                                            <div class="rating-rank">
+                                                                <img alt="star-icon" src="images/Star-icon.svg">
+                                                                <p class="rating-content">4.4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="whishlist-icon">
+                                                    <img src="images/Icon feather-heart.svg" alt="whishlist-icon">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                                <div class="food-product hvr-shadow">
+                                                    <a class="clickable" href="#"></a>
+                                                    <div class="food-item">
+                                                        <img alt="food-item" src="images/food-list15.jpg">
+                                                        <div class="brand-logo">
+                                                            <img alt="restaurant-logo" src="images/ph.jpg">
+                                                        </div>
+                                                    </div>
+                                                    <div class="food-desc">
+                                                        <h4>KFC</h4>
+                                                        <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                                    </div>
+                                                    <div class="delivery-detail">
+                                                        <div class="delivery-time">
+                                                            <img alt="deliver-icon" src="images/delivery-icon.svg">
+                                                            <span>44 min</span>
+                                                        </div>
+                                                        <div class="bg-rating">
+                                                            <img alt="bg-rating" src="images/bg-rating.svg">
+                                                            <div class="rating-rank">
+                                                                <img alt="star-icon" src="images/Star-icon.svg">
+                                                                <p class="rating-content">4.4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="whishlist-icon">
+                                                    <img src="images/Icon feather-heart.svg" alt="whishlist-icon">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                                <div class="food-product hvr-shadow">
+                                                    <a class="clickable" href="#"></a>
+                                                    <div class="food-item">
+                                                        <img alt="food-item" src="images/food-list16.jpg">
+                                                        <div class="brand-logo">
+                                                            <img alt="restaurant-logo" src="images/mcd.jpg">
+                                                        </div>
+                                                    </div>
+                                                    <div class="food-desc">
+                                                        <h4>KFC</h4>
+                                                        <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                                    </div>
+                                                    <div class="delivery-detail">
+                                                        <div class="delivery-time">
+                                                            <img alt="deliver-icon" src="images/delivery-icon.svg">
+                                                            <span>44 min</span>
+                                                        </div>
+                                                        <div class="bg-rating">
+                                                            <img alt="bg-rating" src="images/bg-rating.svg">
+                                                            <div class="rating-rank">
+                                                                <img alt="star-icon" src="images/Star-icon.svg">
+                                                                <p class="rating-content">4.4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="whishlist-icon">
+                                                    <img src="images/Icon feather-heart.svg" alt="whishlist-icon">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                                <div class="food-product hvr-shadow deleted-product">
+                                                    <a class="clickable" href="#"></a>
+                                                    <div class="food-item">
+                                                        <img alt="food-item" src="images/food-list4.jpg">
+                                                        <div class="brand-logo">
+                                                            <img alt="restaurant-logo" src="images/kfc.jpg">
+                                                        </div>
+                                                    </div>
+                                                    <div class="food-desc">
+                                                        <h4>KFC</h4>
+                                                        <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                                    </div>
+                                                    <div class="delivery-detail">
+                                                        <div class="delivery-time">
+                                                            <img alt="deliver-icon" src="images/delivery-icon.svg">
+                                                            <span>44 min</span>
+                                                        </div>
+                                                        <div class="bg-rating">
+                                                            <img alt="bg-rating" src="images/bg-rating.svg">
+                                                            <div class="rating-rank">
+                                                                <img alt="star-icon" src="images/Star-icon.svg">
+                                                                <p class="rating-content">4.4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="whishlist-icon">
+                                                    <img src="images/Icon feather-heart.svg" alt="whishlist-icon">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                                <div class="food-product hvr-shadow deleted-product">
+                                                    <a class="clickable" href="#"></a>
+                                                    <div class="food-item">
+                                                        <img alt="food-item" src="images/food-list0.jpg">
+                                                        <div class="brand-logo">
+                                                            <img alt="restaurant-logo" src="images/d.jpg">
+                                                        </div>
+                                                    </div>
+                                                    <div class="food-desc">
+                                                        <h4>KFC</h4>
+                                                        <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                                    </div>
+                                                    <div class="delivery-detail">
+                                                        <div class="delivery-time">
+                                                            <img alt="deliver-icon" src="images/delivery-icon.svg">
+                                                            <span>44 min</span>
+                                                        </div>
+                                                        <div class="bg-rating">
+                                                            <img alt="bg-rating" src="images/bg-rating.svg">
+                                                            <div class="rating-rank">
+                                                                <img alt="star-icon" src="images/Star-icon.svg">
+                                                                <p class="rating-content">4.4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="whishlist-icon">
+                                                    <img src="images/Icon feather-heart.svg" alt="whishlist-icon">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                                <div class="food-product hvr-shadow deleted-product">
+                                                    <a class="clickable" href="#"></a>
+                                                    <div class="food-item">
+                                                        <img alt="food-item" src="images/food-list2.jpg">
+                                                        <div class="brand-logo">
+                                                            <img alt="restaurant-logo" src="images/kfc.jpg">
+                                                        </div>
+                                                        <div class="diamond-pro">
+                                                            <img alt="offer" src="images/diamond-pro.svg">
+                                                        </div>
+                                                    </div>
+                                                    <div class="food-desc">
+                                                        <h4>KFC</h4>
+                                                        <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                                    </div>
+                                                    <div class="delivery-detail">
+                                                        <div class="delivery-time">
+                                                            <img alt="deliver-icon" src="images/delivery-icon.svg">
+                                                            <span>44 min</span>
+                                                        </div>
+                                                        <div class="bg-rating">
+                                                            <img alt="bg-rating" src="images/bg-rating.svg">
+                                                            <div class="rating-rank">
+                                                                <img alt="star-icon" src="images/Star-icon.svg">
+                                                                <p class="rating-content">4.4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="whishlist-icon">
+                                                    <img src="images/Icon feather-heart.svg" alt="whishlist-icon">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                                <div class="food-product hvr-shadow deleted-product">
+                                                    <a class="clickable" href="#"></a>
+                                                    <div class="food-item">
+                                                        <img alt="food-item" src="images/food-list3.jpg">
+                                                        <div class="brand-logo">
+                                                            <img alt="restaurant-logo" src="images/wimpy.jpg">
+                                                        </div>
+                                                    </div>
+                                                    <div class="food-desc">
+                                                        <h4>KFC</h4>
+                                                        <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                                    </div>
+                                                    <div class="delivery-detail">
+                                                        <div class="delivery-time">
+                                                            <img alt="deliver-icon" src="images/delivery-icon.svg">
+                                                            <span>44 min</span>
+                                                        </div>
+                                                        <div class="bg-rating">
+                                                            <img alt="bg-rating" src="images/bg-rating.svg">
+                                                            <div class="rating-rank">
+                                                                <img alt="star-icon" src="images/Star-icon.svg">
+                                                                <p class="rating-content">4.4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="whishlist-icon">
+                                                    <img src="images/Icon feather-heart.svg" alt="whishlist-icon">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                                <div class="food-product hvr-shadow deleted-product">
+                                                    <a class="clickable" href="#"></a>
+                                                    <div class="food-item">
+                                                        <img alt="food-item" src="images/food-list6.jpg">
+                                                        <div class="brand-logo">
+                                                            <img alt="restaurant-logo" src="images/tb.jpg">
+                                                        </div>
+                                                    </div>
+                                                    <div class="food-desc">
+                                                        <h4>KFC</h4>
+                                                        <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                                    </div>
+                                                    <div class="delivery-detail">
+                                                        <div class="delivery-time">
+                                                            <img alt="deliver-icon" src="images/delivery-icon.svg">
+                                                            <span>44 min</span>
+                                                        </div>
+                                                        <div class="bg-rating">
+                                                            <img alt="bg-rating" src="images/bg-rating.svg">
+                                                            <div class="rating-rank">
+                                                                <img alt="star-icon" src="images/Star-icon.svg">
+                                                                <p class="rating-content">4.4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="whishlist-icon">
+                                                    <img src="images/Icon feather-heart.svg" alt="whishlist-icon">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                                <div class="food-product hvr-shadow deleted-product">
+                                                    <a class="clickable" href="#"></a>
+                                                    <div class="food-item">
+                                                        <img alt="food-item" src="images/food-list5.jpg">
+                                                        <div class="brand-logo">
+                                                            <img alt="restaurant-logo" src="images/ph.jpg">
+                                                        </div>
+                                                    </div>
+                                                    <div class="food-desc">
+                                                        <h4>KFC</h4>
+                                                        <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                                    </div>
+                                                    <div class="delivery-detail">
+                                                        <div class="delivery-time">
+                                                            <img alt="deliver-icon" src="images/delivery-icon.svg">
+                                                            <span>44 min</span>
+                                                        </div>
+                                                        <div class="bg-rating">
+                                                            <img alt="bg-rating" src="images/bg-rating.svg">
+                                                            <div class="rating-rank">
+                                                                <img alt="star-icon" src="images/Star-icon.svg">
+                                                                <p class="rating-content">4.4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="whishlist-icon">
+                                                    <img src="images/Icon feather-heart.svg" alt="whishlist-icon">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                                <div class="food-product hvr-shadow deleted-product">
+                                                    <a class="clickable" href="#"></a>
+                                                    <div class="food-item">
+                                                        <img alt="food-item" src="images/food-list15.jpg">
+                                                        <div class="brand-logo">
+                                                            <img alt="restaurant-logo" src="images/ph.jpg">
+                                                        </div>
+                                                    </div>
+                                                    <div class="food-desc">
+                                                        <h4>KFC</h4>
+                                                        <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                                    </div>
+                                                    <div class="delivery-detail">
+                                                        <div class="delivery-time">
+                                                            <img alt="deliver-icon" src="images/delivery-icon.svg">
+                                                            <span>44 min</span>
+                                                        </div>
+                                                        <div class="bg-rating">
+                                                            <img alt="bg-rating" src="images/bg-rating.svg">
+                                                            <div class="rating-rank">
+                                                                <img alt="star-icon" src="images/Star-icon.svg">
+                                                                <p class="rating-content">4.4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="whishlist-icon">
+                                                    <img src="images/Icon feather-heart.svg" alt="whishlist-icon">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                                <div class="food-product hvr-shadow deleted-product">
+                                                    <a class="clickable" href="#"></a>
+                                                    <div class="food-item">
+                                                        <img alt="food-icon" src="images/food-list16.jpg">
+                                                        <div class="brand-logo">
+                                                            <img alt="restaurant-logo" src="images/mcd.jpg">
+                                                        </div>
+                                                    </div>
+                                                    <div class="food-desc">
+                                                        <h4>KFC</h4>
+                                                        <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                                    </div>
+                                                    <div class="delivery-detail">
+                                                        <div class="delivery-time">
+                                                            <img alt="deliver-icon" src="images/delivery-icon.svg">
+                                                            <span>44 min</span>
+                                                        </div>
+                                                        <div class="bg-rating">
+                                                            <img alt="bg-rating" src="images/bg-rating.svg">
+                                                            <div class="rating-rank">
+                                                                <img alt="star-icon" src="images/Star-icon.svg">
+                                                                <p class="rating-content">4.4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="whishlist-icon">
+                                                    <img src="images/Icon feather-heart.svg" alt="whishlist-icon">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                                <div class="food-product hvr-shadow deleted-product">
+                                                    <a class="clickable" href="#"></a>
+                                                    <div class="food-item">
+                                                        <img alt="food-item" src="images/food-list4.jpg">
+                                                        <div class="brand-logo">
+                                                            <img alt="restaurant-logo" src="images/kfc.jpg">
+                                                        </div>
+                                                    </div>
+                                                    <div class="food-desc">
+                                                        <h4>KFC</h4>
+                                                        <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                                    </div>
+                                                    <div class="delivery-detail">
+                                                        <div class="delivery-time">
+                                                            <img alt="deliver-icon" src="images/delivery-icon.svg">
+                                                            <span>44 min</span>
+                                                        </div>
+                                                        <div class="bg-rating">
+                                                            <img alt="bg-rating" src="images/bg-rating.svg">
+                                                            <div class="rating-rank">
+                                                                <img alt="star-icon" src="images/Star-icon.svg">
+                                                                <p class="rating-content">4.4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="whishlist-icon">
+                                                    <img src="images/Icon feather-heart.svg" alt="whishlist-icon">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                                <div class="food-product hvr-shadow deleted-product">
+                                                    <a class="clickable" href="#"></a>
+                                                    <div class="food-item">
+                                                        <img alt="food-item" src="images/food-list0.jpg">
+                                                        <div class="brand-logo">
+                                                            <img alt="restaurant-logo" src="images/d.jpg">
+                                                        </div>
+                                                    </div>
+                                                    <div class="food-desc">
+                                                        <h4>KFC</h4>
+                                                        <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                                    </div>
+                                                    <div class="delivery-detail">
+                                                        <div class="delivery-time">
+                                                            <img alt="deliver-icon" src="images/delivery-icon.svg">
+                                                            <span>44 min</span>
+                                                        </div>
+                                                        <div class="bg-rating">
+                                                            <img alt="bg-rating" src="images/bg-rating.svg">
+                                                            <div class="rating-rank">
+                                                                <img alt="star-icon" src="images/Star-icon.svg">
+                                                                <p class="rating-content">4.4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="whishlist-icon">
+                                                    <img src="images/Icon feather-heart.svg" alt="whishlist-icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        </section>
+    </div>
+    <footer class="custom-footer">
+        <div class="footer-one">
+            <div class="container custom-container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-4 col-6">
+                        <div class="footer-links">
+                            <h3>COMPANY</h3>
+                            <ul>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Careers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-6">
+                        <div class="footer-links">
+                            <h3>CONTACT</h3>
+                            <ul>
+                                <li><a href="#">Help & Support</a></li>
+                                <li><a href="#">Partner with Us</a></li>
+                                <li><a href="#">We Deliver to</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-6">
+                        <div class="footer-links legal">
+                            <h3>LEGAL</h3>
+                            <ul>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Cancellation & Refund</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Cookie Policy</a></li>
+                                <li><a href="#">Offer Terms</a></li>
+                                <li><a href="#">Phishing & Fraud</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-6 footer-up-down">
+                        <div class="dwn-app">
+                            <a href="#"><img alt="AppStore" src="images/appStore.svg"></a>
+                            <a href="#"><img alt="GooglePlay" src="images/googlePlay.svg"></a>
+                        </div>
+                        <ul class="social-icons">
+                            <li class="hvr-grow"><a href="#"><img alt="Facebook" src="images/fb.svg"></a></li>
+                            <li class="hvr-grow"><a href="#"><img alt="Instagram" src="images/insta.svg"></a></li>
+                            <li class="hvr-grow"><a href="#"><img alt="Twitter" src="images/twit.svg"></a></li>
+                            <li class="hvr-grow"><a href="#"><img alt="Pinterest" src="images/pin.svg"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-two">
+            <div class="container custom-container">
+                <div class="row">
+                    <div class="col-md-9 col-5">
+                        <div class="footer-logo">
+                            <img alt="Logo" src="images/le-logo.svg">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-7">
+                        <div class="copyright">
+                            <p>© 2021 letseat.co.uk</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="filter-overlay header-overlay" onclick="closeProfile()"></div>
+    <!--Popup Begin-->
+    <div class="search-popup">
+        <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade search-modal" id="exampleModal"
+             role="dialog" tabindex="-1">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content" id="exampleModalLabel">
+                    <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                        <img alt="close-icon" src="images/new-close.svg">
+                    </button>
+                    <div class="modal-header">
+                        <div class="location-guide">
+                            <a aria-label="Close" data-dismiss="modal" data-target="#exampleModal1" data-toggle="modal"
+                               href="#">Sugnall Street, Liverpool, UK</a>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <form class="search-form" method="post">
+                            <div class="form-group material-textfield">
+                                <div><img alt="search" class="search-icon" src="images/search.svg"></div>
+                                <input autocomplete="off" class="form-control" id="first-name"
+                                       name="first-name" placeholder="Search for restaurant, cuisine or a dish"
+                                       type="text">
+                                <label class="text-label" for="first-name">Search for restaurant, cuisine or a
+                                    dish</label>
+                            </div>
+                        </form>
+                        <div class="resto-list">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="restaurant-info">
+                                        <img alt="food-item" class="search-list-img" src="images/food-list2.jpg">
+                                        <div class="resto-detail">
+                                            <div class="food-desc">
+                                                <h4>KFC</h4>
+                                                <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="restaurant-info">
+                                        <img alt="food-item" class="search-list-img" src="images/food-list4.jpg">
+                                        <div class="resto-detail">
+                                            <div class="food-desc">
+                                                <h4>KFC</h4>
+                                                <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="restaurant-info">
+                                        <img alt="food-item" class="search-list-img" src="images/food-list6.jpg">
+                                        <div class="resto-detail">
+                                            <div class="food-desc">
+                                                <h4>KFC</h4>
+                                                <p>Lorem ipsum dolor sit consetetur sadipscing elitr.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="address-popup">
+        <div aria-hidden="true" aria-labelledby="exampleModalLabel1" class="modal fade" id="exampleModal1" role="dialog"
+             tabindex="-1">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content" id="exampleModalLabel1">
+                    <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                        <img alt="close-icon" src="images/new-close.svg">
+                    </button>
+                    <div class="modal-header">
+                        <h2>Select delivery location</h2>
+                    </div>
+                    <div class="modal-body">
+                        <form class="location-search-form" method="post">
+                            <div class="form-group material-textfield">
+                                <div><img alt="search" class="search-icon" src="images/search.svg"></div>
+                                <label for="location" style="display: none;"></label><input autocomplete="off"
+                                                                                            class="form-control"
+                                                                                            id="location"
+                                                                                            name="location"
+                                                                                            placeholder="Sugnall Street, Liverpool, UK"
+                                                                                            type="text">
+                            </div>
+                        </form>
+                        <div class="detect-location">
+                            <div class="inner-content">
+                                <div class="current-location">
+                                    <em>
+                                        <svg fill="#0A83EA" height="14" role="img" viewBox="0 0 20 20"
+                                             width="14" xmlns="http://www.w3.org/2000/svg">
+                                            <title>current-location</title>
+                                            <path d="M13.58 10c0 1.977-1.603 3.58-3.58 3.58s-3.58-1.603-3.58-3.58c0-1.977 1.603-3.58 3.58-3.58v0c1.977 0 3.58 1.603 3.58 3.58v0zM20 9.52v0.96c0 0.265-0.215 0.48-0.48 0.48v0h-1.72c-0.447 3.584-3.256 6.393-6.802 6.836l-0.038 0.004v1.72c0 0.265-0.215 0.48-0.48 0.48v0h-0.96c-0.265 0-0.48-0.215-0.48-0.48v0-1.72c-3.575-0.455-6.375-3.262-6.816-6.802l-0.004-0.038h-1.74c-0.265 0-0.48-0.215-0.48-0.48v0-0.96c0-0.265 0.215-0.48 0.48-0.48v0h1.74c0.445-3.578 3.245-6.385 6.781-6.836l0.039-0.004v-1.72c0-0.265 0.215-0.48 0.48-0.48v0h0.96c0.265 0 0.48 0.215 0.48 0.48v0 1.72c3.584 0.447 6.393 3.256 6.836 6.802l0.004 0.038h1.72c0.265 0 0.48 0.215 0.48 0.48v0zM15.96 10c0-3.292-2.668-5.96-5.96-5.96s-5.96 2.668-5.96 5.96c0 3.292 2.668 5.96 5.96 5.96v0c3.292 0 5.96-2.668 5.96-5.96v0z"></path>
+                                        </svg>
+                                    </em>
+                                    <p>Use current location</p>
+                                </div>
+                                <p class="using-gps">Using GPS</p>
+                            </div>
+                            <div class="recent-location">Recent Locations</div>
+                            <div class="recent-location-outer">
+                                <div class="recent-location-inner">
+                                    <div class="location-content">
+                                        <em>
+                                            <svg class="clock-icon" fill="#1C1C1C" height="15"
+                                                 role="img" viewBox="0 0 20 20" width="15" xmlns="http://www.w3.org/2000/svg">
+                                                <title>time</title>
+                                                <path d="M14.76 9.040h-4.22l-2.58-4.28c-0.147-0.354-0.489-0.598-0.889-0.598-0.53 0-0.96 0.43-0.96 0.96 0 0.227 0.079 0.436 0.211 0.6l-0.001-0.002 2.86 4.76c0.172 0.278 0.474 0.46 0.82 0.46 0 0 0 0 0.001 0h4.76c0.467-0.070 0.822-0.469 0.822-0.95s-0.354-0.88-0.817-0.949l-0.005-0.001zM10 0c-5.523 0-10 4.477-10 10s4.477 10 10 10c5.523 0 10-4.477 10-10v0c0-5.523-4.477-10-10-10v0zM10 18.58c-4.739 0-8.58-3.841-8.58-8.58s3.841-8.58 8.58-8.58c4.739 0 8.58 3.841 8.58 8.58v0c0 4.739-3.841 8.58-8.58 8.58v0z"></path>
+                                            </svg>
+                                        </em>
+                                    </div>
+                                    <div class="location-name">Sugnall Street, Liverpool, UK</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Popup-->
+<script src="js/lib/jquery-3.5.1.slim.min.js"></script>
+<script src="js/lib/popper.min.js"></script>
+<script src="js/lib/bootstrap.min.js"></script>
+<script src="js/lib/owl.carousel.js"></script>
+<script>
+    $(".search").on("click", function () {
+        $(".search-container").toggleClass("active");
+    });
+    $("#dropdownMenuButton1").on("click", function () {
+        $(".search-outer").addClass("show");
+        $('.header-overlay').addClass("profile-open");
+    })
+    function closeProfile(){
+        $(".search-outer").removeClass("show");
+        $('.header-overlay').removeClass("profile-open");
+    }
+</script>
+</body>
+</html>

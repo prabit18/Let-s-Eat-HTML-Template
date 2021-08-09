@@ -163,15 +163,17 @@
                                             <p>95 Linthorpe Road, Middlesbrough, TS1 5DD</p>
                                         </div>
                                         <div class="toggle-section">
-                                            <div class="payment-item delivery-item">
+                                            <div class="payment-item delivery-item active delivery-box">
                                                 <input type="radio" id="test1" name="radio-group" checked="">
                                                 <label for="test1" class="delivery">Delivery<br><span>30-40 Mins</span></label>
-                                                <img src="images/new-delivery-icon.svg" alt="delivery-icon">
+                                                <img src="images/act_delivery_icon.svg" alt="delivery-icon" class="black-img">
+                                                <img src="images/new-delivery-icon.svg" alt="delivery-icon" class="hide-img">
                                             </div>
-                                            <div class="payment-item delivery-item">
+                                            <div class="payment-item delivery-item store-box">
                                                 <input type="radio" id="test2" name="radio-group">
                                                 <label for="test2" class="store-pick">Store Pick up<br><span>15-20 Mins</span></label>
-                                                <img src="images/new-store-pickup.svg" alt="store-icon">
+                                                <img src="images/new-store-pickup.svg" alt="store-icon" class="black-img">
+                                                <img src="images/act_store_pickup.svg" alt="store-icon" class="hide-img">
                                             </div>
                                         </div>
                                         <div class="preferred-time">
@@ -352,7 +354,7 @@
                                 <h2>Checkout</h2>
                             </div>
                             <div class="cart-details personal-cart-detail">
-                                <div class="delivery-address">
+                                <div class="delivery-address post-login-address">
                                     <div class="address-header">
                                         <div class="address-left personal-detail">
                                             <img src="images/Group 6593.svg" alt="Address_Icon">
@@ -372,6 +374,21 @@
                                                 </div>
                                                 <div class="verify-btn">
                                                     <a href="#" data-toggle="modal" data-target="#phoneModal">Verify Phone Number</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="delivery-address new-address">
+                                    <div class="address-header">
+                                        <div class="address-left personal-detail">
+                                            <img src="images/Group 6593.svg" alt="Address_Icon" class="address-icon">
+                                            <div class="address-text">
+                                                <h2>Account</h2>
+                                                <p>Log in to your existing account or sign up.</p>
+                                                <div class="authorization-btn">
+                                                    <button type="button" class="login-botton" data-toggle="modal" data-target="#loginModal">Log in</button>
+                                                    <button type="button" class="signup-botton"  data-toggle="modal" data-target="#signupModal">Sign up</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -1157,6 +1174,24 @@
         $(".change-btn").attr("style", "display:block");
         $('.address-element').attr("style", "display:block");
     })
+    $(".store-box").on("click", function () {
+        $(".delivery-box").removeClass('active');
+        $(".store-box").addClass("active");
+        $(".store-box").attr("style", "border-radius:0");
+        $('.hide-img').attr("style", "display:block");
+        $('.black-img').attr("style", "display:none");
+    })
+    $(".delivery-box").on("click", function () {
+        $(".store-box").removeClass('active');
+        $(".delivery-box").addClass("active");
+        $('.black-img').attr("style", "display:block");
+        $('.hide-img').attr("style", "display:none");
+    })
+    $(".address-icon").on("click", function () {
+        $(".post-login-address").attr("style", "display:block");
+        $('.new-address').attr("style", "display:none");
+    })
+    
     function closeProfile(){
         $(".search-outer").removeClass("show");
         $('.header-overlay').removeClass("profile-open");

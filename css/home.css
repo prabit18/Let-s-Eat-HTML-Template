@@ -154,13 +154,13 @@
 }
 .brand-logo {
     position: absolute;
-    bottom: -35px;
-    left: 0;
+    bottom: 10px;
+    left: 10px;
     border-radius: 50%;
     overflow: hidden;
-    width: 73px;
-    height: 73px;
-    padding: 6px;
+    width: 45px;
+    height: 45px;
+    padding: 5px;
     background-color: #ffffff;
 }
 .brand-logo img {
@@ -171,6 +171,7 @@
 }
 
 .food-desc {
+    min-height: 90px;
     text-align: center;
     padding: 15px 0 10px;
     border-bottom: 1px solid #909AB9;
@@ -188,6 +189,10 @@
     line-height: 16px;
     color: #3B4148;
     font-family: Montserrat-Regular, sans-serif;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
 .delivery-detail {
     display: flex;
@@ -368,6 +373,9 @@ p.rating-content {
     .title-header img {
         max-width: calc(100% - 100px);
         height: 28px;
+    }
+    .food-desc{
+        min-height: 85px;
     }
     .food-desc h4 {
         font-size: 15px;

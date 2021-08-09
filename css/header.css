@@ -471,6 +471,47 @@ a.login-signup-link span:after {
 .search-outer.show{
     z-index: 0;
 }
+/*verification-popup*/
+.login-modal .modal-body.success-body.verification-body{
+    padding: 0 60px 40px;
+}
+.verification-body h2{
+    font-size: 20px;
+    line-height: 18px;
+    font-family: 'Montserrat-SemiBold';
+    color: #293250;
+}
+.login-modal .modal-body.success-body.verification-body p{
+    font-size: 16px;
+    line-height: 19px;
+    color: #3B4148;
+    font-family: 'Montserrat-Regular';
+    margin-top: 15px;
+}
+.action-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.action-btn button{
+    border: none;
+    font-size: 15px;
+    line-height: 18px;
+    font-family: 'Montserrat-Medium';
+    color: #283350;
+    min-width: 160px;
+    height: 40px;
+    border-radius: 20px;
+}
+.action-btn button.no-btn{
+    background-color: #DCDFE8;
+}
+.action-btn button.yes-btn{
+    margin-left: 20px;
+    background-color: #FFD438;
+}
+
 
 
 @media(min-width: 1024px) {
@@ -768,5 +809,27 @@ a.login-signup-link span:after {
     }
     .detect-location .search-popup input, .detect-location .address-popup input {
         height: 45px;
+    }
+    /*verification popup*/
+    .login-modal .modal-body.success-body.verification-body {
+        padding: 0 40px 30px;
+    }
+    .verification-body h2 {
+        font-size: 18px;
+        line-height: 16px;
+    }
+    .login-modal .modal-body.success-body.verification-body p {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .action-btn {
+        margin-top: 25px;
+    }
+    .action-btn button {
+        min-width: 120px;
+        height: 30px;
+    }
+    .action-btn button.yes-btn {
+        margin-left: 10px;
     }
 }

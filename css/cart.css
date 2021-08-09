@@ -1275,6 +1275,53 @@ button.quantity-arrow-plus {
 .mobile-no-field .form-control::placeholder,.mobile-no-field .form-control{
     text-align: center;
 }
+/*payment*/
+.delivery-option .toggle-section {
+    margin-bottom: 0;
+}
+.delivery-option .payment-item [type="radio"]:checked + label, .payment-item [type="radio"]:not(:checked) + label {
+    padding: 8px 10px 8px 26px;
+}
+/*payent-toggle*/
+.payment-item.delivery-item.active {
+    background-color: #457CD6;
+}
+.payment-item.delivery-item input[type="radio"]:checked + label,
+.payment-item.delivery-item input[type="radio"]:checked + label span{
+    color: #FFFFFF;
+}
+.payment-item.delivery-item input[type="radio"]:checked + label:before {
+    border: 1px solid #FFFFFF;
+    background: #457cd6;
+}    
+.payment-item.delivery-item input[type="radio"]:checked + label:after {
+    background: #FFFFFF;
+}
+
+.authorization-btn {
+    margin-top: 20px;
+}
+.authorization-btn button{
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #283350;
+    height: 40px;
+    width: 140px;
+    font-family: 'Montserrat-Medium';
+}
+button.login-botton {
+    background-color: #FFD438;
+    margin-right: 20px;
+}
+button.signup-botton {
+    background-color: #2A3251;
+    color: #FFFFFF;
+}
+.post-login-address,.hide-img{
+    display: none;
+}
 
 
 
@@ -1284,6 +1331,14 @@ button.quantity-arrow-plus {
 @media(min-width: 576px) {
     .address-modal.delete-modal .modal-dialog {
         min-width: 580px;
+    }
+}
+@media(max-width: 1200px){
+    /*payment*/
+    .delivery-option .toggle-section {
+        width: auto;
+        display: flex;
+        justify-content: center;
     }
 }
 @media(max-width: 1023px) {
@@ -1549,6 +1604,13 @@ button.quantity-arrow-plus {
     .login-modal .modal-body .form-group {
         margin-bottom: 15px;
     }
+    .authorization-btn {
+        margin-top: 15px;
+    }
+    button.login-botton {
+        background-color: #FFD438;
+        margin-right: 10px;
+    }
 }
 @media(max-width: 400px) {
     .apply-offers {
@@ -1710,5 +1772,12 @@ button.quantity-arrow-plus {
     .add-new-address-box button {
         padding: 5px 10px;
         height: 35px;
+    }
+    button.login-botton {
+        margin-right: 5px;
+    }
+    .authorization-btn button {
+        height: 35px;
+        width: 105px;
     }
 }
